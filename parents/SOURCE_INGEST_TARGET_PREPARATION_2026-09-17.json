@@ -1,0 +1,102 @@
+{
+  "state": "PREPARATION_ONLY_NOT_SOURCE_ACCEPTANCE",
+  "date": "2026-09-17",
+  "source_operations_performed": false,
+  "source_tests_run": false,
+  "queue_claims_performed": false,
+  "new_permissions": false,
+  "operator_report": {
+    "source_document": "SOURCE_LEVERAGE_AUDIT_S2026-09-17.md",
+    "canonical_fragment_ids": null,
+    "fragment_count_reported": 23,
+    "source_content_digest": null,
+    "source_byte_equality_verified": false,
+    "embedding_generated_reported": 0,
+    "pg_embedding_model_reported": "voyage-3-large",
+    "pg_embedding_present_reported": 23,
+    "target_embedding_present_reported": 0,
+    "ingest_aura_instance_reported": "5627c34b",
+    "earlier_vector_aura_instance_reported": "2423a9f4",
+    "target_instances_reconciled": false,
+    "queue_ids_reported": [
+      5168898,
+      5168899,
+      5168900,
+      5168901,
+      5168902,
+      5168903,
+      5168904,
+      5168905,
+      5168906,
+      5168907,
+      5168908,
+      5168909,
+      5168910,
+      5168911,
+      5168912,
+      5168913,
+      5168914,
+      5168915,
+      5168916,
+      5168917,
+      5168918,
+      5168919,
+      5168920
+    ],
+    "queue_status_reported": "PENDING",
+    "deferred_report_work": "dwq#3501",
+    "receipt_ceiling_reported": "DISCOVERY_ONLY:PARTIAL_DEFERRED",
+    "raw_receipt_id": null,
+    "source_runtime_independently_verified": false
+  },
+  "required_discriminators": [
+    "actual fragment identities/content and vector lineage",
+    "intended target instance/index/property/representation",
+    "copy-on-project contract versus intentionally text-only product",
+    "existing queue consumer and payload version",
+    "quality-rejected item membership",
+    "actual selected retrieval consumer"
+  ],
+  "r3_files_available_in_active_runtime": false,
+  "parents_observed": [
+    {
+      "name": "SOURCE_GRAPH_PLANES_RECONCILIATION_R2_2026-09-17.md",
+      "bytes": 45129,
+      "sha256": "a3b996e0b73092c185540d3c566fafaf53dccbf019c01a75ce7f513c5699ea66"
+    },
+    {
+      "name": "SOURCE_GRAPH_PLANES_DISPOSITIONS_R2_2026-09-17.json",
+      "bytes": 27382,
+      "sha256": "599b432165aba6deb7b58d8b07a2a3fe085e05115539b3a2bbe98ac1aad9c3aa"
+    },
+    {
+      "name": "SOURCE_GRAPH_PLANES_R2_MANIFEST_2026-09-17.json",
+      "bytes": 3350,
+      "sha256": "584e430c00f0a1e24476970fa875485433b6e634219589f35998fd76e77558a7"
+    },
+    {
+      "name": "SOURCE_LEARNING_TAKEOVER_ALIGNED_ONESHOT_2026-09-17.md",
+      "bytes": 49349,
+      "sha256": "ac491db6e568e9ceffe396e670ef1513f16c7dd68ccbc8c5bf3b05506daea7c4"
+    },
+    {
+      "name": "SOURCE_LEARNING_TAKEOVER_ALIGNED_2026-09-17.zip",
+      "bytes": 13588185,
+      "sha256": "73e87512909a2cf88da299bb48eff4e8f69780699d26e76c4212a668be683768"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "SOURCE_INGEST_TARGET_RECONCILIATION_2026-09-17.md",
+      "bytes": 31478,
+      "sha256": "cfba78aba3e778bf4ba8f912d85c0509860ef9d4628bcf9c69d5534e2f80543b"
+    }
+  ],
+  "validation_kind": "artifact structure, exact queue-range arithmetic and parent preservation only; no service tests",
+  "checks": {
+    "queue_range_has_23_unique_ids": true,
+    "no_fragment_ids_invented": true,
+    "no_source_pass_or_grant_invented": true,
+    "parents_unchanged_during_this_preparation": true
+  }
+}

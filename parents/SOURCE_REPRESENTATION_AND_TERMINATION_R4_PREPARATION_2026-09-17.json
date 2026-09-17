@@ -1,0 +1,61 @@
+{
+  "date": "2026-09-17",
+  "status": "PREPARATION_ONLY_NOT_SOURCE_ACCEPTANCE",
+  "artifact": {
+    "name": "SOURCE_REPRESENTATION_AND_TERMINATION_R4_2026-09-17.md",
+    "bytes": 46795,
+    "words": 6362,
+    "sha256": "2e8b67c832b618f568832ca347088549c685d4847bb25a50f68a5194836db17e"
+  },
+  "parent_checks": [
+    {
+      "name": "SOURCE_LEARNING_TAKEOVER_ALIGNED_2026-09-17.zip",
+      "bytes": 13588185,
+      "sha256": "73e87512909a2cf88da299bb48eff4e8f69780699d26e76c4212a668be683768",
+      "matches_prior_custody": true
+    },
+    {
+      "name": "SOURCE_LEARNING_TAKEOVER_ALIGNED_ONESHOT_2026-09-17.md",
+      "bytes": 49349,
+      "sha256": "ac491db6e568e9ceffe396e670ef1513f16c7dd68ccbc8c5bf3b05506daea7c4",
+      "matches_prior_custody": true
+    },
+    {
+      "name": "SOURCE_GRAPH_PLANES_RECONCILIATION_R2_2026-09-17.md",
+      "bytes": 45129,
+      "sha256": "a3b996e0b73092c185540d3c566fafaf53dccbf019c01a75ce7f513c5699ea66",
+      "matches_prior_custody": true
+    },
+    {
+      "name": "SOURCE_GRAPH_VECTOR_RECALL_SUPPLEMENT_R3_2026-09-17.md",
+      "bytes": 60890,
+      "sha256": "9be9f58562aad4294c363aa8eb726f8ab22ee6a7b6b99138e07a3a5942964bd6",
+      "matches_prior_custody": true
+    },
+    {
+      "name": "SOURCE_INGEST_TARGET_RECONCILIATION_2026-09-17.md",
+      "bytes": 31478,
+      "sha256": "cfba78aba3e778bf4ba8f912d85c0509860ef9d4628bcf9c69d5534e2f80543b",
+      "matches_prior_custody": true
+    }
+  ],
+  "checks": {
+    "all_parent_hashes_match": true,
+    "all_16_reference_entries_present": true,
+    "sections_1_through_12_present": true,
+    "non_actuating_ceiling_present": true
+  },
+  "source_operations_performed": false,
+  "source_tests_run": false,
+  "source_patch_applied": false,
+  "new_authority_granted": false,
+  "private_vectors_or_queries_exported": false,
+  "source_pages_unreadable": [
+    "scripts/governance/three_pass_delta.py @ 9266d8cd31a56ecdf43d0830ab69f66a4af23ab4",
+    "scripts/enrich_with_voyage.py @ 9266d8cd31a56ecdf43d0830ab69f66a4af23ab4",
+    "scripts/refresh_binding_rules_fastrp_aura.py @ 59501776da636dd6ccc608bbcdee10f84dec5c46",
+    "poly-simplex/substrate/embedding.py @ c6bebbc5d1f21ededb108ef57efb50fbaf97de89",
+    "core/vector_guard.py @ 015087b2a714f5842546abe8712fd9a0ed8d1822"
+  ],
+  "note": "Public documentation reviewed selectively; user-reported current-source/runtime observations retain their original evidence ceiling. Hash and structural checks do not establish correctness, execution or closure."
+}

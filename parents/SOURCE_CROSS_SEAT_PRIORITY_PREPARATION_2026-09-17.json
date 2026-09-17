@@ -1,0 +1,256 @@
+{
+  "status": "SOURCE_BASED_RECONCILIATION_NO_ACTUATION",
+  "date": "2026-09-17",
+  "input_archive": {
+    "name": "1jsB2l4DsJnSRLGi-grok-workspace.zip",
+    "sha256": "b674592b7d39a7cbe4be2e26126a593d69db1a499c379731c9e786823bfc7e83",
+    "bytes": 5690434
+  },
+  "inspection": {
+    "non_directory_members": 361,
+    "uncompressed_bytes": 17931490,
+    "crc_pass": true,
+    "captured_text_bodies": 20,
+    "distinct_captured_blobs": 16,
+    "envelope_blob_matches": 20,
+    "source_behavior_tests_run": false,
+    "b8_retimed": false,
+    "current_source_code_verified": false,
+    "independent_capture_authenticity_verified": false
+  },
+  "source_operations": {
+    "invocations": 0,
+    "repository_edits": 0,
+    "task_rows_created": 0,
+    "credentials_read": false,
+    "credential_rotation": false,
+    "provider_inference": false,
+    "queue_claims": 0,
+    "epoch_install": false
+  },
+  "scope_exclusions": [
+    "font assets",
+    "image/UI rendering",
+    "authentication configuration contents",
+    "environment/credential files",
+    "archived executable startup/build/test/migration commands"
+  ],
+  "preserved_parent_hashes": {
+    "SOURCE_SUBSUMED_RECONCILIATION_2026-09-17.md": "8e72a1577371a5b6ea88a62d77089c327e4127d8a6bb82d452ce8c7d2c10b632",
+    "SOURCE_PAIRS_ONLY_OWNER_DELTA_2026-09-17.md": "6793132ca7b70a616fa86857a119eac28d63f25b4175adaadc456ee30ca3b552",
+    "SOURCE_REPRESENTATION_AND_TERMINATION_R4_2026-09-17.md": "2e8b67c832b618f568832ca347088549c685d4847bb25a50f68a5194836db17e",
+    "SOURCE_LEARNING_TAKEOVER_ALIGNED_2026-09-17.zip": "73e87512909a2cf88da299bb48eff4e8f69780699d26e76c4212a668be683768"
+  },
+  "output_hashes": {
+    "SOURCE_CROSS_SEAT_PRIORITY_RECONCILIATION_2026-09-17.md": "8426f96ed84ce177d07f23be605a54e60810f45a26657836fdc08e83e298b412",
+    "SOURCE_CROSS_SEAT_ARCHIVE_EVIDENCE_2026-09-17.md": "cf43b72494689c67f3a30f32202601b9c7c0c300a1c7da2af4b4238c8653e76f"
+  },
+  "source_body_identity_records": [
+    {
+      "capture": "artifacts/.tmp/mcp-results/github___get_file_contents-1789627515147-eeefadc0.json",
+      "uri": "repo://shaneatlas/the-source/sha/2b542cf7242ee95f0cc03c1898674240a63a7f21/contents/.agents/skills/nornicdb-cypher-queries/SKILL.md",
+      "declared_blob": "8174dcf72747f25939f9661d91dcd2bd55068c1a",
+      "computed_blob": "8174dcf72747f25939f9661d91dcd2bd55068c1a",
+      "blob_match": true,
+      "sha256": "412432d1f87288496de02ed37e94f9d7bc5b682fc47999a928376c650e07be5a",
+      "bytes": 20609,
+      "lines": 622
+    },
+    {
+      "capture": "artifacts/.tmp/mcp-results/github___get_file_contents-1789627548322-79554345.json",
+      "uri": "repo://shaneatlas/the-source/sha/2b542cf7242ee95f0cc03c1898674240a63a7f21/contents/.agents/skills/graph/SKILL.md",
+      "declared_blob": "45d0241412b796bca02d59b825fff83efd7c6219",
+      "computed_blob": "45d0241412b796bca02d59b825fff83efd7c6219",
+      "blob_match": true,
+      "sha256": "330e76d370089f4b783972869f8793fa87698de2a76980dd74a4f8fe6478f16e",
+      "bytes": 19483,
+      "lines": 420
+    },
+    {
+      "capture": "artifacts/.tmp/mcp-results/github___get_file_contents-1789629642694-654a52d9.json",
+      "uri": "repo://shaneatlas/the-source/sha/3143a91dc52cb80d0decb44f416e04f46bd0b13d/contents/.agents/skills/nornicdb-cypher-queries/SKILL.md",
+      "declared_blob": "8174dcf72747f25939f9661d91dcd2bd55068c1a",
+      "computed_blob": "8174dcf72747f25939f9661d91dcd2bd55068c1a",
+      "blob_match": true,
+      "sha256": "412432d1f87288496de02ed37e94f9d7bc5b682fc47999a928376c650e07be5a",
+      "bytes": 20609,
+      "lines": 622
+    },
+    {
+      "capture": "artifacts/.tmp/mcp-results/github___get_file_contents-1789629652297-9cf52b0c.json",
+      "uri": "repo://shaneatlas/the-source/sha/3143a91dc52cb80d0decb44f416e04f46bd0b13d/contents/.agents/skills/graph/SKILL.md",
+      "declared_blob": "45d0241412b796bca02d59b825fff83efd7c6219",
+      "computed_blob": "45d0241412b796bca02d59b825fff83efd7c6219",
+      "blob_match": true,
+      "sha256": "330e76d370089f4b783972869f8793fa87698de2a76980dd74a4f8fe6478f16e",
+      "bytes": 19483,
+      "lines": 420
+    },
+    {
+      "capture": "artifacts/.tmp/mcp-results/github___get_file_contents-1789631830087-b7bd408d.json",
+      "uri": "repo://shaneatlas/the-source/sha/c1422791e08498ac6615973b1f5dcf951a1df73d/contents/scripts/run_gds_v3.py",
+      "declared_blob": "27ba5106202339caee096fde2d41327d9564721d",
+      "computed_blob": "27ba5106202339caee096fde2d41327d9564721d",
+      "blob_match": true,
+      "sha256": "1fbb11a1ab5cf35e02080d79a8ca3e404572ee8c5748fa5c4fd048cace5db944",
+      "bytes": 28164,
+      "lines": 613
+    },
+    {
+      "capture": "artifacts/.tmp/mcp-results/github___get_file_contents-1789631975910-56c1fcc0.json",
+      "uri": "repo://orneryd/NornicDB/sha/e917408d61c32eb537082e7c905a6b1c1d4ff951/contents/docs/performance/hot-path-query-cookbook.md",
+      "declared_blob": "c99acbf5f929f601297bf52bc269faa1f230396b",
+      "computed_blob": "c99acbf5f929f601297bf52bc269faa1f230396b",
+      "blob_match": true,
+      "sha256": "32b11577a08b20566cce9660705678c53b17ccc8c5ff04ed0727733cbe488efc",
+      "bytes": 30233,
+      "lines": 919
+    },
+    {
+      "capture": "artifacts/.tmp/mcp-results/github___get_file_contents-1789632342317-ac36e16f.json",
+      "uri": "repo://orneryd/NornicDB/sha/e917408d61c32eb537082e7c905a6b1c1d4ff951/contents/docs/user-guides/vector-search.md",
+      "declared_blob": "5c130dab593b24dbdad31a83f4c6fcaa851e8cac",
+      "computed_blob": "5c130dab593b24dbdad31a83f4c6fcaa851e8cac",
+      "blob_match": true,
+      "sha256": "069cfe59efe4a7849e3e5b56758546d5259aecafc3a8a027a01fb3d698250991",
+      "bytes": 21248,
+      "lines": 614
+    },
+    {
+      "capture": "artifacts/.tmp/mcp-results/github___get_file_contents-1789632356510-779a44d0.json",
+      "uri": "repo://orneryd/NornicDB/sha/e917408d61c32eb537082e7c905a6b1c1d4ff951/contents/docs/neo4j-migration/feature-parity.md",
+      "declared_blob": "cd5937bf1ac3fe1521bb36e0a255822a8a4d2a06",
+      "computed_blob": "cd5937bf1ac3fe1521bb36e0a255822a8a4d2a06",
+      "blob_match": true,
+      "sha256": "6c3e77d920dde85f6d1b541c56d357c504a7fb36620e6339f4b747d7611500e5",
+      "bytes": 19390,
+      "lines": 350
+    },
+    {
+      "capture": "artifacts/.tmp/mcp-results/github___get_file_contents-1789632990687-8af39b5c.json",
+      "uri": "repo://shaneatlas/the-source/sha/9266d8cd31a56ecdf43d0830ab69f66a4af23ab4/contents/core/graph_provider.py",
+      "declared_blob": "eedcf332afaff4527e71858ac7737b2c2a363d66",
+      "computed_blob": "eedcf332afaff4527e71858ac7737b2c2a363d66",
+      "blob_match": true,
+      "sha256": "28683176e1a245b5a4542dc99ceac4a748ca9dfb5fc19eea5ee2ebac6e945659",
+      "bytes": 23818,
+      "lines": 606
+    },
+    {
+      "capture": "artifacts/.tmp/mcp-results/github___get_file_contents-1789633013859-73f80266.json",
+      "uri": "repo://shaneatlas/the-source/sha/9266d8cd31a56ecdf43d0830ab69f66a4af23ab4/contents/core/ingest_status.py",
+      "declared_blob": "8adf51c86ffee4fb190cbb64382d2af0c7bf8b28",
+      "computed_blob": "8adf51c86ffee4fb190cbb64382d2af0c7bf8b28",
+      "blob_match": true,
+      "sha256": "0a4c695913deb71b0586468b379062839e50496e810c01696bd0a8b6c434fb2f",
+      "bytes": 26700,
+      "lines": 738
+    },
+    {
+      "capture": "artifacts/.tmp/mcp-results/github___get_file_contents-1789633034706-e8370828.json",
+      "uri": "repo://shaneatlas/the-source/sha/9266d8cd31a56ecdf43d0830ab69f66a4af23ab4/contents/scripts/kg/mirror_pg_to_nornic.py",
+      "declared_blob": "c1aa0792a1556ca63517905ca855701752c4712c",
+      "computed_blob": "c1aa0792a1556ca63517905ca855701752c4712c",
+      "blob_match": true,
+      "sha256": "910dfaa44569e93013740bd6512bde01f7726acf2c248bc724daf14fdc7f35a6",
+      "bytes": 36303,
+      "lines": 905
+    },
+    {
+      "capture": "artifacts/.tmp/mcp-results/github___get_file_contents-1789633254540-87ec7424.json",
+      "uri": "repo://shaneatlas/the-source/sha/9266d8cd31a56ecdf43d0830ab69f66a4af23ab4/contents/scripts/3pass_session_close_readiness_s2026_08_07.py",
+      "declared_blob": "e03b4433288c4e8d143fe35d6b25a3e6ff6a0ab6",
+      "computed_blob": "e03b4433288c4e8d143fe35d6b25a3e6ff6a0ab6",
+      "blob_match": true,
+      "sha256": "a5f566532fb7b367d81dcd0a411ee49e48c0e3796d5ce65181fcfdcd1a72e132",
+      "bytes": 18744,
+      "lines": 529
+    },
+    {
+      "capture": "artifacts/.tmp/mcp-results/github___get_file_contents-1789633719397-675de20c.json",
+      "uri": "repo://shaneatlas/the-source/sha/9266d8cd31a56ecdf43d0830ab69f66a4af23ab4/contents/agents/artifacts/governance/MASTER_PLAN_SHIP_REVIEW_S2026-09-01/GRAPH_VECTOR_BATTERIES_HOOK_AUDIT_S2026-09-08T0140Z.md",
+      "declared_blob": "e86e689a3f13b82edd6bb8e76822eaed70fd32e5",
+      "computed_blob": "e86e689a3f13b82edd6bb8e76822eaed70fd32e5",
+      "blob_match": true,
+      "sha256": "a7954a34bc4dc83f347ac469cc5e63374989097a3dbc0af490f2fa2e49c82224",
+      "bytes": 20952,
+      "lines": 134
+    },
+    {
+      "capture": "artifacts/.tmp/mcp-results/github___get_file_contents-1789633769794-3cc0f8df.json",
+      "uri": "repo://shaneatlas/the-source/sha/9266d8cd31a56ecdf43d0830ab69f66a4af23ab4/contents/scripts/enrich_with_voyage.py",
+      "declared_blob": "ae50f42120977657220f50efbd9299263c3dd256",
+      "computed_blob": "ae50f42120977657220f50efbd9299263c3dd256",
+      "blob_match": true,
+      "sha256": "18f386faa5a75eafc15c3a4db7cf3bf8b4c340611a6b0d30bf1afa42dbae23c5",
+      "bytes": 19065,
+      "lines": 457
+    },
+    {
+      "capture": "artifacts/.tmp/mcp-results/github___get_file_contents-1789634085678-31f236ff.json",
+      "uri": "repo://shaneatlas/the-source/sha/59501776da636dd6ccc608bbcdee10f84dec5c46/contents/scripts/run_fastrp_topology_saturation.py",
+      "declared_blob": "90ad738a6dd41617059e4d642e5977fd55a307e5",
+      "computed_blob": "90ad738a6dd41617059e4d642e5977fd55a307e5",
+      "blob_match": true,
+      "sha256": "1c196380b661538f7ad7f2f9a3c49532ecd85dc25ad61f510d8021e59e5f04cb",
+      "bytes": 23408,
+      "lines": 501
+    },
+    {
+      "capture": "artifacts/.tmp/mcp-results/github___get_file_contents-1789634390644-7a25e134.json",
+      "uri": "repo://shaneatlas/the-source/sha/c6bebbc5d1f21ededb108ef57efb50fbaf97de89/contents/core/aura_config.py",
+      "declared_blob": "0744e0857cf2024884564ecf40f78af3e0e0f92d",
+      "computed_blob": "0744e0857cf2024884564ecf40f78af3e0e0f92d",
+      "blob_match": true,
+      "sha256": "1d90ee985496935e1b22991e5981ac6033ac587fd89ef3d24773cf322afb9649",
+      "bytes": 31760,
+      "lines": 785
+    },
+    {
+      "capture": "artifacts/.tmp/mcp-results/github___get_file_contents-1789634405179-319be422.json",
+      "uri": "repo://shaneatlas/the-source/sha/c6bebbc5d1f21ededb108ef57efb50fbaf97de89/contents/core/graph_provider.py",
+      "declared_blob": "eedcf332afaff4527e71858ac7737b2c2a363d66",
+      "computed_blob": "eedcf332afaff4527e71858ac7737b2c2a363d66",
+      "blob_match": true,
+      "sha256": "28683176e1a245b5a4542dc99ceac4a748ca9dfb5fc19eea5ee2ebac6e945659",
+      "bytes": 23818,
+      "lines": 606
+    },
+    {
+      "capture": "artifacts/.tmp/mcp-results/github___get_file_contents-1789635558355-08daaf4d.json",
+      "uri": "repo://shaneatlas/the-source/sha/dbae0b0eb8e0a724eff0ef01ebce36e8b5314df1/contents/.agents/skills/unified-router/SKILL.md",
+      "declared_blob": "a230ba43ad901d8edf22b83846590cb3885b3db7",
+      "computed_blob": "a230ba43ad901d8edf22b83846590cb3885b3db7",
+      "blob_match": true,
+      "sha256": "558866a22dd0dcd1c3622c501f82cc7edb0996475d1896ea500ae183861346de",
+      "bytes": 32871,
+      "lines": 551
+    },
+    {
+      "capture": "artifacts/.tmp/mcp-results/github___get_file_contents-1789636833502-d76d659a.json",
+      "uri": "repo://shaneatlas/the-source/sha/797eb52f45101a98cedc9c3275d822cfda0d3a85/contents/agents/source/docs/gds_reference.md",
+      "declared_blob": "b118b54ef0717102a40a3769efca76de75455468",
+      "computed_blob": "b118b54ef0717102a40a3769efca76de75455468",
+      "blob_match": true,
+      "sha256": "ab66881a1113084d80042648305cb759ba3581b5d0d4ed23e17706a285b72dfc",
+      "bytes": 75618,
+      "lines": 2139
+    },
+    {
+      "capture": "artifacts/.tmp/mcp-results/github___get_file_contents-1789637083325-36158fff.json",
+      "uri": "repo://shaneatlas/the-source/sha/797eb52f45101a98cedc9c3275d822cfda0d3a85/contents/scripts/enrich_with_voyage.py",
+      "declared_blob": "ae50f42120977657220f50efbd9299263c3dd256",
+      "computed_blob": "ae50f42120977657220f50efbd9299263c3dd256",
+      "blob_match": true,
+      "sha256": "18f386faa5a75eafc15c3a4db7cf3bf8b4c340611a6b0d30bf1afa42dbae23c5",
+      "bytes": 19065,
+      "lines": 457
+    }
+  ],
+  "limits": [
+    "B8 and organizational ranking values are operator-reported",
+    "underlying whole-path score inputs not independently recovered",
+    "corpus-pairs to graph-first pair-view equivalence is unresolved",
+    "archive authenticity/current deployment not established"
+  ]
+}

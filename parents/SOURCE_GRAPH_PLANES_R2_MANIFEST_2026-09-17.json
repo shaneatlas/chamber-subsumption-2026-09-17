@@ -1,0 +1,90 @@
+{
+  "status": "ARTIFACT_CONSISTENT_NOT_SOURCE_ACCEPTANCE",
+  "prepared_at_utc": "2026-09-17T07:39:02.327123+00:00",
+  "date_label": "2026-09-17",
+  "source_execution_performed": false,
+  "source_tests_executed": false,
+  "new_authority_granted": false,
+  "live_acceptance_granted": false,
+  "all_named_inputs_unchanged": true,
+  "input_manifest": [
+    {
+      "filename": "Pasted markdown(20260917-073345).md",
+      "path": "/mnt/data/Pasted markdown(20260917-073345).md",
+      "bytes": 15223,
+      "sha256": "c24ed059de7de69d7760fd83a56b80bd33c672356defa7b3cfcaea18436bb148",
+      "lines": 221
+    },
+    {
+      "filename": "SOURCE_GRAPH_DIALECT_HARVEST_ADDENDUM_2026-09-17.md",
+      "path": "/mnt/data/SOURCE_GRAPH_DIALECT_HARVEST_ADDENDUM_2026-09-17.md",
+      "bytes": 32853,
+      "sha256": "845c1f5f38f9fe8194a74c76498ae5b4677ccd2b3729194ae91f911268797ce5",
+      "lines": 260
+    },
+    {
+      "filename": "SOURCE_GRAPH_DIALECT_HARVEST_MANIFEST_2026-09-17.json",
+      "path": "/mnt/data/SOURCE_GRAPH_DIALECT_HARVEST_MANIFEST_2026-09-17.json",
+      "bytes": 954,
+      "sha256": "01ded3b1053e309291df1b4d476c9deb0386bf6acdd7a1ef4a585e0cea977adf",
+      "lines": 26
+    },
+    {
+      "filename": "SOURCE_LEARNING_TAKEOVER_ALIGNED_ONESHOT_2026-09-17.md",
+      "path": "/mnt/data/SOURCE_LEARNING_TAKEOVER_ALIGNED_ONESHOT_2026-09-17.md",
+      "bytes": 49349,
+      "sha256": "ac491db6e568e9ceffe396e670ef1513f16c7dd68ccbc8c5bf3b05506daea7c4",
+      "lines": 348
+    },
+    {
+      "filename": "SOURCE_LEARNING_TAKEOVER_ALIGNED_2026-09-17.zip",
+      "path": "/mnt/data/SOURCE_LEARNING_TAKEOVER_ALIGNED_2026-09-17.zip",
+      "bytes": 13588185,
+      "sha256": "73e87512909a2cf88da299bb48eff4e8f69780699d26e76c4212a668be683768",
+      "lines": null
+    }
+  ],
+  "outputs": [
+    {
+      "filename": "SOURCE_GRAPH_PLANES_RECONCILIATION_R2_2026-09-17.md",
+      "path": "/mnt/data/SOURCE_GRAPH_PLANES_RECONCILIATION_R2_2026-09-17.md",
+      "bytes": 45129,
+      "sha256": "a3b996e0b73092c185540d3c566fafaf53dccbf019c01a75ce7f513c5699ea66",
+      "lines": 416
+    },
+    {
+      "filename": "SOURCE_GRAPH_PLANES_DISPOSITIONS_R2_2026-09-17.json",
+      "path": "/mnt/data/SOURCE_GRAPH_PLANES_DISPOSITIONS_R2_2026-09-17.json",
+      "bytes": 27382,
+      "sha256": "599b432165aba6deb7b58d8b07a2a3fe085e05115539b3a2bbe98ac1aad9c3aa",
+      "lines": 478
+    }
+  ],
+  "validation_checks": {
+    "source_line_count_is_221": true,
+    "fourteen_unique_original_rows": true,
+    "source_rows_preserved": true,
+    "all_records_not_run": true,
+    "work_package_references_resolve": true,
+    "external_references_resolve": true,
+    "inputs_unchanged": true,
+    "parent_zip_matches_declared_hash": true
+  },
+  "source_repository_reads": [
+    {
+      "path": "docs/ops/GRAPH_QUERY_ONTOLOGY.md",
+      "revision": "3143a91dc52cb80d0decb44f416e04f46bd0b13d",
+      "result": "PUBLIC_READER_FETCH_FAILED_NOT_ABSENCE"
+    },
+    {
+      "path": ".agents/skills/nornicdb-cypher-queries/SKILL.md",
+      "revision": "3143a91dc52cb80d0decb44f416e04f46bd0b13d",
+      "result": "PUBLIC_READER_FETCH_FAILED_NOT_ABSENCE"
+    }
+  ],
+  "notes": [
+    "No original upload or prior handoff edited.",
+    "No general package validator or live acceptance engine created.",
+    "External current/manual/main references are not installed-version evidence."
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "status": "PREPARATION_CONSISTENT_NOT_RUNTIME_ACCEPTANCE",
+  "date": "2026-09-17",
+  "source_operations_performed": false,
+  "source_tests_run": false,
+  "recall_measured": false,
+  "new_authority_granted": false,
+  "index_rebuilt": false,
+  "r2_and_aligned_parent_unchanged": [
+    {
+      "name": "SOURCE_GRAPH_PLANES_RECONCILIATION_R2_2026-09-17.md",
+      "bytes": 45129,
+      "sha256": "a3b996e0b73092c185540d3c566fafaf53dccbf019c01a75ce7f513c5699ea66",
+      "unchanged": true
+    },
+    {
+      "name": "SOURCE_GRAPH_PLANES_DISPOSITIONS_R2_2026-09-17.json",
+      "bytes": 27382,
+      "sha256": "599b432165aba6deb7b58d8b07a2a3fe085e05115539b3a2bbe98ac1aad9c3aa",
+      "unchanged": true
+    },
+    {
+      "name": "SOURCE_GRAPH_PLANES_R2_MANIFEST_2026-09-17.json",
+      "bytes": 3350,
+      "sha256": "584e430c00f0a1e24476970fa875485433b6e634219589f35998fd76e77558a7",
+      "unchanged": true
+    },
+    {
+      "name": "SOURCE_LEARNING_TAKEOVER_ALIGNED_ONESHOT_2026-09-17.md",
+      "bytes": 49349,
+      "sha256": "ac491db6e568e9ceffe396e670ef1513f16c7dd68ccbc8c5bf3b05506daea7c4",
+      "unchanged": true
+    },
+    {
+      "name": "SOURCE_LEARNING_TAKEOVER_ALIGNED_2026-09-17.zip",
+      "bytes": 13588185,
+      "sha256": "73e87512909a2cf88da299bb48eff4e8f69780699d26e76c4212a668be683768",
+      "unchanged": true
+    }
+  ],
+  "analytical_disposition_count": 35,
+  "new_native_capability_ids": 0,
+  "primary_reference_count": 16,
+  "checks": {
+    "unique_local_ids": true,
+    "reference_resolution": true,
+    "valid_work_package_mappings": true,
+    "execution_fields_unclaimed": true,
+    "parent_byte_preservation": true
+  },
+  "retrieval_limits": [
+    "Exact pinned Source VECTOR_INDEXES.md and run_gds_v3.py were not readable through the public web tool.",
+    "Exact e917408d61c32eb537082e7c905a6b1c1d4ff951 upstream Nornic documents were not readable; mutable main was inspected separately.",
+    "AWS/Katz benchmark values were not independently corroborated in this bounded pass."
+  ],
+  "arithmetic_basis": {
+    "population_source": "operator-reported, not counted here",
+    "vectors": 3920000,
+    "dimensions": 1024,
+    "float32_bytes": 16056320000,
+    "scalar_payload_only_bytes": 4014080000,
+    "binary_payload_only_bytes": 501760000,
+    "conservative_graph_formula_bytes": 501760000,
+    "dot_multiply_accumulates_per_query": 4014080000
+  },
+  "outputs": [
+    {
+      "name": "SOURCE_GRAPH_VECTOR_RECALL_SUPPLEMENT_R3_2026-09-17.md",
+      "bytes": 60890,
+      "sha256": "9be9f58562aad4294c363aa8eb726f8ab22ee6a7b6b99138e07a3a5942964bd6"
+    },
+    {
+      "name": "SOURCE_GRAPH_VECTOR_RECALL_DISPOSITIONS_R3_2026-09-17.json",
+      "bytes": 26150,
+      "sha256": "39e104bdbbbdbd75d4d22128994a59c9eee636933d04c4dc451a2b34d74cc0a8"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "status": "OFFLINE_CONTENT_PREPARED_NOT_REPOSITORY_IMPLEMENTED",
+  "test_scope": "Temporary synthetic Git fixtures and static master-path record checks; not actual Source/native-host behavior",
+  "test_result": {
+    "run": 35,
+    "passed": 35,
+    "failed": 0,
+    "skipped": 0,
+    "seconds": 0.643
+  },
+  "actual_base_plugin_bytes_obtained": false,
+  "actual_source_patch_generated": false,
+  "synthetic_patch_applicability_check": true,
+  "native_hook_tests_run": false,
+  "source_lock_recorded": false,
+  "installed": false,
+  "native_cache_or_uptake_verified": false,
+  "source_calls_this_preparation": 0,
+  "pair_invocation_this_preparation": "NOT_FIRED",
+  "historical_pair_ceiling": "EVIDENCE_INCOMPLETE",
+  "r2_plus_owner": "da60e026",
+  "new_task_rows": 0,
+  "side_effects": "New local package files and temporary synthetic Git fixtures/tests only; no Source or host-state mutation.",
+  "note": "The package stager emits a review patch only after a future owner supplies the actual current checkout and full HEAD. It never applies or records the release lock."
+}
