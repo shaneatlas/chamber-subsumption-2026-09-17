@@ -1,0 +1,103 @@
+{
+  "observed_at": "2026-09-17T13:50:00Z",
+  "route": "new",
+  "objective": "Unify the recombined connector packet (S01–S38 / EX01–EX64 / L0–L5) under alignment-13pt and emit one no-sacrifice oneshot. Do not fire conferral. Do not apply a plugin patch.",
+  "sufficiency": "Packet is LOCAL_REFERENCE_PACKAGE_VALID (45 sources, 64 cards, 72 L-entries, 35+24 local tests). Pair remains EVIDENCE_INCOMPLETE. This surface cannot mint 3pass, confer, lock, or install.",
+  "change_conditions": "Seat da60e026 runs a confirming 3pass⊥confer pair on D_2 with unchanged hash; or 6310327d produces CMD02 against current HEAD; or EX03 falsifies D_2 step 1.",
+  "next_action": "Owners consume the oneshot by lane. PLUGIN=CMD02 no apply. MASTER=EX03 admitted-client readback. CORPUS=EX41 then EX39. EPOCH=B8 then one sealed epoch. Chamber stays atlas.",
+  "considered": [
+    {
+      "id": "unified-router",
+      "path": "explicit command + recombination census",
+      "binding": "BOUND_DISK_AND_PG",
+      "role": "ingress; SELECT not terminal"
+    },
+    {
+      "id": "recursive-conferral",
+      "path": "wrap existing r1; do not fire r2",
+      "binding": "DISK_ONLY here · receipts exist in PG",
+      "role": "3pass ⊥ confer already ran on D_1; D_2 confirming round is da60e026"
+    },
+    {
+      "id": "alignment-13pt",
+      "path": "explicit slash · wrap stop",
+      "binding": "BOUND_DISK_AND_PG",
+      "role": "ceiling EVIDENCE_INCOMPLETE; does not replace confirming pair"
+    },
+    {
+      "id": "recombined packet",
+      "path": "SOURCE_CONNECTOR_BUILD_RECOMBINED_2026-09-17",
+      "binding": "local reference · sha256 f0d88ce5…",
+      "role": "navigation + owner cards; NOT_REPOSITORY_IMPLEMENTED"
+    },
+    {
+      "id": "oneshot directive",
+      "path": "this cut",
+      "binding": "DIRECTIVE_ONLY",
+      "role": "granular owner lanes; HTTP-fetchable"
+    },
+    {
+      "id": "1m loop / native conferral / CMD03 apply",
+      "path": "forbidden from this surface",
+      "binding": "forbidden",
+      "role": "cannot mint receipts, locks, or installs"
+    }
+  ],
+  "composition": [
+    {
+      "member": "unified-router",
+      "adds": "SELECT one owner lane; do not swallow conferral or restart the estate",
+      "feeds": "Chamber #route + ONESHOT_DIRECTIVE.md"
+    },
+    {
+      "member": "alignment-13pt",
+      "adds": "pair wrap stop at EVIDENCE_INCOMPLETE; geometry objects stay uncollapsed",
+      "feeds": "oneshot §2"
+    },
+    {
+      "member": "recombination",
+      "adds": "EX01–EX64, L0–L5, four-release split, retained 94 acceptances",
+      "feeds": "oneshot lanes; not the public plugin"
+    }
+  ],
+  "not_established": "PAIR_ALIGNED, D_2 conferral, 3pass CONVERGED, plugin 0.2.5 installed, native uptake, #4259+#4265 client behavior, learning chain, F001 carrier.",
+  "learning_link": "none — this seat cannot mint an organic execution_outcomes row; self-grading is forbidden",
+  "anti_join": {
+    "unified_router": "BOUND_DISK_AND_PG",
+    "recursive_conferral": "DISK_ONLY here — r1 fired elsewhere, r2 not this seat",
+    "alignment_13pt": "BOUND_DISK_AND_PG · wrap not substitute",
+    "execution_sprint": "DISK_ONLY",
+    "nornic": "graph plane FALLBACK_MIRROR · not v_routing_factors",
+    "never_infer_topology_from_13pt_suffix": true
+  },
+  "pair": {
+    "skill": "recursive-conferral",
+    "state": "EVIDENCE_INCOMPLETE",
+    "loop": "3pass(D_r, C_{r-1}) → confer(D_r, A_r) until PAIR_ALIGNED",
+    "why": "3pass r1 DEFERRED. Confer r1 REFUSE of D_1. No confirming round on D_2. Unification of the packet does not close the pair.",
+    "terminal": "PAIR_ALIGNED is the pair's terminal, not a router Stop gate. DEFERRED cannot discharge it."
+  },
+  "graph_planes": {
+    "doctrine": "Search reads; embedded suite writes are a separate owner; AGA budgeted; Nornic tenant-safe; PG vectors authority for pairs-only",
+    "authority": "PG semantic vectors · Aura topology · Nornic fallback mirror",
+    "default": "Aura day path; bind actual selected backend before operation",
+    "fallback": "Nornic hot-path cookbook; not Cypher 25 SEARCH",
+    "never": "vendor neo4j-skills as native; generation eligibility as pair eligibility; CIMD oauth{} while AS false",
+    "roles": "plugin 0.2.4 ⊥ source-mcp 0.6.x ⊥ API revision ⊥ sealed epoch",
+    "hot_path": "Nornic cookbook vs Aura GDS vs bounded Search"
+  },
+  "laws": [
+    "SELECT not terminal",
+    "Do not fire conferral from this surface",
+    "PAIR_ALIGNED requires confirming pair on unchanged hash",
+    "Four releases stay four",
+    "WIP=1 per owner",
+    "Do not dump the recombination into the public plugin"
+  ],
+  "ice_cut": {
+    "landed": "Chamber bind + HTTP-fetchable ONESHOT_DIRECTIVE.md",
+    "terminal": "Owner-relative: CMD02 or EX03 or EX41 or B8 — not this seat",
+    "re_rank": "After the selected owner returns an observed product"
+  },
+  "claim_ceiling": "DIRECTIVE_ONLY · NOT_REPOSITORY_IMPLEMENTED · PAIR_EVIDENCE_INCOMPLETE"
+}

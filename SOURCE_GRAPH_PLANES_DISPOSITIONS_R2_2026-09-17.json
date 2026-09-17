@@ -1,0 +1,478 @@
+{
+  "status": "PREPARATION_ONLY_SOURCE_NOT_ACTUATED",
+  "source_file_id": "file_0000000022c881f5b4aad67b6ebbb74f",
+  "source_filename": "Pasted markdown(20260917-073345).md",
+  "source_sha256": "c24ed059de7de69d7760fd83a56b80bd33c672356defa7b3cfcaea18436bb148",
+  "source_line_count": 221,
+  "review_date": "2026-09-17",
+  "records": [
+    {
+      "item": 1,
+      "source_line": 206,
+      "source_patch": "Dialect banners above",
+      "source_owner": "`nornicdb-cypher-queries/SKILL.md` header; `graph_query` / adapter comments",
+      "source_plane": "D, A",
+      "original_row": "| 1 | Dialect banners above | `nornicdb-cypher-queries/SKILL.md` header; `graph_query` / adapter comments | D, A |",
+      "id": "R2.P01",
+      "disposition": "RETAIN_WITH_CORRECTIONS",
+      "work_packages": [
+        "WP00",
+        "WP02"
+      ],
+      "external_sources": [
+        "W05",
+        "W06",
+        "W10",
+        "W11"
+      ],
+      "assessment": "Use per-owner banners, but separate language support, configured language, Source admission and optimized query shape. Do not call unlabeled MATCH illegal Aura syntax. Do not label INSERT as allowed in a read owner. Treat the Nornic tenant predicate and simple-limit optimization as separately testable.",
+      "owner_action_proposed": "Bind actual engine/build, selected language, effect allowlist, tenant mechanism and emitted query. Unknown schema produces a non-executable sketch, not placeholder labels.",
+      "acceptance_design": "Positive: admitted native template on each selected owner. Negative: unsupported syntax, read-path write, and an unscoped Nornic request are rejected without target effects. Observe the effective query after tenant enforcement.",
+      "execution_status": "NOT_RUN",
+      "current_owner_verified": false,
+      "new_authority_granted": false
+    },
+    {
+      "item": 2,
+      "source_line": 207,
+      "source_patch": "Named CypherTemplates: `id + sha256(text) + generation` on Search receipts",
+      "source_owner": "`graph_query` / `adapter_graph_query`",
+      "source_plane": "A",
+      "original_row": "| 2 | Named CypherTemplates: `id + sha256(text) + generation` on Search receipts | `graph_query` / `adapter_graph_query` | A |",
+      "id": "R2.P02",
+      "disposition": "RETAIN_AND_EXTEND_IDENTITY",
+      "work_packages": [
+        "WP00",
+        "WP02",
+        "WP03",
+        "WP05"
+      ],
+      "external_sources": [],
+      "assessment": "A template ID and text hash are useful but insufficient evidence of what executed. A named upstream fast path is not itself a Source template receipt.",
+      "owner_action_proposed": "Reuse the current template/receipt owner. Bind requested template/version, actual emitted statement and parameters through permitted references, plane, target, relevant schema, implementation/release, authority decision and observed output. Preserve exact bytes separately from optional normalization.",
+      "acceptance_design": "Reject same ID with changed content, wrong generation, wrong parameter reference, wrong tenant or stale schema. A driver-bound observation must match the receipt; avoid leaking parameter secrets.",
+      "execution_status": "NOT_RUN",
+      "current_owner_verified": false,
+      "new_authority_granted": false
+    },
+    {
+      "item": 3,
+      "source_line": 208,
+      "source_patch": "EXPLAIN-first + operator table; EXPLAIN ≠ auth",
+      "source_owner": "`/graph` REFERENCE.md lens/suite; `run_cypher.py`",
+      "source_plane": "A, B",
+      "original_row": "| 3 | EXPLAIN-first + operator table; EXPLAIN ≠ auth | `/graph` REFERENCE.md lens/suite; `run_cypher.py` | A, B |",
+      "id": "R2.P03",
+      "disposition": "RETAIN_DIAGNOSTICS_REJECT_AUTOMATIC_VERDICTS",
+      "work_packages": [
+        "WP00",
+        "WP02",
+        "WP04"
+      ],
+      "external_sources": [
+        "W07"
+      ],
+      "assessment": "EXPLAIN is useful for new or changed template qualification; it is not a universal per-request tax or an authorization oracle. Index-seek means continue review, not ship. Label scan alone does not establish missing RANGE index.",
+      "owner_action_proposed": "Keep estimates, actual operator observations, cache temperature, field availability and owner deadlines distinct. PROFILE requires actual execution authority, especially for suite writes. Do not publish transaction administration.",
+      "acceptance_design": "Accept a legitimate bounded label scan and reject dangerous downstream expansion even after a seek. Deny unapproved PROFILE effects. Missing runtime measurements remain unknown; ratios with zero denominators remain explicitly undefined.",
+      "execution_status": "NOT_RUN",
+      "current_owner_verified": false,
+      "new_authority_granted": false
+    },
+    {
+      "item": 4,
+      "source_line": 209,
+      "source_patch": "Grammar allowlist for G04–G06 (close MCP proc hole)",
+      "source_owner": "`graph_query` parser/template policy",
+      "source_plane": "A",
+      "original_row": "| 4 | Grammar allowlist for G04–G06 (close MCP proc hole) | `graph_query` parser/template policy | A |",
+      "id": "R2.P04",
+      "disposition": "RETAIN_WITH_NO_SCOPE_EXPANSION",
+      "work_packages": [
+        "WP02",
+        "WP04"
+      ],
+      "external_sources": [
+        "W01"
+      ],
+      "assessment": "The Search metadata allowlist remains exact. Algorithm stats is not admitted as metadata-adjacent. A bounded template is not a blanket exception to arbitrary GDS refusal.",
+      "owner_action_proposed": "Inspect actual parser and dispatch consumers. Verify mode/effect after query options, comments, prefixes, nested calls and composite routing without inventing a broad regex-only security perimeter.",
+      "acceptance_design": "Preserve metadata and ordinary-read positives. Reject stream/write/mutate/arbitrary projection and algorithm stats outside an explicitly authorized non-Search owner before prohibited dispatch. Keep Q08 synthetic and Q17 policy tests separate from live-state claims.",
+      "execution_status": "NOT_RUN",
+      "current_owner_verified": false,
+      "new_authority_granted": false
+    },
+    {
+      "item": 5,
+      "source_line": 210,
+      "source_patch": "Split GDS mode law by plane; keep suite **write**",
+      "source_owner": "`GRAPH_QUERY_ONTOLOGY.md` Layer 6 vs Search G05",
+      "source_plane": "B ≠ A",
+      "original_row": "| 5 | Split GDS mode law by plane; keep suite **write** | `GRAPH_QUERY_ONTOLOGY.md` Layer 6 vs Search G05 | B ≠ A |",
+      "id": "R2.P05",
+      "disposition": "MATERIAL_SCOPE_CORRECTION_REQUIRES_OWNER_REBIND",
+      "work_packages": [
+        "WP00",
+        "WP02",
+        "WP03",
+        "WP04",
+        "WP05",
+        "WP08"
+      ],
+      "external_sources": [
+        "W01",
+        "W02"
+      ],
+      "assessment": "The report identifies a separate embedded-suite .write path. Preserve that possible existing behavior under its own valid authority; do not globally disable it or authorize it by copying a documentation claim. .write does not establish .mutate use.",
+      "owner_action_proposed": "Bind all actual suite calls, output properties, selection, schema, limits, authority and SUITE_V3_TO_ROUTING consumer. Reconcile projection-only wording with current owners. Under unresolved authority, hold only the affected new consequential step while continuing permitted inspection/tests.",
+      "acceptance_design": "In disposable scope, an explicitly authorized suite write reaches only its admitted property population; the same operation is refused through Search and AGA. Test partial suite writes and routing consumption of complete versus mixed-generation metrics; do not fabricate a full successful suite from one updated property.",
+      "execution_status": "NOT_RUN",
+      "current_owner_verified": false,
+      "new_authority_granted": false
+    },
+    {
+      "item": 6,
+      "source_line": 211,
+      "source_patch": "Probe `gds.version`; v2 snake_case only if v2",
+      "source_owner": "`scripts/run_gds_v3.py`",
+      "source_plane": "B",
+      "original_row": "| 6 | Probe `gds.version`; v2 snake_case only if v2 | `scripts/run_gds_v3.py` | B |",
+      "id": "R2.P06",
+      "disposition": "REJECT_SERVER_VERSION_AS_CLIENT_SELECTOR",
+      "work_packages": [
+        "WP00",
+        "WP02",
+        "WP04"
+      ],
+      "external_sources": [
+        "W02",
+        "W03",
+        "W04"
+      ],
+      "assessment": "gds.version reports a server library version, not the installed Python-client generation. CamelCase Cypher procedures can be correct on GDS 2.x. No blanket snake_case rewrite.",
+      "owner_action_proposed": "Inventory server version, installed graphdatascience/driver pins, actual client object and signatures, returned types and retry semantics. Preserve valid existing calls. Treat dependency upgrades as separate reviewed changes.",
+      "acceptance_design": "Keep a valid server-procedure string unchanged. Select Python endpoints using the actual client contract, not the server major number. Test incompatibility refusal, result interpretation and retry/effect behavior on changed dependencies.",
+      "execution_status": "NOT_RUN",
+      "current_owner_verified": false,
+      "new_authority_granted": false
+    },
+    {
+      "item": 7,
+      "source_line": 212,
+      "source_patch": "AGA: estimate→2GB refuse (no suite pass-through), verify, **session delete on fail**, pair≠node, TTL≠deadline",
+      "source_owner": "`bounded_gds_path_projection` / `aura_gds_projection`",
+      "source_plane": "C",
+      "original_row": "| 7 | AGA: estimate→2GB refuse (no suite pass-through), verify, **session delete on fail**, pair≠node, TTL≠deadline | `bounded_gds_path_projection` / `aura_gds_projection` | C |",
+      "id": "R2.P07",
+      "disposition": "RETAIN_LIFECYCLE_CORRECT_API_AND_TERMINALS",
+      "work_packages": [
+        "WP00",
+        "WP04",
+        "WP08",
+        "WP10"
+      ],
+      "external_sources": [
+        "W08",
+        "W09",
+        "W15"
+      ],
+      "assessment": "Keep bounded admission and owner-aware cleanup. Missing estimation is not zero; suite fallback does not confer AGA budget. Correct the blanket billing-until-delete claim, positional-delete spelling and assumed connectivity method.",
+      "owner_action_proposed": "Bind admitted pair/relationship population, memory policy, acquired versus reused session, finite readiness and active deadlines, actual data-plane connectivity, result export and target-owned terminal observation. Maintain a recoverable resource identity before acquisition can fail.",
+      "acceptance_design": "Over-ceiling/unknown-unadmitted estimate allocates nothing. Test remote allocation followed by readiness failure, hard loss, failed cleanup, borrowed session protection and owned termination. Do not declare termination from a boolean alone or run a paid canary without its current grant.",
+      "execution_status": "NOT_RUN",
+      "current_owner_verified": false,
+      "new_authority_granted": false
+    },
+    {
+      "item": 8,
+      "source_line": 213,
+      "source_patch": "Dual vector note; do not port `SEARCH` to Nornic",
+      "source_owner": "`/nornicdb-vector-search`",
+      "source_plane": "D",
+      "original_row": "| 8 | Dual vector note; do not port `SEARCH` to Nornic | `/nornicdb-vector-search` | D |",
+      "id": "R2.P08",
+      "disposition": "RETAIN_BUILD_BOUND_VECTOR_SEMANTICS",
+      "work_packages": [
+        "WP00",
+        "WP02",
+        "WP05",
+        "WP09",
+        "WP10"
+      ],
+      "external_sources": [
+        "W10",
+        "W12",
+        "W13"
+      ],
+      "assessment": "Do not port Aura SEARCH into Nornic or overwrite working Nornic procedures. WITH EMBEDDING belongs to ingestion, not a read privilege. Document actual prefilter/postfilter result semantics and index model identity.",
+      "owner_action_proposed": "Use current Nornic vector/hybrid owners and feature probes. Qualify zero-result causes, per-database switch state, expected dimensions/model and warning/partial states. Only configure OPTIONS verified on that build.",
+      "acceptance_design": "Test dimension/model mismatch, disabled index, omitted embeddings, missing index, stale environment and filtered near-matches. No disabled-index empty result may train a factual-absence lesson. No read health probe should accidentally warm expensive search state unless intentionally admitted.",
+      "execution_status": "NOT_RUN",
+      "current_owner_verified": false,
+      "new_authority_granted": false
+    },
+    {
+      "item": 9,
+      "source_line": 214,
+      "source_patch": "Three-hop retrieve as default GraphRAG",
+      "source_owner": "`/graph-sql` + Nornic `db.retrieve` + plane-A expand",
+      "source_plane": "D→A→E",
+      "original_row": "| 9 | Three-hop retrieve as default GraphRAG | `/graph-sql` + Nornic `db.retrieve` + plane-A expand | D→A→E |",
+      "id": "R2.P09",
+      "disposition": "RETAIN_AS_CONDITIONAL_COMPOSITION_NOT_UNIVERSAL_DEFAULT",
+      "work_packages": [
+        "WP00",
+        "WP02",
+        "WP05",
+        "WP06",
+        "WP07"
+      ],
+      "external_sources": [],
+      "assessment": "Nornic recall -> Aura topology -> PG adjudication is a useful proposed route when all three contribute; it is not a mandatory path for exact SQL or tasks already answered locally. PG authority must constrain initial access as well as final adjudication.",
+      "owner_action_proposed": "Bind cross-store canonical identities, scope, source snapshot, mapping failures, deletions and mirror lag. Preserve each hop result and what is incomplete. Do not treat store-local element IDs or equal strings as a cross-store identity proof.",
+      "acceptance_design": "Compare competent single-owner and composed paths at comparable scope. Test ambiguous mapping, stale mirror, revoked source and unavailable hop without permission-widening fallback. Measure added useful evidence and latency/cost rather than hop count.",
+      "execution_status": "NOT_RUN",
+      "current_owner_verified": false,
+      "new_authority_granted": false
+    },
+    {
+      "item": 10,
+      "source_line": 215,
+      "source_patch": "V-HYG-1..3 into `/graph-void`; don’t collide with V1–V8 / V-LEGAL",
+      "source_owner": "`graph/REFERENCE.md` void section",
+      "source_plane": "B/A",
+      "original_row": "| 10 | V-HYG-1..3 into `/graph-void`; don’t collide with V1–V8 / V-LEGAL | `graph/REFERENCE.md` void section | B/A |",
+      "id": "R2.P10",
+      "disposition": "RETAIN_HUNTS_REJECT_UNBOUNDED_PASTED_IMPLEMENTATIONS",
+      "work_packages": [
+        "WP00",
+        "WP02",
+        "WP04"
+      ],
+      "external_sources": [],
+      "assessment": "Keep semantic proof voids distinct from modeling hygiene. The two aggregate hunts still enumerate broad graph populations before their output LIMIT. Excluding cookbook fiction does not make the live scan bounded.",
+      "owner_action_proposed": "Define real schema and admitted cohort or separately authorized offline census. A generic relation is a review candidate, not automatic corruption. Compare actual MERGE writer keys against constraints; constraint listing alone cannot prove coverage.",
+      "acceptance_design": "Reject the broad hunts in the restricted read path. Exercise bounded cohorts and report exact/sample/lower-bound scope. Preserve legitimate hubs and exceptions. Never add indexes or type constraints solely from a heuristic verdict.",
+      "execution_status": "NOT_RUN",
+      "current_owner_verified": false,
+      "new_authority_granted": false
+    },
+    {
+      "item": 11,
+      "source_line": 216,
+      "source_patch": "Dual constraint digest into schema fingerprint",
+      "source_owner": "generation join / G0",
+      "source_plane": "E ∩ A",
+      "original_row": "| 11 | Dual constraint digest into schema fingerprint | generation join / G0 | E ∩ A |",
+      "id": "R2.P11",
+      "disposition": "RETAIN_SCOPED_DEPENDENCY_DIGEST",
+      "work_packages": [
+        "WP00",
+        "WP02",
+        "WP03",
+        "WP08",
+        "WP09"
+      ],
+      "external_sources": [],
+      "assessment": "A dual constraint digest can expose meaningful drift, but it is not a cross-store transaction, full schema fingerprint, authority proof or universal generation identifier.",
+      "owner_action_proposed": "Use namespaced canonical serialization of the relevant PG/Aura constraints with exact store/database, role/visibility, scope, observed time and completeness. Keep data/projection, template, policy and release identities separate. Include Nornic dependencies only where relevant.",
+      "acceptance_design": "Detect a changed relevant key/constraint while the tool catalog stays stable. Reject empty/partial catalogs as complete equivalence; tolerate unrelated schema changes according to explicit dependency scope. Revalidate at use when the relevant store changes.",
+      "execution_status": "NOT_RUN",
+      "current_owner_verified": false,
+      "new_authority_granted": false
+    },
+    {
+      "item": 12,
+      "source_line": 217,
+      "source_patch": "Retarget mandate/stack-cement off `/neo4j-aura-graph-analytics-skill`",
+      "source_owner": "routing tables",
+      "source_plane": "C vs B",
+      "original_row": "| 12 | Retarget mandate/stack-cement off `/neo4j-aura-graph-analytics-skill` | routing tables | C vs B |",
+      "id": "R2.P12",
+      "disposition": "RETAIN_AFTER_LEAF_AND_EFFECT_INSPECTION",
+      "work_packages": [
+        "WP00",
+        "WP02",
+        "WP04",
+        "WP10"
+      ],
+      "external_sources": [],
+      "assessment": "Route AGA work to its existing bounded owner and embedded-suite work to its suite owner. A pointer change can alter spend, writes and custody; it is not only documentation.",
+      "owner_action_proposed": "Inspect current composite resolution, underlying interface, permission checks, secrets source, budgets and returned evidence. Reject unattended laptop bootstrap and runtime package installation, not Source-managed environment injection merely by helper name.",
+      "acceptance_design": "No ordinary read becomes paid allocation or suite write through retargeting. Test missing owner, inadequate grant, wrong plane, nested dispatch and no new public-tool or vendor-service installation.",
+      "execution_status": "NOT_RUN",
+      "current_owner_verified": false,
+      "new_authority_granted": false
+    },
+    {
+      "item": 13,
+      "source_line": 218,
+      "source_patch": "Drop/relabel 6 PG_ONLY hollow neo4j-* rows",
+      "source_owner": "`public.skills`",
+      "source_plane": "—",
+      "original_row": "| 13 | Drop/relabel 6 PG_ONLY hollow neo4j-* rows | `public.skills` | — |",
+      "id": "R2.P13",
+      "disposition": "HOLD_DELETION_PENDING_EXACT_CLASSIFICATION",
+      "work_packages": [
+        "WP00",
+        "WP02",
+        "WP09"
+      ],
+      "external_sources": [],
+      "assessment": "The report identifies a count but not all six row IDs and lifecycles. PG_ONLY alone cannot decide native defect, reference-only record, remote owner, alias or retirement.",
+      "owner_action_proposed": "Read the exact rows and current consumers under the actual registry owner. Reuse supported lifecycle states. Repair false routing promises or prepare authorized retirement without creating stubs or deleting provenance.",
+      "acceptance_design": "Verify each disposition, no orphaned caller and no reference-only dispatch. No mutation occurs solely to make a parity counter match six local files.",
+      "execution_status": "NOT_RUN",
+      "current_owner_verified": false,
+      "new_authority_granted": false
+    },
+    {
+      "item": 14,
+      "source_line": 219,
+      "source_patch": "Do not mint `INTERNAL_RESTRICTED`; public `graph_gds` stays VOID",
+      "source_owner": "product-family generator",
+      "source_plane": "exposure ≠ implementation",
+      "original_row": "| 14 | Do not mint `INTERNAL_RESTRICTED`; public `graph_gds` stays VOID | product-family generator | exposure ≠ implementation |",
+      "id": "R2.P14",
+      "disposition": "RETAIN_PUBLIC_COMPATIBILITY_NOT_PERMANENT_FROZEN_STATUS",
+      "work_packages": [
+        "WP00",
+        "WP02",
+        "WP08"
+      ],
+      "external_sources": [],
+      "assessment": "Do not mint INTERNAL_RESTRICTED. Preserve the reported current public VOID/SKILL_ONLY when still accurate; do not decree VOID forever if exposure later changes under valid authority.",
+      "owner_action_proposed": "Keep implementation, exposure, invocation permission, observed execution, effect, resources and useful consumption separately typed by current owners. Names and catalog digests alone do not prove schema/semantic compatibility.",
+      "acceptance_design": "Internal suite or AGA evidence does not promote public graph_gds or widen tools/schemas. A future legitimate status transition requires its own actual exposure and compatible contract evidence.",
+      "execution_status": "NOT_RUN",
+      "current_owner_verified": false,
+      "new_authority_granted": false
+    }
+  ],
+  "external_sources": [
+    {
+      "id": "W01",
+      "title": "GDS execution modes",
+      "url": "https://neo4j.com/docs/graph-data-science/current/common-usage/running-algos/",
+      "narrow_use": "Stats performs algorithm computation; mutate updates a projected graph; write updates the Neo4j database.",
+      "ceiling": "Retrieved manual; not Source runtime.",
+      "review_date": "2026-09-17"
+    },
+    {
+      "id": "W02",
+      "title": "GDS PageRank server interface",
+      "url": "https://neo4j.com/docs/graph-data-science/current/algorithms/page-rank/",
+      "narrow_use": "The server procedure namespace remains gds.pageRank and configuration includes camelCase fields and concurrency.",
+      "ceiling": "Retrieved manual; not installed server evidence.",
+      "review_date": "2026-09-17"
+    },
+    {
+      "id": "W03",
+      "title": "GDS Python typed V2 interface",
+      "url": "https://neo4j.com/docs/graph-data-science-client/current/v2_endpoints/",
+      "narrow_use": "Typed Python endpoints and their snake_case fields are a client interface, not a transformation of Cypher procedure names.",
+      "ceiling": "Retrieved manual; installed package unknown.",
+      "review_date": "2026-09-17"
+    },
+    {
+      "id": "W04",
+      "title": "Python-client maintainer changelog",
+      "url": "https://github.com/neo4j/graph-data-science-client/blob/main/changelog.md",
+      "narrow_use": "The 2.0 changelog describes removing the gds.v2 prefix, changing retry behavior, and correcting session-delete reporting.",
+      "ceiling": "Mutable maintainer main; not a release/install certificate.",
+      "review_date": "2026-09-17"
+    },
+    {
+      "id": "W05",
+      "title": "Nornic hot-path cookbook",
+      "url": "https://github.com/orneryd/NornicDB/blob/main/docs/performance/hot-path-query-cookbook.md",
+      "narrow_use": "Lists SimpleMatchLimitFastPath, read/write execution paths, generic example labels and literal bounded traversal shapes.",
+      "ceiling": "Upstream main documentation; not Source-pinned build.",
+      "review_date": "2026-09-17"
+    },
+    {
+      "id": "W06",
+      "title": "Neo4j MATCH",
+      "url": "https://neo4j.com/docs/cypher-manual/current/clauses/match/",
+      "narrow_use": "Unlabeled MATCH is documented valid Cypher.",
+      "ceiling": "Language fact, not Source permission.",
+      "review_date": "2026-09-17"
+    },
+    {
+      "id": "W07",
+      "title": "Neo4j plans",
+      "url": "https://neo4j.com/docs/cypher-manual/current/planning-and-tuning/execution-plans/",
+      "narrow_use": "EXPLAIN plans; PROFILE executes. The example contains a legitimate label scan; measurements and estimates are different.",
+      "ceiling": "Selected manual sections; no actual Source plan.",
+      "review_date": "2026-09-17"
+    },
+    {
+      "id": "W08",
+      "title": "AGA lifecycle",
+      "url": "https://neo4j.com/docs/aura/graph-analytics/aga/",
+      "narrow_use": "AGA has Cypher and Python interfaces; expiry is non-billing; implicit sessions end when their final graph is dropped.",
+      "ceiling": "Provider lifecycle, not current account charge or observed teardown.",
+      "review_date": "2026-09-17"
+    },
+    {
+      "id": "W09",
+      "title": "GDS session-client API",
+      "url": "https://neo4j.com/docs/graph-data-science-client/current/api/sessions/gds_sessions/",
+      "narrow_use": "Documents estimation, a separate readiness timeout, keyword-only deletion and environment credential loading.",
+      "ceiling": "Client reference; exact installed signature must be bound.",
+      "review_date": "2026-09-17"
+    },
+    {
+      "id": "W10",
+      "title": "Cypher SEARCH",
+      "url": "https://neo4j.com/docs/cypher-manual/current/clauses/search/",
+      "narrow_use": "SEARCH is a MATCH subclause with optional SCORE AS. In-index and post-filtering are different.",
+      "ceiling": "Language/index contract; no current Source index observed.",
+      "review_date": "2026-09-17"
+    },
+    {
+      "id": "W11",
+      "title": "Cypher version selection",
+      "url": "https://neo4j.com/docs/cypher-manual/current/queries/select-version/",
+      "narrow_use": "Cypher 25 support and configured default are distinct; Aura defaults have organization-level configuration.",
+      "ceiling": "Current upstream manual, not database setting readback.",
+      "review_date": "2026-09-17"
+    },
+    {
+      "id": "W12",
+      "title": "Cypher changes",
+      "url": "https://neo4j.com/docs/cypher-manual/current/deprecations-additions-removals-compatibility/",
+      "narrow_use": "Vector procedures are deprecated from 2026.04; graph types are generally available from 2026.06.",
+      "ceiling": "Selected release entries, not permission for DDL.",
+      "review_date": "2026-09-17"
+    },
+    {
+      "id": "W13",
+      "title": "Nornic vector skill",
+      "url": "https://github.com/orneryd/NornicDB/blob/main/docs/skills/vector-search.skill.md",
+      "narrow_use": "Documents queryNodes, managed embedding ingestion, hybrid procedures and disabled-index empty/warning behavior.",
+      "ceiling": "Upstream documentation; Source build and settings unknown.",
+      "review_date": "2026-09-17"
+    },
+    {
+      "id": "W14",
+      "title": "FastRP",
+      "url": "https://neo4j.com/docs/graph-data-science/current/machine-learning/node-embeddings/fastrp/",
+      "narrow_use": "FastRP computes embeddings or associated statistics; a nearest-neighbor operation is a separate step.",
+      "ceiling": "Algorithm documentation, not an executed Source experiment.",
+      "review_date": "2026-09-17"
+    },
+    {
+      "id": "W15",
+      "title": "AuraGraphDataScience client reference",
+      "url": "https://neo4j.com/docs/graph-data-science-client/current/api/sessions/aura_graphdatascience/",
+      "narrow_use": "The retrieved class reference did not establish the exact proposed verify_session_connectivity spelling.",
+      "ceiling": "A bounded lookup failure is not proof the method is absent in every version.",
+      "review_date": "2026-09-17"
+    }
+  ],
+  "source_execution_performed": false,
+  "source_tests_executed": false,
+  "new_authority_granted": false,
+  "live_acceptance_granted": false
+}

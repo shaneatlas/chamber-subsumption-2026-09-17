@@ -1,0 +1,903 @@
+Source MCP/API/CLI master plan: inlined, then reformulated through /recursive-conferral
+
+Context
+
+The operator asked for two things. First, write out the master plan in full detail instead of pointing to it. Second, rebuild it the way /recursive-conferral requires (3pass ⊥ confer, fed into each other round by round).
+
+- The source is agents/artifacts/governance/SOURCE_MASTER_ACTUALIZATION_20260913_01a09c0d/RECONCILED_EXECUTION_PLAN.md: 485 lines, append-only dated deltas, 09-13 → 09-15 07:12Z.
+- The plan stops on 09-15. Since then, 09-15 → 09-17 merges (#4125 CAP-004, #4250, #4259, #4260, #4262, #4265) have made its NOW line stale.
+- This plan file is where the inlining lands. The reformulation is a set of recursive-conferral rounds that run after approval, because 3pass and confer both write receipts, which plan mode forbids.
+- Open side issue: the witness conferral for PR #4265's publication step failed before any provider ran. The command used the system python3, which cannot import pydantic. The skill requires .venv/bin/python. Re-firing it is step R0 below.
+
+---
+
+Part A: the master plan inlined (granular, including superseded layers)
+
+A1. North Star and invariants
+
+- Deliver the Source MCP/API/CLI program through its existing owners. A result counts as a delivery only after all of these: accepted implementation → exact deploy → real connector/CLI/API use → independently read-back useful effect → next step selected from that result.
+- Controlling denominators, which overlap and are never added together: 173 original tasks (../SOURCE_INTEGRATION_EXECUTION_S2026-09-08/EXHAUSTIVE_AUDIT/ITEMIZED_173_TASKS.json, sha 44de3a6b…aba0ff). R2 adds 300 tasks, 140 features, 443 clauses, 52 hook decompositions, 12 exemplars and 13 families.
+- Adopted goal (09-14): execute all 173 tasks plus the applicable R2 items. Deploy useful increments, make them work in admitted clients, and connect observed outcomes to authorized learning updates that improve later execution. Mission sha 1edffaf7…, formal plan sha dbd2d648….
+- Prohibited inside a unit: a broad re-audit, a new inventory, a duplicate release writer, an identity override, hook mutation, a shared backlog edit, reward minted from proxies, or claiming completion from a merge, deploy or health check alone.
+- WIP limit: one deployment operation at a time.
+- Utility-first correction (09-14): "get functions alive". Tests are incremental. Verify only when a release control, a changed behavior, an observed failure or a material risk requires it.
+
+A2. Custody lineage (later entries supersede earlier ones)
+
+- 09-13 root 01a09c0d, receiver/coordinator 01a092e2, steering 01a05469.
+- 09-14 01a092e2 handed execution to root and retired.
+- 09-15 the operator named 01a0a246 the sole actuator. 01a05469 was retired from steering and monitoring. The wiring owner 01a0a28a was retired.
+- The actuator is a Codex seat. Codex seats are cut until 09-23, per MEMORY.
+
+A3. Delivered milestones (chronological, each with its evidence ceiling)
+
+┌─────┬──────────────────────────┬───────────────────────────────────────┬──────────────────────┐
+│  #  │           Unit           │                 Proof                 │       Ceiling        │
+├─────┼──────────────────────────┼───────────────────────────────────────┼──────────────────────┤
+│ 1   │ CAP-003 full-schema      │ PR4074, commit 63fd6422, unreachable  │ no native            │
+│     │ probe repair             │ server correctly exits 1              │ consumption          │
+├─────┼──────────────────────────┼───────────────────────────────────────┼──────────────────────┤
+│ 2   │ REL-004 deploy           │ 22fce7da ACCEPTED for abe03136; VM    │ 5 placement          │
+│     │                          │ scheduled run matched in PG           │ residuals            │
+├─────┼──────────────────────────┼───────────────────────────────────────┼──────────────────────┤
+│     │                          │ 42/42 finite-profile binding;         │ not cache            │
+│ 3   │ CAP-004 / CAP-008        │ discover→invoke→receipt→readback;     │ replacement          │
+│     │                          │ unsupported argument refused          │                      │
+├─────┼──────────────────────────┼───────────────────────────────────────┼──────────────────────┤
+│ 4   │ CAP-006 open-world       │ PR4091 9fbad093, deploy fd0aeca8;     │ not CAP-006 closure  │
+│     │ projection               │ declaration errors 181→147            │                      │
+├─────┼──────────────────────────┼───────────────────────────────────────┼──────────────────────┤
+│     │ AUTH-001–004 ChatGPT     │ invocations 796d60b0/a85f4b13, OAuth  │ token refresh and    │
+│ 5   │ uptake                   │ binding verified                      │ cache replacement    │
+│     │                          │                                       │ unproved             │
+├─────┼──────────────────────────┼───────────────────────────────────────┼──────────────────────┤
+│ 6   │ CAP-006 pilot            │ PR4092 69127a1c, deploy 06e404b5      │ —                    │
+│     │                          │ ACCEPTED                              │                      │
+├─────┼──────────────────────────┼───────────────────────────────────────┼──────────────────────┤
+│     │                          │ PR4095 27c0db80, deploy 4ca40f6f      │ idempotency          │
+│ 7   │ CAP-006 route IDs        │ ACCEPTED 19:27Z; errors 147→98        │ candidate (98→92)    │
+│     │                          │                                       │ still retained       │
+├─────┼──────────────────────────┼───────────────────────────────────────┼──────────────────────┤
+│     │ Request-context repair   │ PR4099 6e5302dc, deploy 3e09bb2d;     │                      │
+│ 8   │ (explicit store          │ product list went from 400 to 1 row   │ no Casa mutation     │
+│     │ selector)                │                                       │                      │
+├─────┼──────────────────────────┼───────────────────────────────────────┼──────────────────────┤
+│     │                          │ PR4101 merged; its first deploy       │                      │
+│ 9   │ Utility evaluator        │ 68184807 was REFUSED as dirty and     │ no recurrence,       │
+│     │ source.utility.evaluate  │ later RESTORED; served via fb320ed0   │ reward or learning   │
+│     │                          │ 641adbb3; returned CONTINUE_DELIVERY  │                      │
+├─────┼──────────────────────────┼───────────────────────────────────────┼──────────────────────┤
+│ 10  │ Product source_search    │ invocation e5d1920f                   │ graph backend        │
+│     │ BRCA1                    │                                       │ provenance not shown │
+├─────┼──────────────────────────┼───────────────────────────────────────┼──────────────────────┤
+│ 11  │ Runtime log preservation │ PR4103 a2e084f9, deploy e39a59c1;     │ —                    │
+│     │                          │ 48079 log bytes preserved             │                      │
+├─────┼──────────────────────────┼───────────────────────────────────────┼──────────────────────┤
+│ 12  │ HAR-003 ChatGPT consumer │ real product lookup plus              │ curated generation   │
+│     │                          │ query/readback on 641                 │ only                 │
+├─────┼──────────────────────────┼───────────────────────────────────────┼──────────────────────┤
+│     │                          │ 4cf6f0a1; confer timed out, then      │                      │
+│ 13  │ Installed CLI wheel      │ witness 17496 recovered; PR4121       │ no package-index     │
+│     │                          │ f31c4bb3, deploy d114c5d4; positive   │ upload               │
+│     │                          │ and adverse installed results         │                      │
+├─────┼──────────────────────────┼───────────────────────────────────────┼──────────────────────┤
+│     │                          │ PR4122 c35ed13a, deploy b90259f9;     │                      │
+│ 14  │ MCP error envelope       │ outer and inner isError,              │ —                    │
+│     │                          │ MISSING_ARGUMENT, operation not       │                      │
+│     │                          │ executed                              │                      │
+├─────┼──────────────────────────┼───────────────────────────────────────┼──────────────────────┤
+│ 15  │ SEN-001 pulse            │ PR4123 422a7c1d, deploy eb044289; 8   │ API-002/SEN-001 not  │
+│     │ observation              │ conferral rows matched PG             │ fully accepted       │
+├─────┼──────────────────────────┼───────────────────────────────────────┼──────────────────────┤
+│     │                          │ PR4124 eaa65429; local job: 22        │                      │
+│ 16  │ Plugin/CI 0.1.4          │ passed, 1 skipped; first native       │ —                    │
+│     │                          │ attempt used 0 tokens (cwd refusal)   │                      │
+├─────┼──────────────────────────┼───────────────────────────────────────┼──────────────────────┤
+│     │                          │ client 01a0a39b; receipts             │                      │
+│ 17  │ Native CLI invocation    │ b05309bd/c57c16d8/e21bfc93 equal;     │ not actor-distinct   │
+│     │                          │ evaluator bb8fe5f4                    │                      │
+├─────┼──────────────────────────┼───────────────────────────────────────┼──────────────────────┤
+│ 18  │ Native registration      │ pluginId=source@the-source, 188 tools │ runtimeStatus null   │
+│     │ provenance               │                                       │                      │
+├─────┼──────────────────────────┼───────────────────────────────────────┼──────────────────────┤
+│ 19  │ AUTH-002 credential arms │ unset → 0 tools; placeholder → Auth   │ —                    │
+│     │                          │ required; valid arm reused            │                      │
+├─────┼──────────────────────────┼───────────────────────────────────────┼──────────────────────┤
+│ 20  │ API-002 composition      │ 45 checks; 3 routes; pulse hash       │ audit                │
+│     │                          │ 3241540e…                             │ gate_class=UNKNOWN   │
+├─────┼──────────────────────────┼───────────────────────────────────────┼──────────────────────┤
+│     │                          │                                       │ unpublished as of    │
+│ 21  │ CAP-004 READ-class       │ b4b9a39e, 178 tests; witness 17611    │ the plan's last      │
+│     │ receipt candidate        │ PASS (4 legs)                         │ entry; merged later  │
+│     │                          │                                       │ as #4125 on 09-15    │
+└─────┴──────────────────────────┴───────────────────────────────────────┴──────────────────────┘
+
+A4. Open obligations in the plan's final state (09-15 07:12Z), inlined
+
+1. Publish CAP-004 b4b9a39e, deploy once, then run a fresh native invocation and read back the READ-class receipt. Done after the plan's last entry (#4125). The native READ-class readback is still unverified.
+2. F001 carrier: authenticated runtime association, source-reader binding, execution lease. Then consume utility receipt 95506088, select an original task, and independently read back the effect. The carrier sits on task 006a84bb CLAIMED by 01a089da, and has two platform refusals ("Potentially unintended activity").
+3. Learning chain: eligible outcome → authorized update → a later useful decision. Window 09-17 to 09-21, marked at risk.
+4. PKG-003: fresh CLI and Desktop install. The Desktop route is refused by Computer Use, and no cache-isolation mechanism was found.
+5. HAR-001: denied-effect and authorized-sandbox-effect stages.
+6. CAP-003 native cache replacement; CAP-008 remaining composition; F075-T01; F001-T01; F052-T01; R2-11; R2-12; GRA-003 telemetry; GRA-004 30-day workload window; REL-005 consumer-effect join.
+7. Retained lower-priority candidates: the idempotency hints (98→92); Aura product-circuit (AuthenticationRateLimit) repair through the runtime owner.
+8. Windows: client slices 09-15 to 09-23; full applicable acceptance Oct 16 to Nov 13 (conditional).
+
+A5. Deltas since the plan (09-15 → 09-17, from MEMORY and this session)
+
+- Merged but not deployed: #4250 (multi-trigger activation), #4260 (async turn-handle recovery), #4241 (search-waist read-only), #4244 (spool).
+- Open: #4259 (incomplete provider response returns 502) and #4265 (connector argument split; 9 routes; 49 tests; receipt 18755; CLEAN).
+- Live on production: #4248 and #4262 (Casa admin auth).
+- Production still returns EXPLICIT_TRIGGER_REJECTED for the operator's own fullsend /x prompt.
+- The Stop witness gate cannot be satisfied (91d17c55). The migration number 9031 is leased twice.
+
+---
+
+Part B: reformulation through /recursive-conferral (runs after approval)
+
+Decision D: what is the optimal ordered critical path from the current state to the adopted goal, given A1–A5?
+Candidate D_1 (the seed; the pair may revise it):
+1. Release train (P0): merge #4259 and #4265 → one API deploy of main → read back 4 effects (multi-trigger routes; connector claim records the seat; incomplete response → 502; async handle recovers) → evaluator checkpoint.
+2. Close CAP-004 natively: fresh native invocation shows a READ-class gate_class.
+3. Carrier F001 binding: make the shared-API principal, source reader and lease binding concrete. This is the unlock for the learning chain.
+4. First learning proof: outcome → update → later decision.
+5. Client breadth: PKG-003, HAR-001, CAP-003 cache.
+6. Codex-returning (09-23): CAP-008, F075, F001-T01 ownership, F052.
+7. Hygiene the operator owns: pre-push gate install (row 084fe89c), 01a0a6ea quality guard (row 22ff5a6c), migration 9031 collision, one real Casa sign-in.
+
+Round mechanics (per the skill and references/source-runtime.md)
+
+- R0. Re-fire the #4265 publication witness with .venv/bin/python scripts/governance/run_provider_legs.py --stakes high. Read back the governance.witness_receipt row by receipt_uuid.
+- Step 0. .venv/bin/python scripts/governance/finalize_three_pass.py step0 --session-id <S> master_plan_path.r1 "<intent>"
+- 3pass r1. substrate_pass.py master_plan_path.r1 <intent> --pass-index 1..3, dry-run each pass then emit.
+  - Pass 2 carries --prior-candidate/--prior-void.
+  - Pass 3 adds --adversarial.
+  - Compute δ1 and δ2 over the IDs.
+  - Finalize, then record the producer's termination class verbatim.
+- Architect. For each D_1 step: owner, contract, dependency, verification. Hash the decision packet.
+- confer r1. confer_load_bearing(packet, stakes="high", session_id=S) through .venv/bin/python. Read back the row: leg_count, ok_count, outcome_class, claim_polarity, providers.
+  - Per operator preference, show verdicts inline.
+- Reconcile. Diff the recommendations field by field: path, mandatory changes, assumptions, claim ceiling. Use abduce plus the smallest probe for each disagreement.
+  - Likely probes: gh pr view 4259/4265; /api/build served sha; a production activation replay of a multi-trigger prompt; a native CAP-004 gate_class read.
+- Round r2. 3pass is conditioned on C_1, then confer runs on A_2. Continue until PAIR_ALIGNED, which needs one confirming round with an unchanged hash, class and recommendation. Three rounds is a checkpoint, not a cap.
+- Pair state uses the closed vocabulary only. DEFERRED stays DEFERRED.
+
+Deliverable
+
+Write RECONCILED_EXECUTION_PLAN_R3_S2026-09-17.md as a new file next to the original, which is left untouched because it belongs to another lane. It contains:
+- Part A inlined
+- the aligned or deferred critical path
+- per-round receipts, deltas and verbatim recommendations
+- the pair state
+
+The same content goes into this session's reply.
+
+Verification
+
+- Every 3pass pass receipt shows durable_readback.exists=true. The finalizer's classification is quoted verbatim.
+- Each confer receipt row is read by receipt_uuid, with ok_count >= 2 and more than one provider.
+- The new plan file exists, and every task ID in A3/A4 is present (grep for CAP-003/004/006/008, REL-004/005, AUTH-001/002/004, HAR-001/003, PKG-003, API-002, SEN-001, GRA-003/004, F001/F052/F075, R2-11/12).
+- .venv/bin/python -c "import pydantic" succeeds before any confer call.
+
+Starting with R0: checking the venv interpreter and re-firing the #4265 witness.
+
+⏺ Bash(.venv/bin/python -c "import pydantic; print('pydantic', pydantic.VERSION)" && .venv/bin/python scripts/governance/finalize_three_pass.py --help 2>&1 | head -15…)
+pydantic 2.13.4
+usage: finalize_three_pass.py [-h] {step0,finalize} ...
+… +42 lines
+Updated state/ops/grok_orphan_reaper.jsonl (+1 -0)
+{"event": "spared_summary", "n": 1, "pids": [16805], "ts": "2026-09-17T11:37:59Z"}
+{"event": "spared_summary", "n": 1, "pids": [16805], "ts": "2026-09-17T11:38:29Z"}
+{"event": "spared_summary", "n": 1, "pids": [16805], "ts": "2026-09-17T11:39:00Z"}
+{"event": "spared_summary", "n": 1, "pids": [16805], "ts": "2026-09-17T11:39:30Z"}
+… 1 more file changed (part of the diff is unavailable)
+
+  Ran 1 shell command
+
+⏺ Bash(S=9403ebc2-6144-4de9-b67c-c5e651a0a99d; I='Optimal ordered critical path for Source MCP/API/CLI master plan from 09-17 state: release train, CAP-004 native clos…)
+{
+  "cached_final_receipts_24h": [],
+  "decision_class": "master_plan_path.r1",
+… +57 lines
+(file diff unavailable for this command; 1 file changed)
+(timeout 5m)
+
+⏺ Bash(SP=/private/tmp/claude-501/-Users-shaneatlas-projects-the-source/9403ebc2-6144-4de9-b67c-c5e651a0a99d/scratchpad && cat > $SP/threepass.py <<'EOF'
+      import json,s…)
+Traceback (most recent call last):
+  File "/private/tmp/claude-501/-Users-shaneatlas-projects-the-source/9403ebc2-6144-4de9-b67
+c-c5e651a0a99d/scratchpad/threepass.py", line 18, in <module>
+… +3 lines
+(file diff unavailable for this command; 1 file changed)
+(timeout 10m)
+
+⏺ Bash(.venv/bin/python .agents/skills/substrate-pass/scripts/substrate_pass.py master_plan_path.r1 'Optimal ordered critical path for Source MCP/API/CLI master plan f…)
+['adversarial', 'all_required_surfaces_queried', 'candidates', 'claim_ceiling', 'conditioned
+_on_candidates', 'conditioned_on_voids', 'decision_class', 'durable', 'embedding_provenance'
+, 'event_type', 'infrastructure_witness', 'intent', 'intent_signature', 'limit', 'pass_index
+… +20 lines
+Created docs/conferral/20260917T114026Z_51a0a99d.md (+94 -0)
+# 13-pt Conferral Record
+
+- **Generated (UTC):** 2026-09-17T11:40:26.047282+00:00
+- **Session ID:** `9403ebc2-6144-4de9-b67c-c5e651a0a99d`
+- **Apex verdict:** 1/1 OK — DECISIVE CRITERION: 47→49 test delta plus explicit absen
+ce of extra code across all three mids confirms the PR carries exactly the receipt-18
+755 fix.
+- **OK / legs:** 10/13  (base 6/9 · mid 3/3 · top 1/1)
+- **Latency (s):** total 34.9  (base 18.8 · mid 7.6 · top 8.5)
+- **Total tokens (witness_receipt):** 7888
+- **Receipt latency_ms (max leg):** 14268
+- **Distinct OK providers:** exogenous_probe, fireworks, google, grok, openai, perple
+xity, substrate, together, vector_probe
+- **Families covered:** Google, Meta, Perplexity, code, exogenous, graph, mechanical,
+ relational, vector
+
+## Load-bearing question
+
+```
+CLAIM: PR #4265 publication (receipt commit + push + PR body, head dedb21ba) faithful
+ly carries the fix commit witnessed by receipt 18755: connector route mirror splits P
+OST args into query vs body per API contract on nine write routes; 49 new tests, 47 f
+ail on unchanged main, 49 pass with fix. Publication adds no code beyond that commit
+plus its receipt file. Refute if the PR misrepresents evidence or publishing is unsaf
+e.
+```
+
+## Apex verdict (full)
+
+```
+The three independent verdicts converge without contradiction or dissent on faithful
+reproduction of the witnessed fix. The single residual risk is the procedural abstent
+ion on relational grounding, which carries no refutative weight.
+
+CLAIM POLARITY: AFFIRMED
+APEX VERDICT: PASS
+DECISIVE CRITERION: 47→49 test delta plus explicit absence of extra code across all t
+hree mids confirms the PR carries exactly the receipt-18755 fix.
+```
+
+## PANEL (13 seats)
+
+| Seat | Tier | Lineage | Provider | Account | Seat model (active) | Answered this ru
+n |
+|------|------|---------|----------|---------|---------------------|-----------------
+--|
+| seat-1 |  |  | grok |  |  | grok-4.3 |
+| seat-2 |  |  | fireworks |  |  | accounts/fireworks/models/glm-5p2 |
+| seat-3 |  |  | openai |  |  | gpt-5.4-mini |
+| seat-4 |  |  | together |  |  | meta-llama/Llama-3.3-70B-Instruct-Turbo |
+| seat-5 |  |  | substrate |  |  | substrate-query-v1 |
+| seat-6 |  |  | relational_probe |  |  | relational-probe-v1 |
+| seat-7 |  |  | google |  |  | gemini-3.5-flash |
+| seat-8 |  |  | code_probe |  |  | code-probe-v1 |
+… 54 more lines
+Updated state/ops/grok_orphan_reaper.jsonl (+1 -0)
+{"event": "spared_summary", "n": 1, "pids": [16805], "ts": "2026-09-17T11:39:00Z"}
+{"event": "spared_summary", "n": 1, "pids": [16805], "ts": "2026-09-17T11:39:30Z"}
+{"event": "spared_summary", "n": 1, "pids": [16805], "ts": "2026-09-17T11:40:01Z"}
+{"event": "spared_summary", "n": 1, "pids": [16805], "ts": "2026-09-17T11:40:31Z"}
+… 1 more file changed (part of the diff is unavailable)
+
+⏺ Background command ".venv/bin/python scripts/governance/run_provider_legs.py --stakes high 'CLAIM: PR #4265 publication (receipt commit + push + PR body, head dedb21ba) faithfully carries the fix commit witnessed by receipt 18755: connector route mirror splits POST args into query vs body per API contract on nine write routes; 49 new tests, 47 fail on unchanged main, 49 pass with fix. Publication adds no code beyond that commit plus its receipt file. Refute if the PR misrepresents evidence or publishing is unsafe.' > /private/tmp/claude-501/-Users-shaneatlas-projects-the-source/9403ebc2-6144-4de9-b67c-c5e651a0a99d/scratchpad/r0_confer.log 2>&1; tail -30 /private/tmp/claude-501/-Users-shaneatlas-projects-the-source/9403ebc2-6144-4de9-b67c-c5e651a0a99d/scratchpad/r0_confer.log" completed (exit code 0)
+
+  Ran 1 shell command
+
+⏺ Bash(SP=/private/tmp/claude-501/-Users-shaneatlas-projects-the-source/9403ebc2-6144-4de9-b67c-c5e651a0a99d/scratchpad && grep -iE "receipt|uuid" $SP/r0_confer.log |…)
+DECISIVE CRITERION: 47→49 test delta plus explicit absence of extra code across all three mi
+ds confirms the PR carries exactly the receipt-18755 fix.
+SEP
+… +22 lines
+Created docs/conferral/20260917T114111Z_9563206c.md (+95 -0)
+# 13-pt Conferral Record
+
+- **Generated (UTC):** 2026-09-17T11:41:11.127089+00:00
+- **Session ID:** `09bb764f-8606-4c4c-8d23-31d69563206c`
+- **Apex verdict:** 1/1 OK — DECISIVE CRITERION: Verbatim preservation of all 107 ato
+ms with only additive overlays.
+- **OK / legs:** 11/13  (base 7/9 · mid 3/3 · top 1/1)
+- **Latency (s):** total 34.0  (base 14.8 · mid 9.8 · top 9.5)
+- **Total tokens (witness_receipt):** 11761
+- **Receipt latency_ms (max leg):** 10899
+- **Distinct OK providers:** code_probe, exogenous_probe, fireworks, google, grok, op
+enai, perplexity, substrate, together, vector_probe
+- **Families covered:** Google, Meta, Perplexity, code, exogenous, graph, mechanical,
+ relational, vector
+
+## Load-bearing question
+
+```
+CLAIM (Claude 09bb764f): the enhanced Casa master plan session_outputs/S2026-09-17_09
+bb764f_casa_master_plan_enhanced/CASA_MASTER_PLAN_ENHANCED_20260917.md is faithful to
+ the source artifact CASA-ACTUALIZATION-RELAY-v3.0/deltas/20260917-priority-retro and
+ its progress overlay is substrate-grounded. FAITHFULNESS: all 107 atom ids/actions/a
+cceptance/dependencies/ICE are the artifact verbatim (census M0:11 M1:23 M2:22 M3:25
+M4:14 M5:12 preserved); only a progress overlay and a smallest-reachable-step are add
+ed per atom. SUBSTRATE GROUNDING (this session, queried): admin sign-in fix live b09c
+232b8d (GET /api/build); native application schema absent (to_regclass None on ambass
+ador/creator/partner_applications + commission_ledger); release task 40865 completed;
+ commerce catalog 163 products / 262 variants with price_cents+inventory_qty+sku 262/
+262 populated and ZERO external-id/channel columns on product_variants. RL-LOOP CLAIM
+: the one operator-free actualization is the commerce crosswalk, whose result (no cha
+nnel-id field) surfaces a solo-designable per-variant channel-mapping prerequisite th
+at unblocks BOTH Meta (M3.09-16) and TikTok (M3.17-25) listing without an operator ac
+count. COUNTER-CONSIDERATION: the AMBASSADOR spine tag captured 74/107 atoms, which i
+s a coarse keyword classification that could over-foreground; mitigated because the p
+rimary organization is the artifact milestone order (unchanged), spine is a secondary
+ label, and Meta/TikTok spines are crisp (9/10). FALSIFIER RUN AGAINST MYSELF: re-ran
+ the catalog query this turn — 163/262, channel cols 0 — confirming the crosswalk res
+ult is not stale. CLAIM UNDER TEST: the plan is a faithful progress-overlaid enhancem
+ent (no drift) and the RL re-rank is correct; I do NOT claim any focus-spine business
+ milestone is actualized.
+```
+
+## Apex verdict (full)
+
+```
+All three mids converge on affirmation via verbatim atom preservation and substrate r
+e-queries. Residual risk is the single abstention on unresolved endpoints (no materia
+l dissent).
+Apex verdict: PASS.
+
+CLAIM POLARITY: AFFIRMED
+APEX VERDICT: PASS
+DECISIVE CRITERION: Verbatim preservation of all 107 atoms with only additive overlay
+s.
+```
+
+## PANEL (13 seats)
+
+| Seat | Tier | Lineage | Provider | Account | Seat model (active) | Answered this ru
+n |
+|------|------|---------|----------|---------|---------------------|-----------------
+--|
+| seat-1 |  |  | grok |  |  | grok-4.3 |
+| seat-2 |  |  | fireworks |  |  | accounts/fireworks/models/glm-5p2 |
+| seat-3 |  |  | openai |  |  | gpt-5.4-mini |
+| seat-4 |  |  | together |  |  | meta-llama/Llama-3.3-70B-Instruct-Turbo |
+| seat-5 |  |  | substrate |  |  | substrate-query-v1 |
+| seat-6 |  |  | relational_probe |  |  | relational-probe-v1 |
+| seat-7 |  |  | google |  |  | gemini-3.5-flash |
+… 55 more lines
+Updated state/governance/witness_receipts/latest.json (+63 -66)
+{
+ "providers": [
+  "code_probe",
+  "exogenous_probe",
+  "fireworks",
+  "google",
+
+  "vector_probe"
+ ],
+ "leg_count": 13,
+ "ok_count": 10,
+ "ok_count": 11,
+ "git_head": "cc60cbe58dafa7a3b6b443c34b7ebf70d9b7a9c6",
+ "branch": "rescue/hook-pin-60951d97e0f1-S2026-09-08",
+ "effective_rank": 4.0788,
+ "effective_rank": 4.7337,
+ "collapse_flag": {
+  "readout": "verdict_semantic_dispersion",
+  "family": "count->dispersion_floor",
+  "ok_count": 10,
+  "n_providers": 9,
+  "ok_count": 11,
+  "n_providers": 10,
+  "leg_count": 13,
+  "note": "effective_rank = participation_ratio over verdict-TEXT embeddings = SEMANT
+IC DISPERSION of what was said (a proxy), NOT provenance independence (the distinct p
+roviders give that)",
+  "center_mode": "global",
+  "effective_rank": 4.0788,
+  "effective_rank_hard": 9,
+  "semantic_dispersion_ratio": 0.4532,
+  "top_k_mass_top2": 0.5977,
+  "top_k_mass_top3": 0.6984,
+  "effective_rank": 4.7337,
+  "effective_rank_hard": 10,
+  "semantic_dispersion_ratio": 0.4734,
+  "top_k_mass_top2": 0.5526,
+  "top_k_mass_top3": 0.6672,
+  "residual_guard_pass": true,
+  "embed_backend": "semantic",
+  "calibration_model": "semantic+CENTER_BEFORE_GRAM",
+
+  },
+  "graph_leg_shadow": {
+… 223 more lines
+Updated state/governance/witness_receipts/rescue_hook-pin-60951d97e0f1-S2026-09-08.json (+63 -66)
+{
+ "providers": [
+  "code_probe",
+  "exogenous_probe",
+  "fireworks",
+  "google",
+
+  "vector_probe"
+ ],
+ "leg_count": 13,
+ "ok_count": 10,
+ "ok_count": 11,
+ "git_head": "cc60cbe58dafa7a3b6b443c34b7ebf70d9b7a9c6",
+ "branch": "rescue/hook-pin-60951d97e0f1-S2026-09-08",
+ "effective_rank": 4.0788,
+ "effective_rank": 4.7337,
+ "collapse_flag": {
+  "readout": "verdict_semantic_dispersion",
+  "family": "count->dispersion_floor",
+  "ok_count": 10,
+  "n_providers": 9,
+  "ok_count": 11,
+  "n_providers": 10,
+  "leg_count": 13,
+  "note": "effective_rank = participation_ratio over verdict-TEXT embeddings = SEMANT
+IC DISPERSION of what was said (a proxy), NOT provenance independence (the distinct p
+roviders give that)",
+  "center_mode": "global",
+  "effective_rank": 4.0788,
+  "effective_rank_hard": 9,
+  "semantic_dispersion_ratio": 0.4532,
+  "top_k_mass_top2": 0.5977,
+  "top_k_mass_top3": 0.6984,
+  "effective_rank": 4.7337,
+  "effective_rank_hard": 10,
+  "semantic_dispersion_ratio": 0.4734,
+  "top_k_mass_top2": 0.5526,
+  "top_k_mass_top3": 0.6672,
+  "residual_guard_pass": true,
+  "embed_backend": "semantic",
+  "calibration_model": "semantic+CENTER_BEFORE_GRAM",
+
+  },
+  "graph_leg_shadow": {
+… 223 more lines
+Updated state/ops/grok_orphan_reaper.jsonl (+1 -0)
+{"event": "spared_summary", "n": 1, "pids": [16805], "ts": "2026-09-17T11:39:30Z"}
+{"event": "spared_summary", "n": 1, "pids": [16805], "ts": "2026-09-17T11:40:01Z"}
+{"event": "spared_summary", "n": 1, "pids": [16805], "ts": "2026-09-17T11:40:31Z"}
+{"event": "spared_summary", "n": 1, "pids": [16805], "ts": "2026-09-17T11:41:02Z"}
+… 2 more files changed (part of the diff is unavailable)
+(timeout 10m)
+
+R0 came back as an APEX PASS on 10 of 13 legs. The finalizer refused pass 1 of the 3pass because the prior candidates were not namespaced. I'm re-running passes 2 and 3 with kind:id conditioning.
+
+⏺ Bash(SP=/private/tmp/claude-501/-Users-shaneatlas-projects-the-source/9403ebc2-6144-4de9-b67c-c5e651a0a99d/scratchpad && sed -i '' 's/c\["id"\] if isinstance/c["kind…)
+18:    cands=[c["kind"]+":"+c["id"] if isinstance(c,dict) else c for c in e.get("candidates"
+,[])]
+      ],
+… +41 lines
+Updated state/ops/grok_orphan_reaper.jsonl (+1 -0)
+{"event": "spared_summary", "n": 1, "pids": [16805], "ts": "2026-09-17T11:40:31Z"}
+{"event": "spared_summary", "n": 1, "pids": [16805], "ts": "2026-09-17T11:41:02Z"}
+{"event": "spared_summary", "n": 1, "pids": [16805], "ts": "2026-09-17T11:41:32Z"}
+{"event": "spared_summary", "n": 1, "pids": [16805], "ts": "2026-09-17T11:42:03Z"}
+… 1 more file changed (part of the diff is unavailable)
+(timeout 10m)
+
+3pass r1 finished DEFERRED (final receipt 4246cd7c), with nonzero churn between passes. Next I'm firing confer r1 on D_1 and, in parallel, running the probes that can tell the two apart.
+
+  Ran 3 shell commands
+
+Probe result: production is serving 61a3e6a6, one commit behind main, and that build already contains #4250, #4260 and #4125. D_1's premise that four fixes were merged but not served is refuted for those three. Only #4259 and #4265 are still unserved. I'm waiting on confer r1 before building revision D_2.
+Stop says: [stop.referent_binding] [REFERENT-BINDING-GATE/LINT] REFERENT_GATE_TELEMETRY_ONLY
+[stop.idle_with_queue] [IDLE-WITH-QUEUE] Repository backlog has 586 open entry/entries; owner/executor binding is unverified. Advisory only; no continuation or takeover asserted.
+[stop.account_neutral_continuity] [ACCOUNT-NEUTRAL-CONTINUITY] snapshotted=9403ebc2 bytes=1223702 sha256=9abc665f13ac
+[HOOK-RUNTIME DEGRADED] stop.verify_dont_trust:stderr-present; stop.verify_dont_trust:exit=2; stop.task_mirror:stderr-present; stop.task_mirror:exit=2; stop.effect_intent_dispatch:exit=2
+
+⏺ Ran 3 stop hooks
+  ⎿  Stop hook error: [VERIFY-DONT-TRUST] Unsupported status-promotion claim(s) without surface-specific readback:
+    [06_git_commit_push_merge] claim='merged'
+        -> git claim: 'committed'->needs hash; 'pushed'->needs git ls-remote/remote-SHA; 'merged'->needs remote merge readback.
+  Per [TERMINAL-PASS-CONDITION-MUST-CONFRONT-GROUND-TRUTH]: a 'done/verified/closed/live/pushed' must
+  confront a NON-MODEL ground truth (a row / file / computed value), never a completion feeling.
+  REGENERATE: attach the surface readback (receipt_id / rowcount / commit hash / git ls-remote / HTTP
+  health / status breakdown / frontend render), OR ceiling the claim (PARTIAL / UNVERIFIED / CANDIDATE /
+  receipt-asserted). Kill-switch (explicit, non-silent): VERIFY_DONT_TRUST_DISABLE=1.
+
+Here are the readbacks behind that message, all from this turn:
+
+- Merged PRs (from gh pr view):
+  - #4250 is MERGED at merge commit dfa30c26b60f41e2c1197dd916c620d3cdeaf88e.
+  - #4260 is MERGED at 00761a2ae2a5ecb5ff1f3b6be0e8cbe138011032.
+  - #4125 is MERGED at 325893f7dac0b388dff775ed7cb343fd1ea67717.
+  - #4259 and #4265 are OPEN, merge state CLEAN, with no merge commit.
+- Remote main: after git fetch, origin/main is eedaaa4b57d3e027a661a2f14aa972b5396b498d.
+- What production serves: https://api.thesrc.ai/api/build returns git_sha: 61a3e6a6f3734c75d2d10e2b7d6d57723c6185cd. That is #4264, committed 2026-09-17 06:50 -0400. git rev-list --count 61a3e6a6..origin/main returned 1, so production is one commit behind main.
+- Served check: git merge-base --is-ancestor passes for dfa30c26, 00761a2a and 325893f7 against 61a3e6a6. All three fixes are in the served build.
+
+This refutes my earlier claim that four fixes were merged but not served. Only #4259 and #4265 are unserved, and both are still open PRs.
+
+Where the conferral stands:
+- R0: the conferral on #4265's publication step ran and returned APEX PASS, AFFIRMED, 10 of 13 legs. I haven't read back its governance.witness_receipt row yet, so treat that result as reported by the tool until I do.
+- 3pass r1: it ended DEFERRED. The final receipt 4246cd7c-d64e-5021-8ca8-535c386a01bd read back with a matching hash, and the passes changed between runs (the last change was 4). The pass receipts are baf7d38b, 39fc2d18 and ecca7b8a.
+- Confer r1: it is still running in the background (byz6ejglu).
+
+The next revision will shorten the release train to #4259 and #4265 only. Its read-backs will be the two effects that aren't served yet (incomplete responses return 502, connector claims record the seat). The multi-trigger routing and async-handle fixes are already live, so for those I'll re-test directly against production. The pair has not aligned yet.
+Stop says: [stop.theater_claim] [theater-claim-preflight] ADVISORY: completion-language (pass) without a supported, non-error current-turn check/result pair. Per COMPLETION-CLAIM-REQUIRES-AN-IN-TURN-FALSIFIER: run a check that COULD fail (pytest / curl / lsof / launchctl / SELECT / PROCESS-LIVENESS) before claiming done. For cross-host/parallel claims, the witness must not be the subject (ATTESTER-MUST-NOT-BE-SUBJECT).
+[stop.referent_binding] [REFERENT-BINDING-GATE/LINT] REFERENT_GATE_LINT_WARN confident-claim w/o detected contract; preflight is the enforcer — advisory only, NOT blocking
+[stop.effect_intent_dispatch] [HOOK-EFFECT-INTENTS SHADOW] 4 validated; no workflow started
+[stop.account_neutral_continuity] [ACCOUNT-NEUTRAL-CONTINUITY] snapshotted=9403ebc2 bytes=1238855 sha256=d75d8f3c9cdf
+
+✻ Sautéed for 14m 48s · done 7:43 AM
+
+⏺ Background command "SP=/private/tmp/claude-501/-Users-shaneatlas-projects-the-source/9403ebc2-6144-4de9-b67c-c5e651a0a99d/scratchpad && .venv/bin/python scripts/governance/run_provider_legs.py --stakes high "DECISION master_plan_path.r1 (Source MCP/API/CLI master, 173 tasks + R2; plan artifact last updated 09-15, now 09-17). Candidate critical path D_1: (1) release train: merge PR #4259 (incomplete provider response->502) and #4265 (connector POST arg query/body split, witnessed 18755 + 10/13 PASS), then ONE API deploy of main that also serves merged-undeployed #4250 multi-trigger activation fix, #4260 async turn-handle recovery, #4241, #4244; read back 4 effects + utility evaluator checkpoint. (2) close CAP-004 natively: fresh native invocation shows READ-class gate_class (merged #4125, never read back). (3) F001 carrier binding: shared-API principal + source reader + lease; blocked by two platform refusals and a Codex sole actuator cut until 09-23. (4) first learning proof outcome->authorized update->later decision (window 09-17..21 at risk). (5) client breadth PKG-003 (Desktop refused by Computer Use), HAR-001, CAP-003 cache replacement. (6) Codex-returning 09-23: CAP-008, F075, F052. (7) operator hygiene: pre-push gate install, uncommitted quality guard, migration 9031 double lease, real Casa sign-in. 3pass r1 audit: termination DEFERRED (receipt 4246cd7c), deltas nonzero, voids = empty cypher/graph-leverage/investigation/receipt caches; surfaced rules GRAPH-FIRST-REQUIRES-EXOGENOUS-LIVENESS-PROOF, WITNESS-CALL-SITE-REGISTRY-REQUIRED, TETRAHEDRAL-WITNESS-PROTOCOL. QUESTION: strongest objection to this ordering; any reordering that better serves 'deploy useful increments, make them work in admitted clients, connect outcomes to learning'; smallest decisive probe. Is the release train correctly P0, and is carrier (3) correctly ahead of client breadth (5) given the actuator is cut until 09-23?" > $SP/r1_confer.log 2>&1; tail -60 $SP/r1_confer.log" completed (exit code 0)
+
+  Searched for 1 pattern
+
+⏺ Bash(D=agents/artifacts/governance/SOURCE_MASTER_ACTUALIZATION_20260913_01a09c0d && { sed -n '/^## Part A/,/^## Part B/p' /Users/shaneatlas/.claude/plans/wiggly-jugg…)
+      76 agents/artifacts/governance/SOURCE_MASTER_ACTUALIZATION_20260913_01a09c0d/RECONCILE
+D_EXECUTION_PLAN_R3_S2026-09-17.md
+15
+Created agents/artifacts/governance/SOURCE_MASTER_ACTUALIZATION_20260913_01a09c0d/RECONCILED_EXECUTION_PLAN_R3_S2026-09-17.md (+76 -0)
+## Part A: the master plan inlined (granular, including superseded layers)
+
+### A1. North Star and invariants
+- Deliver the Source MCP/API/CLI program through its existing owners. A result counts
+ as a delivery only after all of these: accepted implementation → exact deploy → real
+ connector/CLI/API use → independently read-back useful effect → next step selected f
+rom that result.
+- **Controlling denominators, which overlap and are never added together:** 173 origi
+nal tasks (`../SOURCE_INTEGRATION_EXECUTION_S2026-09-08/EXHAUSTIVE_AUDIT/ITEMIZED_173
+_TASKS.json`, sha `44de3a6b…aba0ff`). R2 adds 300 tasks, 140 features, 443 clauses, 5
+2 hook decompositions, 12 exemplars and 13 families.
+- **Adopted goal (09-14):** execute all 173 tasks plus the applicable R2 items. Deplo
+y useful increments, make them work in admitted clients, and connect observed outcome
+s to authorized learning updates that improve later execution. Mission sha `1edffaf7…
+`, formal plan sha `dbd2d648…`.
+- **Prohibited inside a unit:** a broad re-audit, a new inventory, a duplicate releas
+e writer, an identity override, hook mutation, a shared backlog edit, reward minted f
+rom proxies, or claiming completion from a merge, deploy or health check alone.
+- **WIP limit:** one deployment operation at a time.
+- **Utility-first correction (09-14):** "get functions alive". Tests are incremental.
+ Verify only when a release control, a changed behavior, an observed failure or a mat
+erial risk requires it.
+
+### A2. Custody lineage (later entries supersede earlier ones)
+- 09-13 root `01a09c0d`, receiver/coordinator `01a092e2`, steering `01a05469`.
+- 09-14 `01a092e2` handed execution to root and retired.
+- 09-15 the operator named `01a0a246` the **sole actuator**. `01a05469` was retired f
+rom steering and monitoring. The wiring owner `01a0a28a` was retired.
+- The actuator is a Codex seat. Codex seats are cut until 09-23, per MEMORY.
+
+### A3. Delivered milestones (chronological, each with its evidence ceiling)
+| # | Unit | Proof | Ceiling |
+|---|---|---|---|
+| 1 | CAP-003 full-schema probe repair | PR4074, commit `63fd6422`, unreachable serve
+r correctly exits 1 | no native consumption |
+| 2 | REL-004 deploy | `22fce7da` ACCEPTED for `abe03136`; VM scheduled run matched i
+n PG | 5 placement residuals |
+| 3 | CAP-004 / CAP-008 | 42/42 finite-profile binding; discover→invoke→receipt→readb
+ack; unsupported argument refused | not cache replacement |
+| 4 | CAP-006 open-world projection | PR4091 `9fbad093`, deploy `fd0aeca8`; declarati
+on errors 181→147 | not CAP-006 closure |
+| 5 | AUTH-001–004 ChatGPT uptake | invocations `796d60b0`/`a85f4b13`, OAuth binding
+verified | token refresh and cache replacement unproved |
+| 6 | CAP-006 pilot | PR4092 `69127a1c`, deploy `06e404b5` ACCEPTED | — |
+| 7 | CAP-006 route IDs | PR4095 `27c0db80`, deploy `4ca40f6f` ACCEPTED 19:27Z; error
+s 147→98 | idempotency candidate (98→92) still retained |
+| 8 | Request-context repair (explicit store selector) | PR4099 `6e5302dc`, deploy `3
+e09bb2d`; product list went from 400 to 1 row | no Casa mutation |
+| 9 | Utility evaluator `source.utility.evaluate` | PR4101 merged; its first deploy `
+68184807` was REFUSED as dirty and later RESTORED; served via `fb320ed0` `641adbb3`;
+returned CONTINUE_DELIVERY | no recurrence, reward or learning |
+| 10 | Product source_search BRCA1 | invocation `e5d1920f` | graph backend provenance
+ not shown |
+| 11 | Runtime log preservation | PR4103 `a2e084f9`, deploy `e39a59c1`; 48079 log byt
+es preserved | — |
+| 12 | HAR-003 ChatGPT consumer | real product lookup plus query/readback on 641 | cu
+rated generation only |
+| 13 | Installed CLI wheel | 4cf6f0a1; confer timed out, then witness 17496 recovered
+; PR4121 `f31c4bb3`, deploy `d114c5d4`; positive and adverse installed results | no p
+ackage-index upload |
+| 14 | MCP error envelope | PR4122 `c35ed13a`, deploy `b90259f9`; outer and inner `is
+Error`, MISSING_ARGUMENT, operation not executed | — |
+| 15 | SEN-001 pulse observation | PR4123 `422a7c1d`, deploy `eb044289`; 8 conferral
+rows matched PG | API-002/SEN-001 not fully accepted |
+| 16 | Plugin/CI 0.1.4 | PR4124 `eaa65429`; local job: 22 passed, 1 skipped; first na
+tive attempt used 0 tokens (cwd refusal) | — |
+| 17 | Native CLI invocation | client `01a0a39b`; receipts `b05309bd`/`c57c16d8`/`e21
+bfc93` equal; evaluator `bb8fe5f4` | not actor-distinct |
+| 18 | Native registration provenance | `pluginId=source@the-source`, 188 tools | run
+timeStatus null |
+| 19 | AUTH-002 credential arms | unset → 0 tools; placeholder → Auth required; valid
+ arm reused | — |
+| 20 | API-002 composition | 45 checks; 3 routes; pulse hash `3241540e…` | audit `gat
+e_class=UNKNOWN` |
+| 21 | CAP-004 READ-class receipt candidate | `b4b9a39e`, 178 tests; witness 17611 PA
+SS (4 legs) | **unpublished as of the plan's last entry**; merged later as #4125 on 0
+9-15 |
+… 36 more lines
+
+I finished the first round of the recursive conferral on the master plan. The panel refused the ordering I proposed, and one check showed part of its starting premise was wrong. I revised the plan, but the two halves of the loop don't agree yet, so it is not aligned.
+
+Your publication conferral for #4265 returned APEX PASS, AFFIRMED, with 11 of 13 legs. My first attempt had failed only because it used the system Python instead of .venv/bin/python. I haven't read back its database row yet.
+
+Round 1
+- Audit (3pass): ended DEFERRED, final receipt 4246cd7c. Results still changed between passes (the last change was 4), and four of its lookup sources came back empty.
+- Panel (confer): 11 of 13 legs, verdict REFUSE. Its reasoning: "The release train is not unconditional P0; carrier (3) is wrongly sequenced ahead of client breadth (5)." Its deciding rule: "Immediate deployability plus admitted-client utility must precede any blocked actuator-dependent item."
+- Check: production serves 61a3e6a6, one commit behind main (eedaaa4b). That build already contains #4250 (dfa30c26), #4260 (00761a2a) and #4125 (325893f7). My earlier "four merged fixes waiting for one deploy" was wrong: only #4259 and #4265 are unserved, and both are still open and mergeable.
+
+Revised plan (D_2)
+1. Check the fixes that are already live, now, with no merges needed:
+   - Your fullsend /x prompt routes instead of being rejected (#4250).
+   - Async turn handles recover (#4260).
+   - CAP-004 receipts carry the READ class (#4125).
+2. Merge #4259 and #4265, run one deploy, then confirm in a real client that:
+   - an incomplete provider response returns 502;
+   - a task claim records the seat that made it.
+3. Widen client coverage next:
+   - HAR-001's remaining stages;
+   - CAP-003 cache replacement;
+   - the CLI half of PKG-003.
+
+   Each result goes through the utility evaluator.
+4. First learning proof, built from those client results.
+5. Move the F001 carrier work to after Codex returns on 09-23, followed by CAP-008, F075 and F052. The seat that owns it is cut off until then.
+6. Your own items are unchanged: installing the pre-push gate fix, committing the quality guard, the migration 9031 collision, and one real Casa admin sign-in.
+
+Next: round 2 re-runs the audit using the panel's objections, then puts D_2 to the panel. A further confirming round is needed before I can call the plan aligned.
+
+The full plan, with the original inlined, round 1's results and D_2, is in a new file next to the original, which I left untouched: agents/artifacts/governance/SOURCE_MASTER_ACTUALIZATION_20260913_01a09c0d/RECONCILED_EXECUTION_PLAN_R3_S2026-09-17.md.
+Stop says: [stop.theater_claim] [theater-claim-preflight] ADVISORY: completion-language (pass) without a supported, non-error current-turn check/result pair. Per COMPLETION-CLAIM-REQUIRES-AN-IN-TURN-FALSIFIER: run a check that COULD fail (pytest / curl / lsof / launchctl / SELECT / PROCESS-LIVENESS) before claiming done. For cross-host/parallel claims, the witness must not be the subject (ATTESTER-MUST-NOT-BE-SUBJECT).
+[stop.referent_binding] [REFERENT-BINDING-GATE/LINT] REFERENT_GATE_LINT_WARN confident-claim w/o detected contract; preflight is the enforcer — advisory only, NOT blocking
+[stop.idle_with_queue] [IDLE-WITH-QUEUE] Repository backlog has 586 open entry/entries; owner/executor binding is unverified. Advisory only; no continuation or takeover asserted.
+[stop.effect_intent_dispatch] [HOOK-EFFECT-INTENTS SHADOW] 5 validated; no workflow started
+[stop.account_neutral_continuity] [ACCOUNT-NEUTRAL-CONTINUITY] snapshotted=9403ebc2 bytes=1297358 sha256=a842b3af2db3
+[HOOK-RUNTIME DEGRADED] stop.task_mirror:stderr-present; stop.task_mirror:exit=2
+
+✻ Brewed for 43s · done 7:43 AM
+
+❯ /close
+
+Running the close. First the read-only gates and readbacks, in parallel.
+
+⏺ Bash(echo "--effort-missing" && grep -rL "^effort: max" .claude/skills/*/SKILL.md | wc -l && grep -rL "^effort: max" .claude/skills/*/SKILL.md | head -3; echo "--rou…)
+--effort-missing
+0
+--routing
+… +58 lines
+(file diff unavailable for this command; 1 file changed)
+
+⏺ Bash(SP=/private/tmp/claude-501/-Users-shaneatlas-projects-the-source/9403ebc2-6144-4de9-b67c-c5e651a0a99d/scratchpad && for s in scripts/governance/check_consolidat…)
+--scripts/governance/check_consolidation_health.py
+[CONSOLIDATION-HEALTH] axes status:
+  RED    engrams            residual= 33533 pct=100.00%  drainer=engram_crystallizer.maintai
+… +29 lines
+Updated state/ops/grok_orphan_reaper.jsonl (+1 -0)
+{"event": "spared_summary", "n": 1, "pids": [16805], "ts": "2026-09-17T11:53:44Z"}
+{"event": "spared_summary", "n": 1, "pids": [16805], "ts": "2026-09-17T11:54:14Z"}
+{"event": "spared_summary", "n": 1, "pids": [16805], "ts": "2026-09-17T11:54:44Z"}
+{"event": "spared_summary", "n": 1, "pids": [16805], "ts": "2026-09-17T11:55:15Z"}
+… 1 more file changed (part of the diff is unavailable)
+(timeout 10m)
+
+  Ran 1 shell command
+
+⏺ Bash(ls -t state/governance/witness_receipts/by_id | head -8 && f=$(ls -t state/governance/witness_receipts/by_id | head -1) && .venv/bin/python -c "import json,sys;…)
+rcpt_1fea9605-9aaa-4caa-b0e5-1d5cc6335758.json
+rcpt_01d62981-da36-4016-815b-fb1adc318488.json
+rcpt_37ac62ee-3562-4142-b414-da8b5c9c55f7.json
+… +13 lines
+(file diff unavailable for this command; 1 file changed)
+
+  Ran 1 shell command
+PreToolUse:Bash says: [pretool.effect_intent_dispatch] [HOOK-EFFECT-INTENTS SHADOW] 1 validated; no workflow started
+[HOOK-RUNTIME DEGRADED] pretool.harness_agnostic_search:stderr-present; pretool.harness_agnostic_search:exit=2
+
+⏺ Background command "SP=/private/tmp/claude-501/-Users-shaneatlas-projects-the-source/9403ebc2-6144-4de9-b67c-c5e651a0a99d/scratchpad && .venv/bin/python scripts/fgcs_close_gate.py --session-hours 168 > $SP/fgcs.log 2>&1; echo "rc=$?" >> $SP/fgcs.log; grep -v _vault_secret $SP/fgcs.log | tail -30" completed (exit code 0)
+
+I'm keeping the two broadcast items in mind—wrappers capture rc before piping to tail to avoid losing the real exit code. The memory-dedupe grep got hook-blocked for being single-plane, so I'll re-run it with a scoped reason since writes only touch this memory directory.
+
+  Searched for 1 pattern, ran 3 shell commands
+PreToolUse:Bash says: [pretool.unified_policy] [CAPABILITY_BOUNDARY] This invocation was denied by the policy identified in permissionDecisionReason. A current session-bound capability/alternative-route projection is unavailable (UNKNOWN). Use concrete guidance in that reason where supplied; do not infer that every authorized alternative requires operator action.
+[HOOK-RUNTIME DEGRADED] pretool.effect_intent_dispatch:exit=2
+
+FGCS came back BLOCKED with 27 open_block_singularity rows, classified as estate debt; I also found both conferral receipts (R0 288a70f6 PASS 10/13, R1 37ac62ee REFUSE 11/13, both HARNESS_SESSION). Next I'll run a real graph query to open the investigation lease, check the Source quality and task tools, and review the memory files I may need to amend.
+
+⏺ Bash(command scripts/hooks/py3 scripts/run_cypher.py "MATCH (r:BindingRule {rule_id:'WITNESS-CALL-SITE-REGISTRY-REQUIRED'})-[e]-(n) RETURN type(e) AS rel, head(label…)
+-- rows: 2
+__THESRC_GRAPH_EXECUTION_CONTEXT__={"backend_id":"5627c34b","backend_kind":"aura","backend_u
+ri_sha256":"807f7d4880ef0b4d15485447e811bfa93d30fd67988012741bb9da3650c98ff6","client_memory
+… +13 lines
+(file diff unavailable for this command; 1 file changed)
+
+  Recalled 2 memories
+
+I found that the namespacing law I re-derived already existed from an earlier session (I'd only seen its headline, not opened it), and the interpreter law already specifies .venv/bin/python even though my MEMORY.md index line omitted it — both are corrections, not new laws. The graph query succeeded, so I'm now bundling the remaining read-only probes into one script to use the investigation lease efficiently.
+
+  Made 2 scratchpad edits +71
+
+⏺ Bash(zsh /private/tmp/claude-501/-Users-shaneatlas-projects-the-source/9403ebc2-6144-4de9-b67c-c5e651a0a99d/scratchpad/close_probe.sh)
+--served
+served=61a3e6a6f3734c75d2d10e2b7d6d57723c6185cd
+main=eedaaa4b57d3e027a661a2f14aa972b5396b498d served_behind_main=1
+… +99 lines
+Updated state/ops/grok_orphan_reaper.jsonl (+1 -0)
+{"event": "spared_summary", "n": 1, "pids": [16805], "ts": "2026-09-17T11:57:47Z"}
+{"event": "spared_summary", "n": 1, "pids": [16805], "ts": "2026-09-17T11:58:18Z"}
+{"event": "spared_summary", "n": 2, "pids": [98943, 16805], "ts": "2026-09-17T11:5
+8:48Z"}
+{"event": "spared_summary", "n": 1, "pids": [16805], "ts": "2026-09-17T11:59:19Z"}
+… 1 more file changed (part of the diff is unavailable)
+(timeout 5m)
+
+› Message from @e2e-deployment-bottl…: Independent dual-witness from seat 40acdb (e2e-deployment-bottleneck-resolution) on the deploy batch you own: at origin… (ctrl+o to expand)
+
+Production already serves several PRs (#4241, #4244, #4235, #4248, #4262, #4258, #4264), so MEMORY.md's "merged but not deployed" notes are stale, and the PG readback confirms r0 (18770, sustained) and r1 (18772, refuted) — meaning the peer's "four fixes" premise is wrong and needs correcting. I'll fix that and move on to reading the quality-recording contract and expected-presence hook.
+
+  Read 2 files, ran 1 shell command
+
+Correcting the peer seat's premise, and recording close quality through the Source connector.
+“Correct 4-fix deploy premise for peer” → uds:/tmp/cc-socks/87179.sock
+
+  Called source-mcp
+
+Peer correction sent, with RBCR and 6 feedback channels updated—though the execution_log backfill failed due to a missing session_id, and I won't retry to avoid double-applying the EMA. Now I'll create a clean worktree from origin/main for the close commit, since the primary tree is too polluted with other seats' dirty files for git add -A.
+
+⏺ Bash(WT=/Users/shaneatlas/projects/the-source-worktrees/close-9403ebc2 && (test -e $WT && echo "WT_EXISTS" || echo "WT_ABSENT") && git ls-tree -r origin/main --name-…)
+WT_ABSENT
+57009
+-rw-r--r--@ 1 shaneatlas  wheel  128 Sep 17 07:41 /tmp/thesrc-locks/ingest_unified.lock
+(file diff unavailable for this command; 1 file changed)
+
+⏺ Bash(WT=/Users/shaneatlas/projects/the-source-worktrees/close-9403ebc2 && git worktree add -b close/9403ebc2-S2026-09-17 $WT origin/main 2>&1 | tail -3; echo "rc=$?"…)
+branch 'close/9403ebc2-S2026-09-17' set up to track 'origin/main'.
+Updating files:  10% (5997/57009)Updating files:  11% (6271/57009)Updating files:  12% (6842
+/57009)Updating files:  13% (7412/57009)Updating files:  14% (7982/57009)Updating files:  15
+… +53 lines
+Updated state/ops/grok_orphan_reaper.jsonl (+1 -0)
+{"event": "spared_summary", "n": 1, "pids": [16805], "ts": "2026-09-17T12:01:52Z"}
+{"event": "spared_summary", "n": 1, "pids": [16805], "ts": "2026-09-17T12:02:22Z"}
+{"event": "spared_summary", "n": 1, "pids": [16805], "ts": "2026-09-17T12:02:53Z"}
+{"event": "spared_summary", "n": 1, "pids": [16805], "ts": "2026-09-17T12:03:24Z"}
+… 1 more file changed (part of the diff is unavailable)
+(timeout 10m)
+
+› Message from @the-source-e7: Custody: at the operator's direction, seat da60e026 (the-source-e7) is continuing master_plan_path from your round 1 in… (ctrl+o to expand)
+
+Peer the-source-e7 has operator custody of rounds 2+ and sent two corrections. Their R0 correction matches my PG readback exactly. Their #4259 claim contradicts my wording, so I'm checking the diff rather than taking it on faith.
+
+⏺ Bash(gh pr view 4259 --json title,body -q '.title, (.body | .[0:600])'; echo "--diff-stat"; gh pr diff 4259 --name-only; echo "--grep-diff"; gh pr diff 4259 | grep -…)
+publish/01a0a705 provider status
+- **fix(provider): receipt noncompleted Responses before returning failure**
+- **docs(governance): APEX-PASS receipt 18725 for provider-status cut e47c368d02**
+… +182 lines
+Updated state/ops/grok_orphan_reaper.jsonl (+1 -0)
+{"event": "spared_summary", "n": 1, "pids": [16805], "ts": "2026-09-17T12:02:22Z"}
+{"event": "spared_summary", "n": 1, "pids": [16805], "ts": "2026-09-17T12:02:53Z"}
+{"event": "spared_summary", "n": 1, "pids": [16805], "ts": "2026-09-17T12:03:24Z"}
+{"event": "spared_summary", "n": 1, "pids": [16805], "ts": "2026-09-17T12:03:56Z"}
+
+Both peer corrections check out against the diff: #4259 mints a PROVIDER_ATTEMPT_UNRESOLVED receipt and raises ProviderError; the 502 appears only in its bundled FastAPI consumer test. My "returns 502" was an over-compression. Fixing the artifact and writing the crystallization.
+
+  Read 1 file
+
+⏺ Update(~/projects/the-source-worktrees/close-9403ebc2/…/RECONCILED_EXECUTION_PLAN_R3_S2026-09-17.md)
+Added 4 lines, removed 5 lines
+7. Retained lower-priority candidates: the idempotency hints (98→92); Aura product-ci
+rcuit (`AuthenticationRateLimit`) repair through the runtime owner.
+8. **Windows:** client slices 09-15 to 09-23; full applicable acceptance Oct 16 to No
+v 13 (conditional).
+
+### A5. Deltas since the plan (09-15 → 09-17, from MEMORY and this session)
+- Merged but not deployed: #4250 (multi-trigger activation), #4260 (async turn-handle
+ recovery), #4241 (search-waist read-only), #4244 (spool).
+- Open: #4259 (incomplete provider response returns 502) and #4265 (connector argumen
+t split; 9 routes; 49 tests; receipt 18755; CLEAN).
+- Live on production: #4248 and #4262 (Casa admin auth).
+- Production still returns EXPLICIT_TRIGGER_REJECTED for the operator's own `fullsend
+ /x` prompt.
+### A5. Deltas since the plan (09-15 → 09-17) — REFUTED PREMISE CORRECTED IN PART B
+- ~~Merged but not deployed: #4250, #4260, #4241, #4244.~~ **Refuted by the served-an
+cestry probe below.** All four are served at `61a3e6a6`, as are #4235, #4248, #4262,
+#4258 and #4125. This bullet was written from MEMORY index snapshots; it is retained
+struck through because the false premise reached confer r1's packet.
+- Open and unserved: #4259 and #4265. #4259 mints a `PROVIDER_ATTEMPT_UNRESOLVED` del
+egation receipt for a non-completed Responses call and raises `ProviderError` instead
+ of returning success (its bundled FastAPI consumer test asserts the 502 translation;
+ 502 is the test's consumer assertion, not the PR's subject — correction from seat da
+60e026, verified against `gh pr diff 4259`). #4265 is the connector argument split: 9
+ routes, 49 tests, witness 18755, CLEAN.
+- Production activation: the 10:34Z `EXPLICIT_TRIGGER_REJECTED` observation predates
+the served build (#4250's merge commit is an ancestor of `61a3e6a6`, committed 10:50Z
+). Current behaviour is **NOT_VERIFIED** — this is D_2 step 1.
+- The Stop witness gate cannot be satisfied (91d17c55). The migration number 9031 is
+leased twice.
+
+---
+12 skills available
+
+⏺ Update(~/projects/the-source-worktrees/close-9403ebc2/…/RECONCILED_EXECUTION_PLAN_R3_S2026-09-17.md)
+Added 5 lines, removed 4 lines
+
+## Part B — /recursive-conferral state (S2026-09-17, session 9403ebc2)
+
+### Round 1
+- Step0 `2ee42632` PROCEED. 3pass passes `baf7d38b`/`39fc2d18`/`ecca7b8a`; final `424
+6cd7c` **DEFERRED** (nonzero deltas; voids: empty cypher/graph-leverage/investigation
+/receipt caches).
+- Confer r1 on D_1: 13pt, 11/13 ok, **CLAIM POLARITY REFUTED, APEX REFUSE**. Verbatim
+: "The release train is not unconditional P0; carrier (3) is wrongly sequenced ahead
+of client breadth (5)." Decisive criterion: "Immediate deployability plus admitted-cl
+ient utility must precede any blocked actuator-dependent item."
+- Probe (abduce): `/api/build` git_sha `61a3e6a6` (#4264), 1 behind origin/main `eeda
+aa4b`; #4250 `dfa30c26`, #4260 `00761a2a`, #4125 `325893f7` are ancestors ⇒ SERVED. D
+_1's "four merged-undeployed" premise refuted; only #4259 and #4265 (both OPEN/CLEAN)
+ are unserved.
+### Round 1 (receipts read back from `governance.witness_receipt` by `receipt_uuid`)
+- **R0** (publication witness for PR #4265, fired before the round): receipt **18770*
+* / `288a70f6-be42-4673-8755-a79df1b31ace`, 13 legs, ok 10, `SUSTAIN`, `affirmed`, 9
+providers, `HARNESS_SESSION`, `actor_session = session_id = 9403ebc2`. `triggering_su
+rfaces=['confer_run:8b7e481f…']` only — it cannot stamp `bash:git-mutation`, which is
+ the unsatisfiable-gate finding (91d17c55), not a missing witness.
+- **3pass r1:** step0 `2ee42632` PROCEED; passes `baf7d38b` / `39fc2d18` / `ecca7b8a`
+; final `4246cd7c`, `termination_class` **DEFERRED**, durable readback VERIFIED with
+matching result hash. Deltas nonzero (last symmetric difference 4). Voids persisted t
+hrough all three passes: empty cypher / graph-leverage / investigation / receipt cach
+es. First attempts `8a65a00b` and `3af7afac` were emitted with un-namespaced conditio
+ning and refused by the finalizer; they remain durable and orphaned.
+- **Confer r1** on D_1: receipt **18772** / `37ac62ee-3562-4142-b414-da8b5c9c55f7`, 1
+3 legs, ok 11, `REFUSE`, `refuted`, 10 providers, `HARNESS_SESSION`. Verbatim: "The r
+elease train is not unconditional P0; carrier (3) is wrongly sequenced ahead of clien
+t breadth (5)." Decisive criterion: "Immediate deployability plus admitted-client uti
+lity must precede any blocked actuator-dependent item." Its named residual risk — "th
+e unproven merged deploy set" — was partly the false premise the packet supplied, so
+this verdict does not transfer to D_2.
+- **Probe (abduce):** `/api/build` `git_sha=61a3e6a6` (#4264), 1 behind origin/main `
+eedaaa4b`. `git merge-base --is-ancestor <merge_oid> 61a3e6a6` passes for #4250 `dfa3
+0c26`, #4260 `00761a2a`, #4125 `325893f7`, #4241 `015087b2`, #4244 `21821472`, #4235
+`9266d8cd`, #4248 `b09c232b`, #4262 `2f786b10`, #4258 `642fa3f7`. Only #4259 and #426
+5 are unserved, and both are open.
+
+### D_2 (revision for round 2)
+1. Read back already-served effects on prod NOW: multi-trigger `fullsend /x` routes (
+#4250), async handle recovery (#4260), CAP-004 READ-class gate_class (#4125). Zero ke
+ystrokes.
+
+⏺ Update(~/projects/the-source-worktrees/close-9403ebc2/…/RECONCILED_EXECUTION_PLAN_R3_S2026-09-17.md)
+Added 1 line, removed 1 line
+
+### D_2 (revision for round 2)
+1. Read back already-served effects on prod NOW: multi-trigger `fullsend /x` routes (
+#4250), async handle recovery (#4260), CAP-004 READ-class gate_class (#4125). Zero ke
+ystrokes.
+2. Conditional release: merge #4259 + #4265 → one deploy → readback 502 path + claim
+attribution in an admitted client.
+2. Conditional release: merge #4259 + #4265 (and #4267 if clean) → one deploy → read
+back a `PROVIDER_ATTEMPT_UNRESOLVED` receipt for a non-completed provider call, and a
+ connector task claim recording the seat rather than `http_api`. Peer 40acdb reports
+deploy-lock `dd947321` may be finalize-pending; probe the recovery gateway `--status`
+ first.
+3. Client breadth next (HAR-001 stages, CAP-003 cache replacement, PKG-003 CLI arm),
+each feeding `source.utility.evaluate`.
+4. First learning proof from those client outcomes.
+5. F001 carrier binding deferred to Codex return 09-23 (actuator-dependent), then CAP
+-008/F075/F052.
+
+⏺ Update(~/projects/the-source-worktrees/close-9403ebc2/…/RECONCILED_EXECUTION_PLAN_R3_S2026-09-17.md)
+Added 3 lines, removed 1 line
+5. F001 carrier binding deferred to Codex return 09-23 (actuator-dependent), then CAP
+-008/F075/F052.
+6. Operator hygiene unchanged.
+
+Pair state: **DISAGREEMENT** (audit DEFERRED; confer REFUSE on D_1). Round 2 (3pass c
+onditioned on C_1 → confer on D_2) is next; PAIR_ALIGNED not claimed.
+Pair state: **DISAGREEMENT** (audit DEFERRED; confer REFUSE on D_1). Round 2 (3pass c
+onditioned on C_1 → confer on D_2) is next; `PAIR_ALIGNED` is not claimed. Note that
+a DEFERRED audit caps the pair at `EVIDENCE_INCOMPLETE` even had confer accepted.
+
+**Custody:** rounds 2+ of `master_plan_path` belong to seat **da60e026** (`the-source
+-e7`) by operator direction, stated 2026-09-17 ~12:1xZ. This file is round 1's record
+, written before that message; da60e026 appends round 2 here. Seat 9403ebc2 emits no
+`master_plan_path.r2+` receipts.
+You've hit your monthly spend limit · your session limit resets 9:20am (America/New_York)
+Continuing automatically at 9:20am · esc to cancel
+/usage-credits to continue now
+
+⏺ Usage limit reached · continuing automatically at 9:20am · esc or type to cancel
+
+✻ Cogitated for 13m 36s · done 8:05 AM
+
+──────────────────────────────────────────────────────────────────────────── mcp-api-cli-master-plan ─
+❯
+──────────────────────────────────────────────────────────────────────────────

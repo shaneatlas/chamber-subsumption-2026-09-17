@@ -1,0 +1,14 @@
+{
+  "status": "LOCAL_REFERENCE_PACKAGE_VALID",
+  "scope": "Package bytes, reference ranges, navigation, static dependency/coverage and non-promotion invariants only; NOT Source runtime acceptance",
+  "sources_checked": 45,
+  "execution_cards_checked": 64,
+  "card_reference_ranges_checked": 165,
+  "enhancement_entries_checked": 72,
+  "original_controls_retained": 94,
+  "baseline_registers_checked": 7,
+  "inherited_files_byte_compared": 27,
+  "local_html_links_checked": 19116,
+  "manifest_entries_checked": 161,
+  "errors": []
+}

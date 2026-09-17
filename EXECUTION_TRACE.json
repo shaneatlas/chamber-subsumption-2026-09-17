@@ -1,0 +1,3081 @@
+{
+  "kind": "local_source_linked_execution_design_not_runtime_tasks",
+  "prepared_on": "2026-09-17",
+  "project_execution_status": "NOT_RUN",
+  "native_subsuming_transcripts_invoked": false,
+  "steps": [
+    {
+      "id": "EX01",
+      "title": "Bind the selected objective and owner without restarting the estate audit",
+      "lane": "CUSTODY",
+      "existing_owner": "Existing connector owner 6310327d; master-path r2+ remains da60e026",
+      "scope": "Entry to whichever owner lane is actually selected",
+      "action": "Identify the concrete consumer outcome, authorized work environment, current owner, and actual contended surface. Carry D_2 and the package boundary as source-derived constraints. Trace only the paths implicated in that outcome.",
+      "acceptance_predicate": "An actual current owner and usable checkpoint are recorded, or the exact missing authority/environment is identified.",
+      "positive_case": "A non-overlapping connector preparation continues without taking the master-plan or release writer.",
+      "negative_case": "A request to recombine documents does not create an execution lease or imply authority to merge, dispatch, or drain.",
+      "references": [
+        {
+          "source_id": "S03",
+          "start_line": 5,
+          "end_line": 5,
+          "quote_sha256": "8b0fe9cd1a38d6064275bd33708b46961329730c97fe37c819be384c794b9713",
+          "anchor_text": "**Owner:**"
+        },
+        {
+          "source_id": "S24",
+          "start_line": 481,
+          "end_line": 489,
+          "quote_sha256": "2933c31d9ff401db8a0305fb0efbf2fcf6fa1d7273f5977349d6e63dd0332940",
+          "anchor_text": "### WP00"
+        },
+        {
+          "source_id": "S01",
+          "start_line": 889,
+          "end_line": 892,
+          "quote_sha256": "103e2bef505ac784bb1dc430e3710db168ff054275b35e466db4a39bb64582de",
+          "anchor_text": "**Custody:**"
+        }
+      ],
+      "depends_on": [],
+      "repository_or_service_locators": [
+        "Current repository instructions",
+        "Existing custody owner"
+      ],
+      "work_packages": [
+        "WP00"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": null,
+      "current_binding_gap": "Current implementation, authority, and actual consumer result must be bound by the named owner; this source packet does not establish them.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 1
+    },
+    {
+      "id": "EX02",
+      "title": "Bind the actual plugin base and every applicable identity",
+      "lane": "PLUGIN",
+      "existing_owner": "Connector owner; local configuration owner for installed observations",
+      "scope": "Before a real plugin patch",
+      "action": "Capture genuine repository root and full HEAD, relevant dirty/preimage state, plugin manifests, marketplace entry, gateway, hooks, helper, lattice, and existing lock. Keep served generation and installed cache separate. Do not reset to any historical SHA.",
+      "acceptance_predicate": "The permitted base is identified from actual bytes; a moved 0.2.4 base causes reconciliation rather than downgrade.",
+      "positive_case": "The four-skill/five-command base matches and the release version is available.",
+      "negative_case": "API-reported plugin 0.2.4 is not used as proof of installed-cache bytes; unrelated work is preserved.",
+      "references": [
+        {
+          "source_id": "S03",
+          "start_line": 7,
+          "end_line": 15,
+          "quote_sha256": "73ed2901874f93b19fd7ae2121f442282207a5329baed670d6983dbd277a06af",
+          "anchor_text": "## 1. Bind the actual base once"
+        },
+        {
+          "source_id": "S21",
+          "start_line": 52,
+          "end_line": 77,
+          "quote_sha256": "e33e2fac9a8545a87bd516cc73139b4f11fd0352aa53b803c1e12f18d7bd3ad1",
+          "anchor_text": "### 2.1 Fresh identity"
+        }
+      ],
+      "depends_on": [
+        "EX01"
+      ],
+      "repository_or_service_locators": [
+        "plugins/source/.claude-plugin/plugin.json",
+        "plugins/source/.codex-plugin/plugin.json",
+        ".claude-plugin/marketplace.json",
+        "plugins/source/MANIFEST_LOCK.json",
+        "plugins/source/.mcp.json"
+      ],
+      "work_packages": [
+        "WP00"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": null,
+      "current_binding_gap": "Current implementation, authority, and actual consumer result must be bound by the named owner; this source packet does not establish them.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 2
+    },
+    {
+      "id": "EX03",
+      "title": "Read back already-served D_2 effects before conditional release",
+      "lane": "MASTER_PATH",
+      "existing_owner": "da60e026 coordinates r2+; actual admitted-client owner performs each check",
+      "scope": "D_2 step 1; separate from plugin startup",
+      "action": "Use the actual admitted route/test contract to observe multi-trigger handling for fullsend /x, async-handle behavior, and CAP-004 READ classification. Bind a harmless or existing test case; zero keystrokes is not a zero-effect guarantee. No blind replay of an effectful user command.",
+      "acceptance_predicate": "The behaviors are demonstrated at their actual served revision, or each remains specifically NOT_VERIFIED.",
+      "positive_case": "Existing served implementation is exercised and its client-visible result matches the intended contract.",
+      "negative_case": "The 10:34Z rejection and served ancestry are not substituted for a fresh behavior result; fullsend is not executed merely because it appears in this source.",
+      "references": [
+        {
+          "source_id": "S01",
+          "start_line": 790,
+          "end_line": 805,
+          "quote_sha256": "4c7ecead10012202f7f566f5d3825ef5fa03463973b5ef3fb4e63f5a18a41ec8",
+          "anchor_text": "### A5. Deltas since the plan (09-15 → 09-17) — REFUTED"
+        },
+        {
+          "source_id": "S01",
+          "start_line": 852,
+          "end_line": 856,
+          "quote_sha256": "d06988450c5b82d5313c6b23902fbb08b38e3bcc8321aa37e5c5e7f2dedc3a80",
+          "anchor_text": "### D_2 (revision for round 2)"
+        },
+        {
+          "source_id": "S28",
+          "start_line": 701,
+          "end_line": 725,
+          "quote_sha256": "f026873fd5491b02be59ccbf2ebca4b6686eb98bb92ba32e6643d5c9469be8bc",
+          "anchor_text": "## 18. Acceptance matrix"
+        }
+      ],
+      "depends_on": [
+        "EX01"
+      ],
+      "repository_or_service_locators": [
+        "Existing multi-trigger activation path (#4250)",
+        "Existing async handle path (#4260)",
+        "CAP-004 READ-class receipt path (#4125)"
+      ],
+      "work_packages": [
+        "WP00",
+        "WP02",
+        "WP04"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": null,
+      "current_binding_gap": "Current activation and admitted-client test invocation remain unverified; do not invent a route or fixture payload.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 3
+    },
+    {
+      "id": "EX04",
+      "title": "Resolve native router content and consumers in the native namespace",
+      "lane": "ROUTER",
+      "existing_owner": "Existing unified-router and Source operation-contract owners",
+      "scope": "A claimed router-actuation path",
+      "action": "Obtain the actual native skill/body and its called ingress/dispatch implementation using its authorized reader. Keep source_capabilities metadata separate from vendor source.skills.catalog and catalog_sha256. Trace how selection reaches the executor.",
+      "acceptance_predicate": "The native producer→selection→dispatcher→consumer relationship is bound; metadata alone is not acceptance.",
+      "positive_case": "The expected native body and call-site are available under the current contract.",
+      "negative_case": "The vendor-reference hash or a missing-argument error is not relabeled a native skill read or a route failure.",
+      "references": [
+        {
+          "source_id": "S21",
+          "start_line": 77,
+          "end_line": 85,
+          "quote_sha256": "e7516b8133b7da36040d3d3c073c4b7fd5560f23e84a629e875b09b2e3ce1a9f",
+          "anchor_text": "### 2.2 Discovery improved"
+        },
+        {
+          "source_id": "S22",
+          "start_line": 63,
+          "end_line": 81,
+          "quote_sha256": "e6e11453cd3db457a6c33121a5fef238588f2fc691fcbaa62d611822ea397a79",
+          "anchor_text": "\"route_id\": \"source.skills.read\""
+        }
+      ],
+      "depends_on": [
+        "EX01"
+      ],
+      "repository_or_service_locators": [
+        "unified-router native skill and actual ingress (current paths to bind)",
+        "source_capabilities metadata",
+        "Native operation contract distinct from vendor-reference catalog"
+      ],
+      "work_packages": [
+        "WP00",
+        "WP02"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": null,
+      "current_binding_gap": "Current implementation, authority, and actual consumer result must be bound by the named owner; this source packet does not establish them.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 4
+    },
+    {
+      "id": "EX05",
+      "title": "Preserve the complete objective through a cheap single ingress decision",
+      "lane": "ROUTER",
+      "existing_owner": "Existing ingress/router and API/CLI/MCP adapter owners",
+      "scope": "Every selected general-purpose request",
+      "action": "Preserve full input, relevant session/stakes/context and explicit-command semantics. Select capability, depth/modifier, evidence/state, and executor under hard constraints. Keep the plugin an existing gateway wrapper rather than a second activation engine.",
+      "acceptance_predicate": "The actual selected service receives the intended input and its chosen treatment; no recurring conferral loop or irrelevant fixed-domain truncation is introduced.",
+      "positive_case": "An exact native query can be selected with no model call when that is the requested product.",
+      "negative_case": "An ordinary general request is not silently reduced to historical Drug search or first-200-character input; no new endpoint is invented from a logical design name.",
+      "references": [
+        {
+          "source_id": "S32",
+          "start_line": 41,
+          "end_line": 58,
+          "quote_sha256": "658eed7365da02c10d261858fdc1c32507c7d7daf5a10e38fc993b0b838ee474",
+          "anchor_text": "Preserve the existing router"
+        },
+        {
+          "source_id": "S28",
+          "start_line": 138,
+          "end_line": 143,
+          "quote_sha256": "9e2d41fdcc7d45c5bdb9dea4f31d16038c1c97aa36ec331b6d110ba13c488131",
+          "anchor_text": "### The actual vehicle mismatch found in code"
+        },
+        {
+          "source_id": "S05",
+          "start_line": 5,
+          "end_line": 13,
+          "quote_sha256": "f9d9c414f6becb62a8e10f9cc118165f2d63a74690296b68b68284bb4728cf5a",
+          "anchor_text": "## Select before expanding"
+        }
+      ],
+      "depends_on": [
+        "EX04"
+      ],
+      "repository_or_service_locators": [
+        "Current source_turn and existing corpus/source-chat adapters",
+        "Existing activation path; no activate_skill inner loop"
+      ],
+      "work_packages": [
+        "WP02"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": null,
+      "current_binding_gap": "Current implementation, authority, and actual consumer result must be bound by the named owner; this source packet does not establish them.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 5
+    },
+    {
+      "id": "EX06",
+      "title": "Enforce actual tool scope at dispatch rather than trust caller labels",
+      "lane": "DISPATCH",
+      "existing_owner": "Server-owned operation classification and policy dispatcher",
+      "scope": "Before the effect-bearing leaf",
+      "action": "Bind declared operation metadata, principal, target, permission, and resource envelope. Ensure the dispatcher obeys denial before execution; preserve eligible reads and explicitly scoped writes.",
+      "acceptance_predicate": "A denied operation does not actuate; a legitimate bounded operation still completes.",
+      "positive_case": "A permitted operation executes through the actual gateway.",
+      "negative_case": "A built-in mutator labeled READ, an unscoped custom WRITE, or a different interface cannot inherit permission.",
+      "references": [
+        {
+          "source_id": "S28",
+          "start_line": 304,
+          "end_line": 350,
+          "quote_sha256": "3e9127a06773204c6e4cc6e20fb87ae85763ebc0b9c3fcf1039fe6bdba387a1d",
+          "anchor_text": "## 8. What was actually implemented"
+        },
+        {
+          "source_id": "S21",
+          "start_line": 350,
+          "end_line": 358,
+          "quote_sha256": "710bc8d6eabe093f6ab01b62a4b9034a07b54e457b068509a3e36920d44e204f",
+          "anchor_text": "## 13. No permission inherited"
+        }
+      ],
+      "depends_on": [
+        "EX04"
+      ],
+      "repository_or_service_locators": [
+        "core/lifecycle/tool_policy_gateway.py",
+        "Actual consuming dispatchers; historical PR #4102 must be reconciled"
+      ],
+      "work_packages": [
+        "WP04"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": null,
+      "current_binding_gap": "Current implementation, authority, and actual consumer result must be bound by the named owner; this source packet does not establish them.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 6
+    },
+    {
+      "id": "EX07",
+      "title": "Preserve query/body argument semantics and claimant attribution",
+      "lane": "API_RESULT",
+      "existing_owner": "Existing connector route-mirror/API owner for #4265",
+      "scope": "Selected mirrored routes, not all plugin content",
+      "action": "Bind each affected route to its actual API schema; split query versus body arguments as required. Preserve the authentic acting seat where the contract requires it. Use the reported nine-route/49-test delta only as historical evidence until reconciled.",
+      "acceptance_predicate": "The intended client request reaches the actual parameters and claims identify the expected seat rather than an accidental generic actor.",
+      "positive_case": "One admitted-client claim yields the expected target row and matching actor.",
+      "negative_case": "Unsupported/misplaced arguments refuse honestly; a passing publication witness does not stamp bash:git-mutation.",
+      "references": [
+        {
+          "source_id": "S01",
+          "start_line": 790,
+          "end_line": 805,
+          "quote_sha256": "4c7ecead10012202f7f566f5d3825ef5fa03463973b5ef3fb4e63f5a18a41ec8",
+          "anchor_text": "### A5. Deltas since the plan (09-15 → 09-17) — REFUTED"
+        },
+        {
+          "source_id": "S01",
+          "start_line": 239,
+          "end_line": 244,
+          "quote_sha256": "e840ede5b47de0df155a0c5d4d97f80a5bc4965f3f0dd6ea9fe6fa558662bc8f",
+          "anchor_text": "CLAIM: PR #4265 publication"
+        },
+        {
+          "source_id": "S01",
+          "start_line": 827,
+          "end_line": 845,
+          "quote_sha256": "71dfe86689a02b5778291e64f6fa8f14218fd57901b411541f36e12dd8b8eef0",
+          "anchor_text": "### Round 1 (receipts read back"
+        }
+      ],
+      "depends_on": [
+        "EX01",
+        "EX06"
+      ],
+      "repository_or_service_locators": [
+        "#4265 connector route mirror (exact files from current diff)",
+        "Actual API schema and claim consumer"
+      ],
+      "work_packages": [
+        "WP02",
+        "WP03"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": null,
+      "current_binding_gap": "Current implementation, authority, and actual consumer result must be bound by the named owner; this source packet does not establish them.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 7
+    },
+    {
+      "id": "EX08",
+      "title": "Separate incomplete provider responses from successful execution",
+      "lane": "API_RESULT",
+      "existing_owner": "Provider adapter and downstream API/result owners for #4259",
+      "scope": "Non-completed provider-response handling",
+      "action": "Bind the current #4259 change: preserve PROVIDER_ATTEMPT_UNRESOLVED delegation receipt and raise ProviderError. Keep HTTP 502 scoped to the bundled consumer test. Account for partial output, unknown effect, and retry ownership.",
+      "acceptance_predicate": "The actual incomplete provider result remains visible through the admitted client and receipt.",
+      "positive_case": "A completed provider operation retains its legitimate success path.",
+      "negative_case": "A non-completed response does not become success; no test invents a universal 502 guarantee.",
+      "references": [
+        {
+          "source_id": "S01",
+          "start_line": 771,
+          "end_line": 771,
+          "quote_sha256": "1001a8e1b8b3b646b0647f49b5d2ca2c7318312bb6c3a6230a3b2b5a1f1f30cb",
+          "anchor_text": "Both peer corrections check out"
+        },
+        {
+          "source_id": "S01",
+          "start_line": 790,
+          "end_line": 805,
+          "quote_sha256": "4c7ecead10012202f7f566f5d3825ef5fa03463973b5ef3fb4e63f5a18a41ec8",
+          "anchor_text": "### A5. Deltas since the plan (09-15 → 09-17) — REFUTED"
+        },
+        {
+          "source_id": "S32",
+          "start_line": 144,
+          "end_line": 161,
+          "quote_sha256": "eceae96ac28712c5d8cd02b5611a050834bfb0cfd807ebe0da2852244edde1fd",
+          "anchor_text": "### Failure and fallback behavior"
+        }
+      ],
+      "depends_on": [
+        "EX01"
+      ],
+      "repository_or_service_locators": [
+        "#4259 current provider adapter diff",
+        "ProviderError consumer translation",
+        "Existing delegation receipt owner"
+      ],
+      "work_packages": [
+        "WP03",
+        "WP04"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": null,
+      "current_binding_gap": "Current implementation, authority, and actual consumer result must be bound by the named owner; this source packet does not establish them.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 8
+    },
+    {
+      "id": "EX09",
+      "title": "Make complete structured-result delivery an actual consumer predicate",
+      "lane": "API_RESULT",
+      "existing_owner": "Existing serializer/normalizer/connector result owner; layer to localize",
+      "scope": "Selected large or nested result path",
+      "action": "Reproduce the exposed incomplete JSON case with safe test data at the bound operation/normalizer boundary. Inspect transport, serialization, normalization, and reader separately. Deliver the complete scoped product or an explicit partial result with a supported continuation/reference; do not add a broad replacement transport.",
+      "acceptance_predicate": "The consumer can parse/resolve the intended output and its omissions; clean outer state never certifies an incomplete inner product.",
+      "positive_case": "Complete authorized references and qualifications survive a large response.",
+      "negative_case": "Use the two retained catalog/readback cases as evidence of a failure class, not raw bytes or proof of which layer cut them.",
+      "references": [
+        {
+          "source_id": "S21",
+          "start_line": 85,
+          "end_line": 99,
+          "quote_sha256": "12a9bf4d7302a44a797114b45b019292ade6eeb3ddc62617a87154656715a8a4",
+          "anchor_text": "### 2.3 A current result-integrity"
+        },
+        {
+          "source_id": "S28",
+          "start_line": 397,
+          "end_line": 415,
+          "quote_sha256": "3e6d98c426a3743126f894319b564d9d05f47339a6e249b0f6a132d1d4c87cb4",
+          "anchor_text": "### Completion semantics must change"
+        }
+      ],
+      "depends_on": [
+        "EX01"
+      ],
+      "repository_or_service_locators": [
+        "source-mcp/source_mcp/http_client.py (historical locator)",
+        "source-mcp/source_mcp/sse.py (historical locator)",
+        "Actual current final.payload.answer producer and reader"
+      ],
+      "work_packages": [
+        "WP02",
+        "WP03"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": null,
+      "current_binding_gap": "Current implementation, authority, and actual consumer result must be bound by the named owner; this source packet does not establish them.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 9
+    },
+    {
+      "id": "EX10",
+      "title": "Preserve degraded, streamed, and unavailable output through normalization",
+      "lane": "API_RESULT",
+      "existing_owner": "Existing stream consumer and normalized response owner",
+      "scope": "Any selected streaming or degraded path",
+      "action": "Retain error frames, missing terminal frames, unavailable completion and partial content. Preserve complete witness references and actual output qualification. Read-only valid results need their output contract, not artificial mutation proof.",
+      "acceptance_predicate": "The reader sees the actual incomplete/unavailable status while retaining safe useful output.",
+      "positive_case": "A clean complete stream stays usable without extra generic review.",
+      "negative_case": "HTTP 200, empty error arrays, or a nonempty receipt string do not hide a truncated stream or unavailable model.",
+      "references": [
+        {
+          "source_id": "S28",
+          "start_line": 397,
+          "end_line": 415,
+          "quote_sha256": "3e6d98c426a3743126f894319b564d9d05f47339a6e249b0f6a132d1d4c87cb4",
+          "anchor_text": "### Completion semantics must change"
+        },
+        {
+          "source_id": "S21",
+          "start_line": 358,
+          "end_line": 379,
+          "quote_sha256": "41360d042d102f4679e1544bbfbb1fc2aa6ba288713f13e60025a13a926107ad",
+          "anchor_text": "## 14. Preserve useful failure"
+        }
+      ],
+      "depends_on": [
+        "EX09"
+      ],
+      "repository_or_service_locators": [
+        "Existing SSE collapse/normalization",
+        "Actual client rendering and result parser"
+      ],
+      "work_packages": [
+        "WP02",
+        "WP03"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": null,
+      "current_binding_gap": "Current implementation, authority, and actual consumer result must be bound by the named owner; this source packet does not establish them.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 10
+    },
+    {
+      "id": "EX11",
+      "title": "Keep exact receipt evidence and dependent finalization compatible",
+      "lane": "FINALIZATION",
+      "existing_owner": "Existing finalizer plus trigger/receipt consumer",
+      "scope": "When recording completion for the selected product",
+      "action": "Check exact actor/domain/event/status/evidence and target reference, not receipt-ID existence alone. Reconcile the current EvidenceFinalizer and fn_record_skill_trigger_execution together; preserve valid failure recording and typed unverified success rather than downgrade a label and break its consumer.",
+      "acceptance_predicate": "No unverified effect is promoted and no valid existing recording path is silently disabled.",
+      "positive_case": "The operation-specific exact readback satisfies its applicable verifier.",
+      "negative_case": "Forged reference strings, conflicting identities, stale receipts, or mismatched actors do not become VERIFIED.",
+      "references": [
+        {
+          "source_id": "S28",
+          "start_line": 456,
+          "end_line": 491,
+          "quote_sha256": "5e78807c53dc233dbb298676912e88fbfe739b8b94c0aa22daa5552dfd734b32",
+          "anchor_text": "## 12. Completion: the finalizer"
+        }
+      ],
+      "depends_on": [
+        "EX01"
+      ],
+      "repository_or_service_locators": [
+        "core/lifecycle/evidence_finalizer.py",
+        "core/api/skill_execution.py",
+        "governance.fn_record_skill_trigger_execution"
+      ],
+      "work_packages": [
+        "WP03"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": null,
+      "current_binding_gap": "Current implementation, authority, and actual consumer result must be bound by the named owner; this source packet does not establish them.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 11
+    },
+    {
+      "id": "EX12",
+      "title": "Prepare the inherited connector delta without inventing current plugin bytes",
+      "lane": "PLUGIN",
+      "existing_owner": "6310327d under its current custody",
+      "scope": "Local patch preparation; not Source integration",
+      "action": "Run the inherited local checker/tests in their own directory. On a real bound base, run prepare_connector_delta.py with the actual full HEAD and a fresh disjoint output directory. Inspect its refusal and exact preimages; it has no apply operation.",
+      "acceptance_predicate": "An applicable review patch and preparation record are generated, or the exact base incompatibility is returned.",
+      "positive_case": "Synthetic controls demonstrate the stager output; a later real base produces a separately identified patch.",
+      "negative_case": "A stale version, changed inventory, secret literal, symlink, unexpected hook, or missing current base refuses; no fake metadata or current checkout reconstructed from an archive.",
+      "references": [
+        {
+          "source_id": "S03",
+          "start_line": 15,
+          "end_line": 33,
+          "quote_sha256": "b03b2731d39df0ed86b633522fd9b025acc1fea876f605151b9437791ac682bb",
+          "anchor_text": "## 2. Produce the minimum candidate"
+        },
+        {
+          "source_id": "S02",
+          "start_line": 78,
+          "end_line": 95,
+          "quote_sha256": "74dab0815373f5d57c05c0f3b048650eacf7bc82898415f1faed58f0b0556c12",
+          "anchor_text": "## Prepare a real review patch"
+        },
+        {
+          "source_id": "S14",
+          "start_line": 188,
+          "end_line": 206,
+          "quote_sha256": "4583f830f681f7190050d056bce6f63a8aee6db6302da48796a3d5fa4af55054",
+          "anchor_text": "def prepare("
+        }
+      ],
+      "depends_on": [
+        "EX02"
+      ],
+      "repository_or_service_locators": [
+        "Inherited tools/prepare_connector_delta.py",
+        "Actual plugins/source source tree"
+      ],
+      "work_packages": [
+        "WP00"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": "CMD02",
+      "current_binding_gap": "Current implementation, authority, and actual consumer result must be bound by the named owner; this source packet does not establish them.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 12
+    },
+    {
+      "id": "EX13",
+      "title": "Keep four skills and five commands as a version-bound package inventory",
+      "lane": "PLUGIN",
+      "existing_owner": "Connector package owner",
+      "scope": "Existing plugin front",
+      "action": "Preserve source-mcp-usage, source-levers, source-frontier-battery, cross-session-orchestration and the five reported command files. Resolve actual host namespaces at load time. Inventory JSON stays review data, not an installed registry.",
+      "acceptance_predicate": "Only the intended components load and the cross-session skill is present in the actual cache/load.",
+      "positive_case": "Four expected skills and five existing commands remain available.",
+      "negative_case": "CLI skills, PG rows, vendor references, or folder names do not certify native plugin presence; a changed actual inventory triggers scoped rebind rather than mass deletion.",
+      "references": [
+        {
+          "source_id": "S02",
+          "start_line": 16,
+          "end_line": 26,
+          "quote_sha256": "ec1dacfc00a1de6cf053ad3c82f22fcd5d0e8192d6ed13e2c6da92011a1c795e",
+          "anchor_text": "| Four skills |"
+        },
+        {
+          "source_id": "S03",
+          "start_line": 21,
+          "end_line": 33,
+          "quote_sha256": "ec786e11eceabd90a125804047303737b14f355af48cc913b19b73f54dc5fccc",
+          "anchor_text": "Allowed changes are:"
+        }
+      ],
+      "depends_on": [
+        "EX02"
+      ],
+      "repository_or_service_locators": [
+        "plugins/source/skills/*/SKILL.md",
+        "plugins/source/commands/*.md",
+        "contracts/SKILLS_MANIFEST.json is preparation only"
+      ],
+      "work_packages": [
+        "WP02"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": null,
+      "current_binding_gap": "Current implementation, authority, and actual consumer result must be bound by the named owner; this source packet does not establish them.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 13
+    },
+    {
+      "id": "EX14",
+      "title": "Install compact battery meta as a reference directory, not a second router",
+      "lane": "PLUGIN",
+      "existing_owner": "Existing source-frontier-battery owner",
+      "scope": "Prompt/contract bytes only",
+      "action": "Use the supplied append-only supplement and references. Carry the objective, decision-changing rule clause, exact evidence handles, scope and required result. Expand the selected reference only when needed. Preserve missing selector provenance, null battery status, disclosed VECTOR_SUBSTITUTE, and PROJECTION_DEBT.",
+      "acceptance_predicate": "The reader obtains sufficient relevant contract material without starting a native pair, timer, selector, or bulk doctrine load.",
+      "positive_case": "A load-bearing decision selects the existing pair owner; a residual-frontier objective resolves to its actual npass contract.",
+      "negative_case": "Naming a slash chain, duplicate routing, a classifier_fallback label, or a known-zero-row query toll is not execution/acceptance.",
+      "references": [
+        {
+          "source_id": "S05",
+          "start_line": 5,
+          "end_line": 25,
+          "quote_sha256": "db9e5db0ec9f0509e0d411fe7c547c37f7864836391944f7db654463e9713b5a",
+          "anchor_text": "## Select before expanding"
+        },
+        {
+          "source_id": "S19",
+          "start_line": 2,
+          "end_line": 16,
+          "quote_sha256": "0dd2f7a97bbb7b6e467dd9155cd008a94fe4a9ee93cb7ebc2f218e22e7fb7a5b",
+          "anchor_text": "## Connector meta:"
+        }
+      ],
+      "depends_on": [
+        "EX12",
+        "EX13"
+      ],
+      "repository_or_service_locators": [
+        "plugins/source/skills/source-frontier-battery/SKILL.md",
+        "Existing references/connector-meta directory"
+      ],
+      "work_packages": [
+        "WP02",
+        "WP05"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": null,
+      "current_binding_gap": "Current implementation, authority, and actual consumer result must be bound by the named owner; this source packet does not establish them.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 14
+    },
+    {
+      "id": "EX15",
+      "title": "Keep MCP identity and result meta in the existing usage skill",
+      "lane": "PLUGIN",
+      "existing_owner": "Existing source-mcp-usage owner",
+      "scope": "Prompt/contract bytes only",
+      "action": "Append the supplied current-schema, native/vendor namespace, identity distinction and complete-result guidance. Treat observation hashes as identities of their own objects. Do not turn a discovery listing or READ label into actuation authority.",
+      "acceptance_predicate": "The actual reader preserves namespace, scope, error, provider/fallback and result completeness.",
+      "positive_case": "The intended schema and complete evidence are consumed.",
+      "negative_case": "The vendor hash is not used to read a native router; malformed JSON is not repaired by invented missing values.",
+      "references": [
+        {
+          "source_id": "S20",
+          "start_line": 2,
+          "end_line": 10,
+          "quote_sha256": "43836442ac0ad7fbd0746b57c24c816b380f6676d00ed2d25724673a5b533579",
+          "anchor_text": "## Keep connection, execution, and evidence distinct"
+        },
+        {
+          "source_id": "S21",
+          "start_line": 77,
+          "end_line": 99,
+          "quote_sha256": "ef88cff91eaa0d54bf725af39931cf4ddbd1eedbef6accd07cedd008229d3f7b",
+          "anchor_text": "### 2.2 Discovery improved"
+        }
+      ],
+      "depends_on": [
+        "EX12",
+        "EX13"
+      ],
+      "repository_or_service_locators": [
+        "plugins/source/skills/source-mcp-usage/SKILL.md"
+      ],
+      "work_packages": [
+        "WP02",
+        "WP03"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": null,
+      "current_binding_gap": "Current implementation, authority, and actual consumer result must be bound by the named owner; this source packet does not establish them.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 15
+    },
+    {
+      "id": "EX16",
+      "title": "Preserve hook registration and estate precedence without copying B8",
+      "lane": "PLUGIN",
+      "existing_owner": "Existing plugin hooks owner; epoch owner stays separate",
+      "scope": "No runtime hook change in this payload",
+      "action": "Preserve actual SessionStart/UserPromptSubmit bytes and hook helper. Check silence when the existing estate detection conditions hold. Preserve Grok shadow-native single-owner behavior only where that adapter applies. No PreToolUse, Stop, timer, conferral or explicit duplicate manifest hooks is added.",
+      "acceptance_predicate": "Exactly the intended owning hook path executes once, or a specific native-owner gap is identified.",
+      "positive_case": "Estate detected yields plugin silence; non-estate host uses the existing front once under its actual contract.",
+      "negative_case": "An unhealthy detected epoch does not cause the plugin to execute duplicate policies; folder presence is not runtime health.",
+      "references": [
+        {
+          "source_id": "S08",
+          "start_line": 9,
+          "end_line": 19,
+          "quote_sha256": "42c8b256c26d2104ac86770f78c836524a02f5eaa4ad7f1791a91671b53e1892",
+          "anchor_text": "## Existing hooks remain"
+        },
+        {
+          "source_id": "S03",
+          "start_line": 43,
+          "end_line": 59,
+          "quote_sha256": "4aef4e56dde17571ac50ebad6af078f491c0ce0d8df65643fe15d62b9d8cf8e6",
+          "anchor_text": "## 4. Validate this actual candidate"
+        }
+      ],
+      "depends_on": [
+        "EX02"
+      ],
+      "repository_or_service_locators": [
+        "plugins/source/hooks/hooks.json",
+        "plugins/source/hooks/_common.py",
+        "Actual host-resolved hook registry"
+      ],
+      "work_packages": [
+        "WP04"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": null,
+      "current_binding_gap": "Current implementation, authority, and actual consumer result must be bound by the named owner; this source packet does not establish them.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 16
+    },
+    {
+      "id": "EX17",
+      "title": "Prove helper behavior unchanged by comments-only authoring",
+      "lane": "PLUGIN",
+      "existing_owner": "Frontier helper owner",
+      "scope": "Comments-only addition",
+      "action": "Apply the supplied comments to frontier_battery.py and compare Python AST before/after. Preserve the actual existing /api/activate wrapper; no selector/conferral implementation is copied.",
+      "acceptance_predicate": "AST and functional behavior are unchanged by this authoring delta.",
+      "positive_case": "Comments and references are present; known existing wrapper tests still pass.",
+      "negative_case": "A code change disguised as comments or a second router loop is rejected.",
+      "references": [
+        {
+          "source_id": "S03",
+          "start_line": 21,
+          "end_line": 33,
+          "quote_sha256": "ec786e11eceabd90a125804047303737b14f355af48cc913b19b73f54dc5fccc",
+          "anchor_text": "Allowed changes are:"
+        },
+        {
+          "source_id": "S03",
+          "start_line": 43,
+          "end_line": 59,
+          "quote_sha256": "4aef4e56dde17571ac50ebad6af078f491c0ce0d8df65643fe15d62b9d8cf8e6",
+          "anchor_text": "## 4. Validate this actual candidate"
+        }
+      ],
+      "depends_on": [
+        "EX12"
+      ],
+      "repository_or_service_locators": [
+        "plugins/source/scripts/frontier_battery.py"
+      ],
+      "work_packages": [
+        "WP02"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": null,
+      "current_binding_gap": "Current implementation, authority, and actual consumer result must be bound by the named owner; this source packet does not establish them.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 17
+    },
+    {
+      "id": "EX18",
+      "title": "Integrate reviewed payload and record the real release lock",
+      "lane": "PLUGIN",
+      "existing_owner": "Connector release owner; current authority required",
+      "scope": "Actual plugin candidate, not epoch/API deployment",
+      "action": "Apply only the reviewed owned diff after current preimage/applicability checks. Update both real plugin manifests and Source marketplace version when release allocation permits; inspect and invoke existing plugin_lock.py recorder. Keep historical 0.2.4→0.2.5 conditional.",
+      "acceptance_predicate": "Current candidate bytes, permitted component changes, real lock coverage and version fields agree under the actual checker.",
+      "positive_case": "Relevant tests and lock checks pass for this current candidate.",
+      "negative_case": "No fabricated MANIFEST_LOCK, occupied version reuse, direct cache editing, or mapping from API-reported version to installed cache.",
+      "references": [
+        {
+          "source_id": "S03",
+          "start_line": 59,
+          "end_line": 65,
+          "quote_sha256": "f83f44bd0247106f5aa2c009847e65d15a888163e73c5962958df117e4831f7a",
+          "anchor_text": "## 5. Record the existing release lock"
+        },
+        {
+          "source_id": "S02",
+          "start_line": 93,
+          "end_line": 93,
+          "quote_sha256": "1b7c91e750f3a37e21cdba36c425a7a57077ceab4c9b98ea77f70ef9d1290dca",
+          "anchor_text": "The emitted state is"
+        },
+        {
+          "source_id": "S03",
+          "start_line": 19,
+          "end_line": 19,
+          "quote_sha256": "246c699f783d446e4da6b00ff7a72d5d50757e4997ceb37af07e852e00eda021",
+          "anchor_text": "The authorized owner inspects"
+        }
+      ],
+      "depends_on": [
+        "EX12",
+        "EX14",
+        "EX15",
+        "EX16",
+        "EX17"
+      ],
+      "repository_or_service_locators": [
+        "plugins/source/.claude-plugin/plugin.json",
+        "plugins/source/.codex-plugin/plugin.json",
+        ".claude-plugin/marketplace.json",
+        "plugins/source/scripts/plugin_lock.py",
+        "plugins/source/MANIFEST_LOCK.json"
+      ],
+      "work_packages": [
+        "WP08"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": "CMD03",
+      "current_binding_gap": "Current implementation, authority, and actual consumer result must be bound by the named owner; this source packet does not establish them.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 18
+    },
+    {
+      "id": "EX19",
+      "title": "Qualify copied-cache and in-place host loading separately",
+      "lane": "PLUGIN_CLIENT",
+      "existing_owner": "Admitted Claude/Codex client and connector owner",
+      "scope": "Actual installed/load mode",
+      "action": "Use the supported installed-host update path only with authority. Observe host version, source identity, installed/cache path and resolved content. Check cross-session skill and complete reference loading; do not assume a version bump refreshes every host mode identically.",
+      "acceptance_predicate": "The intended host consumes the exact current candidate rather than only registering its name.",
+      "positive_case": "Intended skills/commands/hooks and source references are actually available in the admitted client.",
+      "negative_case": "Manifest equality, registration provenance or a cache directory does not become successful handshake, uptake or useful task.",
+      "references": [
+        {
+          "source_id": "S03",
+          "start_line": 65,
+          "end_line": 75,
+          "quote_sha256": "03ddae7c879110d4455dda50b9ddb34bc5aa1c8c20052ea8fe6b5fadef0fd641",
+          "anchor_text": "## 6. Native install/uptake"
+        },
+        {
+          "source_id": "S04",
+          "start_line": 9,
+          "end_line": 19,
+          "quote_sha256": "f027137adb40680ae62a3ae7d0312a2d7a690eb57016da8db7597b4c198085c5",
+          "anchor_text": "| Native loading |"
+        }
+      ],
+      "depends_on": [
+        "EX18"
+      ],
+      "repository_or_service_locators": [
+        "Actual host plugin load/cache",
+        "CAP-003 cache replacement",
+        "PKG-003 installed CLI/client arms"
+      ],
+      "work_packages": [
+        "WP02",
+        "WP08"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": null,
+      "current_binding_gap": "Current implementation, authority, and actual consumer result must be bound by the named owner; this source packet does not establish them.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 19
+    },
+    {
+      "id": "EX20",
+      "title": "Bind the authenticated gateway and schema seen by the actual client",
+      "lane": "PLUGIN_CLIENT",
+      "existing_owner": "Connector/API auth owner",
+      "scope": "Native client conformance",
+      "action": "Verify initialize/discovery and scoped identity on the intended single gateway. Keep catalog, schema fingerprint, generation, profile exposure, auth binding and active client cache distinct. Observe denied/valid credential arms with approved fixtures; never put tokens in this evidence packet.",
+      "acceptance_predicate": "The actual client has the intended current exposed contract and binding; unexposed operations remain unexposed.",
+      "positive_case": "A permitted native query succeeds with its exact user and READ-class receipt.",
+      "negative_case": "A catalog hash alone does not certify schema equivalence; a valid identifier alone does not authorize another principal.",
+      "references": [
+        {
+          "source_id": "S04",
+          "start_line": 15,
+          "end_line": 17,
+          "quote_sha256": "4550dc33b6cd9dddd854e476e0dee92eb2f2ee27f896c7bbb2c5e30868e5e7d1",
+          "anchor_text": "| Gateway |"
+        },
+        {
+          "source_id": "S21",
+          "start_line": 52,
+          "end_line": 77,
+          "quote_sha256": "e33e2fac9a8545a87bd516cc73139b4f11fd0352aa53b803c1e12f18d7bd3ad1",
+          "anchor_text": "### 2.1 Fresh identity"
+        },
+        {
+          "source_id": "S01",
+          "start_line": 32,
+          "end_line": 115,
+          "quote_sha256": "e5ea279e5be8c89d8e32b79e1caca307a7b0e3448ac5c5dcf5ebbc44f2762038",
+          "anchor_text": "A3. Delivered milestones"
+        }
+      ],
+      "depends_on": [
+        "EX19"
+      ],
+      "repository_or_service_locators": [
+        "https://mcp.thesrc.ai/mcp/ (reported canonical gateway)",
+        "source_catalog_identity and current native schemas",
+        "AUTH-001–004 applicable arms"
+      ],
+      "work_packages": [
+        "WP02",
+        "WP04"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": null,
+      "current_binding_gap": "Current implementation, authority, and actual consumer result must be bound by the named owner; this source packet does not establish them.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 20
+    },
+    {
+      "id": "EX21",
+      "title": "Show one useful connector result and independently read it back",
+      "lane": "PLUGIN_CLIENT",
+      "existing_owner": "Actual product reader and applicable acceptance owner",
+      "scope": "First selected admitted-client outcome",
+      "action": "Choose a supported task and approved data, not another capability census. Bind actual request, chosen operation, full result, receipt and correct reader interpretation. Observe independent readback where the owner contract requires it. Decide the next action from that actual result.",
+      "acceptance_predicate": "The declared useful result is consumed with evidence and limitations intact.",
+      "positive_case": "An existing technical context/retrieval task reaches useful output without unnecessary native work.",
+      "negative_case": "An install, health check, receipt row, or malformed inner answer is not delivery.",
+      "references": [
+        {
+          "source_id": "S01",
+          "start_line": 16,
+          "end_line": 25,
+          "quote_sha256": "feb0d8a8bfbfafe308a7c9e31316efe9a98a72a7e4fd6902eaa938074d51b212",
+          "anchor_text": "A1. North Star and invariants"
+        },
+        {
+          "source_id": "S04",
+          "start_line": 19,
+          "end_line": 19,
+          "quote_sha256": "c1204a11601269cf06e7b15733ad1b54116082c7f8b55cf2c928b58d334a3cdc",
+          "anchor_text": "| Actual utility |"
+        },
+        {
+          "source_id": "S28",
+          "start_line": 701,
+          "end_line": 727,
+          "quote_sha256": "cb308b407b781d95c981e5f1806d87ac337c7ddc3114a7c01ea4f2fd5f744224",
+          "anchor_text": "## 18. Acceptance matrix"
+        }
+      ],
+      "depends_on": [
+        "EX20",
+        "EX09"
+      ],
+      "repository_or_service_locators": [
+        "Chosen existing Source read/product route",
+        "Actual native reader",
+        "Applicable independent outcome readback"
+      ],
+      "work_packages": [
+        "WP02",
+        "WP03",
+        "WP08"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": null,
+      "current_binding_gap": "Current implementation, authority, and actual consumer result must be bound by the named owner; this source packet does not establish them.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 21
+    },
+    {
+      "id": "EX22",
+      "title": "Respect the conditional D_2 API release and recovery lock",
+      "lane": "MASTER_PATH",
+      "existing_owner": "Existing API release owner with da60e026 r2+ coordination",
+      "scope": "D_2 step 2; not the plugin release or hook epoch",
+      "action": "Refresh exact current PR/release state only for #4259/#4265 and conditional #4267. Probe the existing recovery gateway status because lock dd947321 was reported possibly pending. Do not repeat a pending release or assume a merge grant from this handoff. One authorized API deploy follows the applicable controls.",
+      "acceptance_predicate": "Exact served candidate plus real provider-unresolved and seat-claim results are observed, or the exact gate holds release.",
+      "positive_case": "Already-served effects remain correct; newly released effects are read through an admitted client.",
+      "negative_case": "A clean PR, SUSTAIN R0, no-error health response, or obsolete premise is not release acceptance.",
+      "references": [
+        {
+          "source_id": "S01",
+          "start_line": 852,
+          "end_line": 856,
+          "quote_sha256": "d06988450c5b82d5313c6b23902fbb08b38e3bcc8321aa37e5c5e7f2dedc3a80",
+          "anchor_text": "### D_2 (revision for round 2)"
+        },
+        {
+          "source_id": "S01",
+          "start_line": 866,
+          "end_line": 875,
+          "quote_sha256": "2957edcd5a7562e412c5e14354c73f20c1698d8c2a5890152980f8c42a30f461",
+          "anchor_text": "2. Conditional release: merge #4259 + #4265 (and #4267 if clean)"
+        }
+      ],
+      "depends_on": [
+        "EX03",
+        "EX07",
+        "EX08"
+      ],
+      "repository_or_service_locators": [
+        "Existing recovery gateway --status contract to bind",
+        "Current #4259 / #4265 / conditional #4267",
+        "Actual API release and rollback owner"
+      ],
+      "work_packages": [
+        "WP08"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": null,
+      "current_binding_gap": "Current PR states, release-lock state, release authority and exact executable gateway invocation have not been read in this synthesis.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 22
+    },
+    {
+      "id": "EX23",
+      "title": "Carry client breadth through source.utility.evaluate without minting proxy learning",
+      "lane": "MASTER_PATH",
+      "existing_owner": "HAR-001, CAP-003 and PKG-003 current owners",
+      "scope": "D_2 step 3",
+      "action": "Run each applicable admitted-client arm: denied-effect/authorized-sandbox effect, cache replacement, installed CLI behavior. Preserve actor distinctness and the actual environment. Submit only qualified observed outcomes using the current utility-evaluation contract.",
+      "acceptance_predicate": "Each arm has its own actual acceptance and utility disposition; evaluator return is not recurrence or learned benefit.",
+      "positive_case": "A valid client result reaches the appropriate evaluator.",
+      "negative_case": "One curator-profile read, synthetic test, or zero-token cwd refusal is not all-client breadth; no claim of learning from CONTINUE_DELIVERY.",
+      "references": [
+        {
+          "source_id": "S01",
+          "start_line": 115,
+          "end_line": 126,
+          "quote_sha256": "c3681f9c8e0b9253c145a19d87a016bd4c45832432d73041e37080aabc4afaa8",
+          "anchor_text": "A4. Open obligations"
+        },
+        {
+          "source_id": "S01",
+          "start_line": 871,
+          "end_line": 876,
+          "quote_sha256": "573bff5d35e5e6231f57959acfeb1cf7fef8b329acaa5d0f0ce628b3bf7ae826",
+          "anchor_text": "3. Client breadth next"
+        },
+        {
+          "source_id": "S01",
+          "start_line": 66,
+          "end_line": 70,
+          "quote_sha256": "eccbeb94aa0cc2ec6e74e49dfe45d843b70b7d2a6e1b4c8ae7cb67d468ff82d1",
+          "anchor_text": "│ 9   │ Utility evaluator"
+        }
+      ],
+      "depends_on": [
+        "EX01"
+      ],
+      "repository_or_service_locators": [
+        "HAR-001",
+        "CAP-003",
+        "PKG-003 CLI arm",
+        "source.utility.evaluate schema to bind"
+      ],
+      "work_packages": [
+        "WP06",
+        "WP08"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": null,
+      "current_binding_gap": "Current implementation, authority, and actual consumer result must be bound by the named owner; this source packet does not establish them.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 23
+    },
+    {
+      "id": "EX24",
+      "title": "Keep carrier and operator hygiene as distinct later owner obligations",
+      "lane": "MASTER_PATH",
+      "existing_owner": "F001/Codex owner; separate operator and Casa owner",
+      "scope": "D_2 steps 5–6, dated September 23 return plan",
+      "action": "Preserve F001/CAP-008/F075/F052 deferral and actual current custody. Keep migration 9031 double-lease, pre-push gate, quality guard where applicable, and Casa sign-in in their own owners. Do not bake dates or these actions into startup prompts as automatic behavior.",
+      "acceptance_predicate": "Unperformed obligations are not erased, made universal blockers, or silently executed by connector packaging.",
+      "positive_case": "An available independent client task continues under its own authority.",
+      "negative_case": "Expired calendar assumptions or a paired decision do not create a carrier capability or Casa mutation grant.",
+      "references": [
+        {
+          "source_id": "S01",
+          "start_line": 874,
+          "end_line": 876,
+          "quote_sha256": "f81e9ff4734917e913f94ddc363011586e747656132a6075a0c1062735abdf3f",
+          "anchor_text": "5. F001 carrier binding deferred"
+        },
+        {
+          "source_id": "S01",
+          "start_line": 881,
+          "end_line": 881,
+          "quote_sha256": "5c3a9168a1842ac2e5e0f33172791a097c9337ed949817fbe362b9a266e99282",
+          "anchor_text": "6. Operator hygiene unchanged."
+        },
+        {
+          "source_id": "S01",
+          "start_line": 889,
+          "end_line": 892,
+          "quote_sha256": "103e2bef505ac784bb1dc430e3710db168ff054275b35e466db4a39bb64582de",
+          "anchor_text": "**Custody:**"
+        },
+        {
+          "source_id": "S03",
+          "start_line": 63,
+          "end_line": 63,
+          "quote_sha256": "2aae6d2c7548c716b39e61799fd9a7a7650ddde9f80e8b6742fcc4060332ee26",
+          "anchor_text": "Plugin 0.2.5, local source-mcp"
+        }
+      ],
+      "depends_on": [
+        "EX01"
+      ],
+      "repository_or_service_locators": [
+        "F001",
+        "CAP-008",
+        "F075",
+        "F052",
+        "9031",
+        "Existing pre-push and Casa owners"
+      ],
+      "work_packages": [
+        "WP00",
+        "WP04"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": null,
+      "current_binding_gap": "Current implementation, authority, and actual consumer result must be bound by the named owner; this source packet does not establish them.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 24
+    },
+    {
+      "id": "EX25",
+      "title": "Keep the B8 candidate and hook epoch under their registered owners",
+      "lane": "HOOK_EPOCH",
+      "existing_owner": "cadc7a87 hook owner; dc64363e release owner; 91d17c55 conditional stamper",
+      "scope": "Native hook runtime only",
+      "action": "Bind _bash_ingest_census at the registered unified-pre-tool-gate path. Correct and qualify its critical-path behavior without violating required coverage. Seal both #4218 and B8 in the intended epoch; include stamper only if ready. Do not package these native hooks into plugins/source.",
+      "acceptance_predicate": "The candidate contains the intended descriptor-bound implementation before installation.",
+      "positive_case": "The applicable policy remains effective while the expensive census leaves the critical path.",
+      "negative_case": "A patch to unregistered pre-ingest-census.py, checkout HEAD alone, or more timeout is not accepted as installed B8 behavior.",
+      "references": [
+        {
+          "source_id": "S09",
+          "start_line": 19,
+          "end_line": 22,
+          "quote_sha256": "330fe94f7645bab958dd4f42092292c42ec5651a38976841d33cda4e5ce8fa2f",
+          "anchor_text": "Return rank is not execution order"
+        },
+        {
+          "source_id": "S38",
+          "start_line": 11,
+          "end_line": 51,
+          "quote_sha256": "edfbfa59ab303321cd7ce6601ddf972d239e9299d57a66e8db12e946281e3b04",
+          "anchor_text": "## UC02"
+        },
+        {
+          "source_id": "S08",
+          "start_line": 15,
+          "end_line": 17,
+          "quote_sha256": "394b71aca41c2e815e8f70da31f26b16d6673a565975eabfa9fab28e0dccd8de",
+          "anchor_text": "## Epochs are another owner"
+        }
+      ],
+      "depends_on": [
+        "EX01"
+      ],
+      "repository_or_service_locators": [
+        ".claude/hooks/unified-pre-tool-gate.py::_bash_ingest_census",
+        "Sealed epoch hooks.toml and lock",
+        "#4218 + B8 release candidate"
+      ],
+      "work_packages": [
+        "WP04",
+        "WP08"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": null,
+      "current_binding_gap": "Current implementation, authority, and actual consumer result must be bound by the named owner; this source packet does not establish them.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 25
+    },
+    {
+      "id": "EX26",
+      "title": "Prepare sealed-runtime registration through the custody wrapper",
+      "lane": "HOOK_EPOCH",
+      "existing_owner": "dc64363e and existing epoch installer owner",
+      "scope": "Prepare only when separately selected; never a plugin side effect",
+      "action": "Use the existing wrapper to validate bootstrap/installer hashes, isolated dependencies, _EpochFinder isolation, exact generated commands, old pin verification, event roster, coverage superset, timeouts and fresh host preimages. Descriptor count 77 is reported candidate-specific, not a universal invariant.",
+      "acceptance_predicate": "Preparation identifies exact before/after registration bytes and refuses drift without applying them.",
+      "positive_case": "Retained non-Source commands and valid old registrations survive a valid plan.",
+      "negative_case": "Ambient checkout core imports, drifted legacy pins or coverage shrink refuse; import success is not worker/Cloud readiness.",
+      "references": [
+        {
+          "source_id": "S38",
+          "start_line": 11,
+          "end_line": 51,
+          "quote_sha256": "edfbfa59ab303321cd7ce6601ddf972d239e9299d57a66e8db12e946281e3b04",
+          "anchor_text": "## UC02"
+        },
+        {
+          "source_id": "S08",
+          "start_line": 15,
+          "end_line": 17,
+          "quote_sha256": "394b71aca41c2e815e8f70da31f26b16d6673a565975eabfa9fab28e0dccd8de",
+          "anchor_text": "## Epochs are another owner"
+        }
+      ],
+      "depends_on": [
+        "EX25"
+      ],
+      "repository_or_service_locators": [
+        "scripts/governance/install_hook_epoch_persistent.py",
+        "core/contracts/hook_epoch_installation.py::prepare_install",
+        "Actual persistent epoch store"
+      ],
+      "work_packages": [
+        "WP04"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": "CMD04",
+      "current_binding_gap": "Current implementation, authority, and actual consumer result must be bound by the named owner; this source packet does not establish them.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 26
+    },
+    {
+      "id": "EX27",
+      "title": "Apply or recover registrations without claiming native uptake",
+      "lane": "HOOK_EPOCH",
+      "existing_owner": "Exclusive release/operator config writer",
+      "scope": "Separately authorized epoch application/recovery",
+      "action": "Under the existing lock, require under-lock repreparation equality, journal APPLYING, live preimage hash, per-file atomic replace and postimage readback. An APPLYING journal requires recover_install; foreign bytes refuse. Keep all-harness scope distinct from instantaneous fleet atomicity.",
+      "acceptance_predicate": "The installer reaches its actual REGISTRATIONS_WRITTEN_NATIVE_UPTAKE_UNPROVED state, or preserves the interruption/conflict.",
+      "positive_case": "All intended pin files have their expected written bytes.",
+      "negative_case": "Repeated --apply, manual journal deletion, unrelated concurrent editing, or partial writes cannot be relabeled complete host uptake.",
+      "references": [
+        {
+          "source_id": "S38",
+          "start_line": 39,
+          "end_line": 51,
+          "quote_sha256": "65004e5659a235f6232a1756010d293a82b059c34b8b74c30a0162a71270f38e",
+          "anchor_text": "**`install_epoch(plan)`**"
+        },
+        {
+          "source_id": "S08",
+          "start_line": 15,
+          "end_line": 17,
+          "quote_sha256": "394b71aca41c2e815e8f70da31f26b16d6673a565975eabfa9fab28e0dccd8de",
+          "anchor_text": "## Epochs are another owner"
+        }
+      ],
+      "depends_on": [
+        "EX26"
+      ],
+      "repository_or_service_locators": [
+        "core/contracts/hook_epoch_installation.py::install_epoch / recover_install",
+        ".thesrc/.epoch-install.lock",
+        ".thesrc/epoch-install-transaction.json"
+      ],
+      "work_packages": [
+        "WP04",
+        "WP08"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": "CMD05",
+      "current_binding_gap": "Current implementation, authority, and actual consumer result must be bound by the named owner; this source packet does not establish them.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 27
+    },
+    {
+      "id": "EX28",
+      "title": "Observe native reload and event execution on the selected pin",
+      "lane": "HOOK_EPOCH",
+      "existing_owner": "Actual Claude/Codex/Grok host owner",
+      "scope": "After registration writing; separate from API/plugin release",
+      "action": "Reload through the actual supported host or start a new session. Bind loaded epoch, expected/compiled/locked bundle, optional runtime identity, event descriptor and B8 behavior. Retain old trees/recovery provenance; zero active old references does not mean delete history.",
+      "acceptance_predicate": "The actual event uses the selected corrected implementation and preserves failure semantics and single ownership.",
+      "positive_case": "B8 event readback shows the intended runtime and behavior.",
+      "negative_case": "Settings bytes, epoch folder presence, API generation, successful imports, and a shadow no-op do not establish native uptake.",
+      "references": [
+        {
+          "source_id": "S08",
+          "start_line": 3,
+          "end_line": 19,
+          "quote_sha256": "7664f57ae77eac836f0c797ce64a2acdedca9f25394845cfdd8acd18261fd8f3",
+          "anchor_text": "## Keep runtime identities separate"
+        },
+        {
+          "source_id": "S38",
+          "start_line": 47,
+          "end_line": 49,
+          "quote_sha256": "5a7ec1a4ab1adaf10f0fa13af4274bfbf8a17ef7666e3eb6f4cfaf2419c3fef2",
+          "anchor_text": "7. Journal →"
+        },
+        {
+          "source_id": "S21",
+          "start_line": 340,
+          "end_line": 340,
+          "quote_sha256": "851904320fb08a94400fd45dd80d641963c3be252ed099c9d87523ce08f90576",
+          "anchor_text": "| Sealed epoch / bundle / runtime |"
+        }
+      ],
+      "depends_on": [
+        "EX27"
+      ],
+      "repository_or_service_locators": [
+        "Actual native host loaded hook registration",
+        "Sealed run_lifecycle_hook.py and hook_runtime.py",
+        "Event-specific B8 readback"
+      ],
+      "work_packages": [
+        "WP04",
+        "WP08"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": null,
+      "current_binding_gap": "Current implementation, authority, and actual consumer result must be bound by the named owner; this source packet does not establish them.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 28
+    },
+    {
+      "id": "EX29",
+      "title": "Bind effective hook dispatch mode and connection contract",
+      "lane": "TEMPORAL",
+      "existing_owner": "Existing hook effect-intent dispatcher, not residual-board drainer",
+      "scope": "Only the selected hook dispatch path",
+      "action": "Distinguish installed temporal prefix from direct dispatcher shadow default and explicit host override. Bind the actual allowed connection/config source. Isolated import success is dependency readiness only. Preserve unconfirmed start, explicit deferred spool, and confirmed workflow states separately.",
+      "acceptance_predicate": "The event record identifies its effective mode and actual dispatch disposition.",
+      "positive_case": "Shadow validates with no workflow; confirmed temporal start retains effect_proven=false.",
+      "negative_case": "Spool retention, a Cloud-default label, or a workflow handle does not certify polling, activity or target acceptance.",
+      "references": [
+        {
+          "source_id": "S38",
+          "start_line": 51,
+          "end_line": 72,
+          "quote_sha256": "835d1e7cf13ae7dae9460fb163c0ec0a40be7124476cafac6c003b19aa1850ab",
+          "anchor_text": "## UC04"
+        },
+        {
+          "source_id": "S08",
+          "start_line": 19,
+          "end_line": 25,
+          "quote_sha256": "f30ceef69bbb2f93808b645cc4e99a854d7271a9b916b062cab43972d132c59e",
+          "anchor_text": "## Durable lifecycle"
+        }
+      ],
+      "depends_on": [
+        "EX28"
+      ],
+      "repository_or_service_locators": [
+        "dispatch_hook_effect_intents.py",
+        "cloud_connect.connect(allow_repo_env=False), source-reported contract",
+        "thesrc-hook-effect-intents queue"
+      ],
+      "work_packages": [
+        "WP04"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": null,
+      "current_binding_gap": "Current implementation, authority, and actual consumer result must be bound by the named owner; this source packet does not establish them.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 29
+    },
+    {
+      "id": "EX30",
+      "title": "Preserve activity-specific retries, epoch identity and target ceilings",
+      "lane": "TEMPORAL",
+      "existing_owner": "HOOK_DECISION_RECEIPT and LEGACY_POLICY_ACTUATION activity owners",
+      "scope": "After actual hook workflow consumption",
+      "action": "Use exact row readback for decision-receipt application. Legacy child keeps one retry/attempt policy, bounded resources, sealed implementation hash, current resource lock and required target readback. Delayed intents must not silently bind a newer implementation.",
+      "acceptance_predicate": "Each activity earns only its own receipt/actuation ceiling, with unresolved target effect still explicit.",
+      "positive_case": "Exact hook_fire_log row matches its intent; bounded legacy execution reports its accepted implementation.",
+      "negative_case": "New idempotency key, changed expected hash, prefix row count or child exit cannot conceal ambiguous replay or implementation drift.",
+      "references": [
+        {
+          "source_id": "S38",
+          "start_line": 63,
+          "end_line": 72,
+          "quote_sha256": "c86e4a32e324bc7e1bdcf467943dd77bc2a3334f74ea07b21b249c3c992bfb80",
+          "anchor_text": "| Type | Temporal retries |"
+        },
+        {
+          "source_id": "S28",
+          "start_line": 442,
+          "end_line": 456,
+          "quote_sha256": "dc824f7423b5c51f784f25eec699360295240121343dc205ec952f4da5e71332",
+          "anchor_text": "### Required recovery contract"
+        }
+      ],
+      "depends_on": [
+        "EX29"
+      ],
+      "repository_or_service_locators": [
+        "HookEffectIntentWorkflow",
+        "apply_hook_effect_intent",
+        "governance.hook_fire_log",
+        "Actual target verifier for legacy actuation"
+      ],
+      "work_packages": [
+        "WP04"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": null,
+      "current_binding_gap": "Current implementation, authority, and actual consumer result must be bound by the named owner; this source packet does not establish them.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 30
+    },
+    {
+      "id": "EX31",
+      "title": "Bind general work to current principal, custody, lease and fence",
+      "lane": "WORK_LIFECYCLE",
+      "existing_owner": "Existing Source custody and admitted work owner",
+      "scope": "Generic delegated work, not automatic hook-workflow substitution",
+      "action": "Use the existing custody functions and actual operation binding. Retain objective/context identity, current authorized scope, attempt, lease/fence, expected target and code state. Reconcile historical interface fit instead of introducing another generic queue.",
+      "acceptance_predicate": "A current executor has the correct authorized work binding; stale or wrong-principal use refuses.",
+      "positive_case": "An eligible replacement acquires the actual remaining work.",
+      "negative_case": "Client-supplied owner strings, copied bearer tokens, or a vendor session ID do not establish Source custody.",
+      "references": [
+        {
+          "source_id": "S28",
+          "start_line": 427,
+          "end_line": 456,
+          "quote_sha256": "260bf95d4df8cb1a96dbe0fd964ee2ab0a1ddb47ad9f25708a51c93d9b073631",
+          "anchor_text": "### Existing custody is a real foundation"
+        },
+        {
+          "source_id": "S21",
+          "start_line": 180,
+          "end_line": 196,
+          "quote_sha256": "32c5fd265eaaff7b4cfaab4282ef8a739eed5a3b1a26b74e24fec87bd4e80867",
+          "anchor_text": "## 6. Ownership at the vendor boundary"
+        }
+      ],
+      "depends_on": [
+        "EX01",
+        "EX06"
+      ],
+      "repository_or_service_locators": [
+        "core/governance/source_execution_custody.py",
+        "governance.fn_open_source_execution_custody_v1",
+        "governance.fn_assert_source_execution_custody_v1",
+        "governance.fn_touch_source_execution_custody_v1"
+      ],
+      "work_packages": [
+        "WP04"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": null,
+      "current_binding_gap": "Current implementation, authority, and actual consumer result must be bound by the named owner; this source packet does not establish them.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 31
+    },
+    {
+      "id": "EX32",
+      "title": "Prove recovery across actual process loss and uncertain effects",
+      "lane": "WORK_LIFECYCLE",
+      "existing_owner": "Registered work driver and target-effect owner",
+      "scope": "An actual recovery claim",
+      "action": "Preserve objective and steps durably; distinguish transport replay from re-created execution. Test lost worker, stale fence, replacement ownership, and crash after effect before acknowledgment under a disposable admitted case. Reconcile the target before replay.",
+      "acceptance_predicate": "Replacement work continues legitimately without duplicate consequential effect or permanently false running status.",
+      "positive_case": "A new executor resumes the same permissible remaining operation.",
+      "negative_case": "Historical tests that characterize orphan non-resumption or Redis connectivity are not accepted recovery evidence.",
+      "references": [
+        {
+          "source_id": "S28",
+          "start_line": 415,
+          "end_line": 456,
+          "quote_sha256": "6731dc8f28a7ca18a4ca638dbf9e0a0865c4a3d14f6cd648eee8c0171031215a",
+          "anchor_text": "## 11. Durable execution"
+        },
+        {
+          "source_id": "S28",
+          "start_line": 322,
+          "end_line": 342,
+          "quote_sha256": "5b2c5d54426cc9ccb5d678b79d81b3051661158f1d500c6028df7d10b21f1416",
+          "anchor_text": "### Test evidence and its exact meaning"
+        }
+      ],
+      "depends_on": [
+        "EX31",
+        "EX11"
+      ],
+      "repository_or_service_locators": [
+        "Actual general turn worker registration",
+        "agents/temporal/mcp_async_turn_workflow.py (historical locator only)",
+        "Target readback and effect-replay owner"
+      ],
+      "work_packages": [
+        "WP04"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": null,
+      "current_binding_gap": "Current implementation, authority, and actual consumer result must be bound by the named owner; this source packet does not establish them.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 32
+    },
+    {
+      "id": "EX33",
+      "title": "Preserve cancellation, context loss, and cross-client reentry",
+      "lane": "WORK_LIFECYCLE",
+      "existing_owner": "Session/cancellation owner and actual next client",
+      "scope": "Continuation or cancellation acceptance",
+      "action": "Keep cancellation requested, acknowledged, and unresolved external work distinct. Carry the same authorized objective, accepted artifacts and remaining obligations to another client. Distinguish context-compaction epoch from hook/intelligence/work identities so necessary rereads are not suppressed.",
+      "acceptance_predicate": "The right next action follows actual state, not the vendor terminal label or lost prompt history.",
+      "positive_case": "A new client resumes useful work with the proper access and evidence.",
+      "negative_case": "Event reconnection does not imply worker recovery; a repeated read after context loss is not automatically a redundant loop.",
+      "references": [
+        {
+          "source_id": "S28",
+          "start_line": 701,
+          "end_line": 727,
+          "quote_sha256": "cb308b407b781d95c981e5f1806d87ac337c7ddc3114a7c01ea4f2fd5f744224",
+          "anchor_text": "## 18. Acceptance matrix"
+        },
+        {
+          "source_id": "S21",
+          "start_line": 115,
+          "end_line": 123,
+          "quote_sha256": "caa1b5b9ed4784ea3ece59fd695a0e7f1fd67ae78405121e6e2c8f7f14ccb72a",
+          "anchor_text": "### 3.1 A newly recovered comparison pressure"
+        },
+        {
+          "source_id": "S21",
+          "start_line": 358,
+          "end_line": 379,
+          "quote_sha256": "41360d042d102f4679e1544bbfbb1fc2aa6ba288713f13e60025a13a926107ad",
+          "anchor_text": "## 14. Preserve useful failure"
+        }
+      ],
+      "depends_on": [
+        "EX31"
+      ],
+      "repository_or_service_locators": [
+        "Existing source_events/source_cancel/session contracts",
+        "Native context-transition records where available",
+        "Actual admitted reentry reader"
+      ],
+      "work_packages": [
+        "WP04",
+        "WP09"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": null,
+      "current_binding_gap": "Current implementation, authority, and actual consumer result must be bound by the named owner; this source packet does not establish them.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 33
+    },
+    {
+      "id": "EX34",
+      "title": "Keep recursive conferral selected and cross-fed, never hidden in activation",
+      "lane": "RECURSIVE_PAIR",
+      "existing_owner": "Native 3pass/confer owners; da60e026 for master_plan_path.r2+",
+      "scope": "Only an actually selected load-bearing decision",
+      "action": "Bind exact decision packet and source partner recommendation, objections, evidence references and receipt. Round 1 has no prior decision conferral; R0 publication is not that partner. Preserve formal audit, conferral and pair states as separate products.",
+      "acceptance_predicate": "A genuinely executed pair has real cross-feeding and exact durable records, or remains incomplete at its rightful state.",
+      "positive_case": "Current 3pass evidence is actually consumed by the conferral on the same decision.",
+      "negative_case": "Partner name, copied PASS, thirteen seats, or supporting architect/introspect/abduce output cannot substitute for either member.",
+      "references": [
+        {
+          "source_id": "S06",
+          "start_line": 5,
+          "end_line": 34,
+          "quote_sha256": "08cca6d873de43c7edff2e33208a6ad09e190fc175c6e26cea294827cb4e885a",
+          "anchor_text": "## Roles and invocation"
+        },
+        {
+          "source_id": "S38",
+          "start_line": 72,
+          "end_line": 78,
+          "quote_sha256": "fe039e8da7e74624b924d3c4370cacb177a880771062c36499e811eef7d534d0",
+          "anchor_text": "## UC05"
+        },
+        {
+          "source_id": "S01",
+          "start_line": 148,
+          "end_line": 165,
+          "quote_sha256": "0c12e70de9b26a094999abc1984972beb7acd4675518b7e5fc4a79cbceb38842",
+          "anchor_text": "Round mechanics"
+        }
+      ],
+      "depends_on": [
+        "EX01"
+      ],
+      "repository_or_service_locators": [
+        "scripts/governance/finalize_three_pass.py",
+        "core/agent_runtime/confer_stakes.py::confer_load_bearing",
+        "Actual native recursive-conferral skill"
+      ],
+      "work_packages": [
+        "WP03",
+        "WP04"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": null,
+      "current_binding_gap": "No native decision hash, current release grant, or pair execution is supplied by this package. Do not fire a pair to approve document recombination.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 34
+    },
+    {
+      "id": "EX35",
+      "title": "Require actual confirmation for PAIR_ALIGNED and retain D_1 history",
+      "lane": "RECURSIVE_PAIR",
+      "existing_owner": "Same native pair owner",
+      "scope": "Pair status/admission only",
+      "action": "Require same evaluated hash and durable readbacks, audit permission, qualifying accepting conferral, no unresolved decision-changing conflict, and actual subsequent confirming pair with unchanged hash/class/recommendation. Preserve D_1 refusal and DEFERRED; do not transfer to D_2.",
+      "acceptance_predicate": "Only the owner-confirmed pair can become PAIR_ALIGNED; every lesser state remains visible.",
+      "positive_case": "All required actual confirmation evidence exists for the same decision.",
+      "negative_case": "DEFERRED, BLOCKED, refuted/CAUGHT_OVERCLAIM, DOMINATOR relabeling, changed IDs or one initial pair cannot satisfy alignment.",
+      "references": [
+        {
+          "source_id": "S06",
+          "start_line": 19,
+          "end_line": 34,
+          "quote_sha256": "2352c3268229e99f7859be30f9d937d243e7d9278ce17b8dbf43d6a33ab26dcd",
+          "anchor_text": "## Keep three result dimensions"
+        },
+        {
+          "source_id": "S01",
+          "start_line": 827,
+          "end_line": 852,
+          "quote_sha256": "6a4c5e68dad038d4fddb96d9ce887141bee42f898a4490c3d1704057dbd2351c",
+          "anchor_text": "### Round 1 (receipts read back"
+        },
+        {
+          "source_id": "S01",
+          "start_line": 883,
+          "end_line": 892,
+          "quote_sha256": "51524668b1ac165e4cd63327f9f58ed14e022cf34cb35356fdd3bb6840b48f3e",
+          "anchor_text": "Pair state: **DISAGREEMENT**"
+        }
+      ],
+      "depends_on": [
+        "EX34"
+      ],
+      "repository_or_service_locators": [
+        "Keyed governance.witness_receipt records",
+        "3pass durable finalizer outputs",
+        "master_plan_path.r2+ existing custody"
+      ],
+      "work_packages": [
+        "WP03"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": null,
+      "current_binding_gap": "Current implementation, authority, and actual consumer result must be bound by the named owner; this source packet does not establish them.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 35
+    },
+    {
+      "id": "EX36",
+      "title": "Resolve graph endpoint and role without treating it as skill activation",
+      "lane": "GRAPH",
+      "existing_owner": "Existing graph_provider/backend registry owner",
+      "scope": "Only a selected graph operation",
+      "action": "Bind actual resolver, host-of-record, backend identity, query population and return provenance. Retain reported Aura default and Nornic fallback as dated policy, not live proof. Do not use destroyed 2423a9f4 or flip active based on a TCP probe.",
+      "acceptance_predicate": "Returned graph evidence states its actual backend or explicitly unknown provenance.",
+      "positive_case": "An authorized scoped query executes through its current permitted plane.",
+      "negative_case": "Loopback in a remote host is not this sandbox; a skill score or 22-factor composite does not choose the Bolt backend.",
+      "references": [
+        {
+          "source_id": "S07",
+          "start_line": 5,
+          "end_line": 19,
+          "quote_sha256": "cc16cd9207c110bbdd0a5504b47f6e29a1eab637f58ad8a6b30832c67fd6d1aa",
+          "anchor_text": "## Roles"
+        },
+        {
+          "source_id": "S38",
+          "start_line": 109,
+          "end_line": 120,
+          "quote_sha256": "0ef2023b1dfdc50971758a9931b283b8351efffcc83ce033e4371f959c964d80",
+          "anchor_text": "## UC08"
+        },
+        {
+          "source_id": "S28",
+          "start_line": 580,
+          "end_line": 599,
+          "quote_sha256": "f2d4421cb51b721843eaa2d1fe82f0df669f03acc93c25b7533fc42ff0c03d4f",
+          "anchor_text": "### Graph registry, endpoint probes and traversal"
+        }
+      ],
+      "depends_on": [
+        "EX01"
+      ],
+      "repository_or_service_locators": [
+        "graph_provider current resolver",
+        "governance.graph_backend.active",
+        "Current backend registry and admitted query route"
+      ],
+      "work_packages": [
+        "WP04"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": null,
+      "current_binding_gap": "Current implementation, authority, and actual consumer result must be bound by the named owner; this source packet does not establish them.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 36
+    },
+    {
+      "id": "EX37",
+      "title": "Preserve per-plane query, GDS and diagnostic contracts",
+      "lane": "GRAPH",
+      "existing_owner": "Search, embedded suite, AGA and Nornic owners separately",
+      "scope": "When the selected mechanism uses that plane",
+      "action": "Use R2 and later corrections, not uncorrected vendor banners. Preserve Source policy versus syntax, metadata versus algorithm work, Python client versus Cypher API, result versus work bounds, and tenant-qualified effective query. Do not disable authorized suite writes because the connector path excludes them.",
+      "acceptance_predicate": "Each query is compatible, scoped and authorized for its actual execution owner.",
+      "positive_case": "A permitted slower scoped Nornic path remains valid when a fast path is lost.",
+      "negative_case": "EXPLAIN does not supply write authority; stats is not metadata; a published cookbook is not the installed engine.",
+      "references": [
+        {
+          "source_id": "S23",
+          "start_line": 763,
+          "end_line": 772,
+          "quote_sha256": "81b8907fd25240a949b3736838c318cf9726f8087b45bfde29d88481102dd8d8",
+          "anchor_text": "| Public VOID means no internal capability"
+        },
+        {
+          "source_id": "S07",
+          "start_line": 19,
+          "end_line": 25,
+          "quote_sha256": "8fbe2898dd4b4a380d17727b289067fadcc5d97b2247f77ea7f5a4bfed2c040d",
+          "anchor_text": "## Dialect and capability"
+        }
+      ],
+      "depends_on": [
+        "EX36"
+      ],
+      "repository_or_service_locators": [
+        "graph_query / adapter_graph_query",
+        "scripts/run_gds_v3.py",
+        "bounded_gds_path_projection",
+        "Installed Nornic templates and route diagnostics"
+      ],
+      "work_packages": [
+        "WP04",
+        "WP09"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": null,
+      "current_binding_gap": "Current implementation, authority, and actual consumer result must be bound by the named owner; this source packet does not establish them.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 37
+    },
+    {
+      "id": "EX38",
+      "title": "Qualify graph publication and optional analytics lifecycle",
+      "lane": "GRAPH",
+      "existing_owner": "Embedded-suite publication or AGA adapter owner, as selected",
+      "scope": "Distinct from corpus pairs",
+      "action": "For suite metrics, bind actual producer field generations and routing-copy consumer before using freshness. For AGA, bind admitted membership, estimate, memory/time/cost, actual session type and cleanup. No paid dry-run or unbounded projection is implied.",
+      "acceptance_predicate": "Selected metrics or analytics results carry their actual completion and resource evidence.",
+      "positive_case": "Required consumer fields are coherent or legitimately tolerate stated partials.",
+      "negative_case": "gds_updated_at, graph.drop, idle TTL, row LIMIT or public family labels do not certify full metric publication, session death, hard work/cost bound.",
+      "references": [
+        {
+          "source_id": "S23",
+          "start_line": 765,
+          "end_line": 770,
+          "quote_sha256": "3094ac09dd77add8709ad2a1ec86e6d2d4440dfbbe0ea61c6b013cb3e17ed640",
+          "anchor_text": "| GDS 2.x means snake_case Cypher"
+        },
+        {
+          "source_id": "S23",
+          "start_line": 735,
+          "end_line": 736,
+          "quote_sha256": "f8eb6e2e550241972dda70fa4c07b99221cffb1e7b4f08d5ec7d005d97ffa277",
+          "anchor_text": "| Qualified metric publication"
+        },
+        {
+          "source_id": "S21",
+          "start_line": 318,
+          "end_line": 322,
+          "quote_sha256": "8c6eb193b68e475a337c1e4cef3c786098c67d3b111d246997967f4d174d29c7",
+          "anchor_text": "| Effect-intent dispatch |"
+        }
+      ],
+      "depends_on": [
+        "EX37"
+      ],
+      "repository_or_service_locators": [
+        "SUITE_V3_TO_ROUTING consumer (exact current file still to bind)",
+        "bounded_gds_path_projection / aura_gds_projection",
+        "Actual session cleanup/readback contract"
+      ],
+      "work_packages": [
+        "WP03",
+        "WP04"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": null,
+      "current_binding_gap": "Current implementation, authority, and actual consumer result must be bound by the named owner; this source packet does not establish them.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 38
+    },
+    {
+      "id": "EX39",
+      "title": "Retain requested corpus IDs and load qualified existing vectors",
+      "lane": "CORPUS",
+      "existing_owner": "Existing enrich_with_voyage / ingest owner",
+      "scope": "A within A+A′+A″; not plugin or graph-first selector",
+      "action": "Keep requested identities before generation anti-join. Bind corpus IDs to full-source and exact embedding-input/hash/model identity. Load pair anchors from persisted rows by canonical ID; missing/stale/wrong-space inputs become explicit unresolved anchors. Use one real tested opt-in CLI; generation-only callers remain quiet.",
+      "acceptance_predicate": "Requested valid anchors reach pair computation with zero Voyage and zero persist_embeddings.",
+      "positive_case": "Satisfied generation is reused for requested pair work.",
+      "negative_case": "Removing sys.exit without reloading anchors, positional zip association, equal text lengths, wrong model, or a guessed --pairs-only flag fails the control.",
+      "references": [
+        {
+          "source_id": "S25",
+          "start_line": 7,
+          "end_line": 15,
+          "quote_sha256": "123ef91253e0185b50a9d8a6fd919002a9e70499c39f9c1cc14569784e7ca3ff",
+          "anchor_text": "##"
+        },
+        {
+          "source_id": "S23",
+          "start_line": 703,
+          "end_line": 721,
+          "quote_sha256": "3646c06a47f2797dbbe15f57d4e2b4ccb2e330a98361c759d1f004d8332aa671",
+          "anchor_text": "## 38. Immediate handoff"
+        },
+        {
+          "source_id": "S23",
+          "start_line": 775,
+          "end_line": 778,
+          "quote_sha256": "86a69f433b757ae72de9fdeea9f2e56f577b065d858697a806d9508cf461eda8",
+          "anchor_text": "| Generation satisfied means ingest product complete"
+        }
+      ],
+      "depends_on": [
+        "EX01",
+        "EX41"
+      ],
+      "repository_or_service_locators": [
+        "scripts/enrich_with_voyage.py selection/classification/parser",
+        "public.corpus_embeddings",
+        "Owning 23-anchor batch manifest, not queue range"
+      ],
+      "work_packages": [
+        "WP01",
+        "WP02"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": null,
+      "current_binding_gap": "The exact 23 corpus IDs and current content/vector bindings are not present as a verified current batch in this source packet.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 39
+    },
+    {
+      "id": "EX40",
+      "title": "Qualify candidate universe and query execution before live pair search",
+      "lane": "CORPUS",
+      "existing_owner": "Existing compute_global_pairs / vector_guard owner",
+      "scope": "A″ inseparable from the pair repair",
+      "action": "Apply compatible model, permission/visibility, self and declared cross-parent policy. Exact 23-row cosine is an integrity fixture, not the full neighbor universe. Use exact search where appropriate; selected ANN keeps raw distance ORDER BY and applicable transaction-local settings on the same connection.",
+      "acceptance_predicate": "The qualified requested candidate search completes within its actual scope or reports instrument/anchor failures.",
+      "positive_case": "A complete zero-above-threshold result remains legitimate after the specified candidate window.",
+      "negative_case": "SET leakage, dirty pooled baselines, swallowed setup/query exceptions, underfetch, forced seqscan denial on a tiny set, or threshold lowering cannot become success.",
+      "references": [
+        {
+          "source_id": "S23",
+          "start_line": 778,
+          "end_line": 782,
+          "quote_sha256": "061083d6d67ea7d1edc763a9dffee2fc24c11a9f6d156c4a2a6785e0e5d14cb5",
+          "anchor_text": "| The 23 anchors are the neighbor universe"
+        },
+        {
+          "source_id": "S23",
+          "start_line": 703,
+          "end_line": 721,
+          "quote_sha256": "3646c06a47f2797dbbe15f57d4e2b4ccb2e330a98361c759d1f004d8332aa671",
+          "anchor_text": "## 38. Immediate handoff"
+        },
+        {
+          "source_id": "S26",
+          "start_line": 77,
+          "end_line": 82,
+          "quote_sha256": "cdc4910fa66bc457bbf98646120ee69c67b74230c11bfc4c3863143992651799",
+          "anchor_text": "apply_hnsw_gucs"
+        }
+      ],
+      "depends_on": [
+        "EX39"
+      ],
+      "repository_or_service_locators": [
+        "compute_global_pairs",
+        "core/vector_guard.py",
+        "Actual database plan and eligible population"
+      ],
+      "work_packages": [
+        "WP01",
+        "WP04",
+        "WP06"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": null,
+      "current_binding_gap": "Current implementation, authority, and actual consumer result must be bound by the named owner; this source packet does not establish them.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 40
+    },
+    {
+      "id": "EX41",
+      "title": "Run type-cluster overwrite control before provenance-safe publication",
+      "lane": "CORPUS",
+      "existing_owner": "Existing _write_id_edges owner",
+      "scope": "A′ in disposable scope before the live 23",
+      "action": "Characterize historical type-only MERGE overwrite, then qualify identity by the existing producer/model contract. Preserve original type-cluster source and weight, avoid node mint and avoid run_id/weight in replay identity. Retain directed anchor/rank/window evidence beside undirected pair publication.",
+      "acceptance_predicate": "A cosine product coexists with original generator evidence and replays without a duplicate relation.",
+      "positive_case": "Known-positive disposable pair is visible through the correct reader.",
+      "negative_case": "ON CREATE SET only cannot hide a missing cosine product; count(r) cannot be relabeled creates; absent endpoint is not zero neighbors.",
+      "references": [
+        {
+          "source_id": "S23",
+          "start_line": 783,
+          "end_line": 787,
+          "quote_sha256": "ce2c2abef783c6852be1c2496d650329fd0627ce21faeddd842d61b40c53db06",
+          "anchor_text": "| Source/model SET after MERGE preserves generator identity"
+        },
+        {
+          "source_id": "S23",
+          "start_line": 703,
+          "end_line": 721,
+          "quote_sha256": "3646c06a47f2797dbbe15f57d4e2b4ccb2e330a98361c759d1f004d8332aa671",
+          "anchor_text": "## 38. Immediate handoff"
+        }
+      ],
+      "depends_on": [
+        "EX01"
+      ],
+      "repository_or_service_locators": [
+        "scripts/enrich_with_voyage.py::_write_id_edges",
+        "Actual SIMILAR_TOPIC reader and relationship identity contract"
+      ],
+      "work_packages": [
+        "WP03",
+        "WP04"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": null,
+      "current_binding_gap": "Current implementation, authority, and actual consumer result must be bound by the named owner; this source packet does not establish them.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 41
+    },
+    {
+      "id": "EX42",
+      "title": "Stage pairs, publish after endpoints, and integrate parent product receipts",
+      "lane": "CORPUS",
+      "existing_owner": "Ingest phases 3.5/4/5b plus existing pair writer",
+      "scope": "Complete A+A′+A″ product",
+      "action": "Stage qualified pairs before projection, publish after endpoints exist, and make Phase 5b follow PG vectors plus the identity-bound pair result. Generation status stays independent of not-requested/not-run/incomplete/completed-zero/unpublished pair states. Preserve partial effects and exact unresolved identities.",
+      "acceptance_predicate": "Parent and reader distinguish generation satisfaction from actual pair search/publication.",
+      "positive_case": "Current product completes truthfully; correctly empty batch uses the positive fixture for writer coverage.",
+      "negative_case": "Full-corpus restamp, global fallback scans, silent edge-batch errors, graph-property copy, GDS invocation or batch-count queue drain cannot replace the product.",
+      "references": [
+        {
+          "source_id": "S23",
+          "start_line": 786,
+          "end_line": 790,
+          "quote_sha256": "405037366bc64250e166eea258d4bbe2f9b14e1f5e80ba506dee04056a4a4203",
+          "anchor_text": "| Add global pair writes to every phase 3.5 call"
+        },
+        {
+          "source_id": "S23",
+          "start_line": 703,
+          "end_line": 721,
+          "quote_sha256": "3646c06a47f2797dbbe15f57d4e2b4ccb2e330a98361c759d1f004d8332aa671",
+          "anchor_text": "## 38. Immediate handoff"
+        },
+        {
+          "source_id": "S26",
+          "start_line": 218,
+          "end_line": 221,
+          "quote_sha256": "78bc77bd3e55e18880587d9215ff3330416e4e882bca835807535a60e1c2c432",
+          "anchor_text": "COMPLETE"
+        }
+      ],
+      "depends_on": [
+        "EX40",
+        "EX41"
+      ],
+      "repository_or_service_locators": [
+        "ingest_unified.py phase3_5_voyage_enrichment / phase4 / phase5b",
+        "Actual alignment queue payload/handler/lease",
+        "Intended cosine vs type-cluster vs SHARES_FACT reader"
+      ],
+      "work_packages": [
+        "WP02",
+        "WP03",
+        "WP04"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": null,
+      "current_binding_gap": "Current implementation, authority, and actual consumer result must be bound by the named owner; this source packet does not establish them.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 42
+    },
+    {
+      "id": "EX43",
+      "title": "Inspect the actual search query and cache role before claiming misuse",
+      "lane": "SEARCH",
+      "existing_owner": "Current search_ask/memory_search query embedder and reader owners",
+      "scope": "Independent question-to-document product",
+      "action": "Bind actual model, role, dimension, preprocessing, cache identity and query consumer. Do not infer question handling from enrich_with_voyage document embeddings. Preserve valid query/document role compatibility rather than invent incompatible spaces.",
+      "acceptance_predicate": "A specific query-role defect is fixed if observed; a correct path remains unchanged.",
+      "positive_case": "Correct role and full permitted query reach the incumbent document index.",
+      "negative_case": "An ingest setting does not prove all questions were misembedded; a provider call is not needed for document-pair reuse.",
+      "references": [
+        {
+          "source_id": "S23",
+          "start_line": 801,
+          "end_line": 808,
+          "quote_sha256": "17d0e174f136e74796c876394aab1096d1c7390973f2e6112c47abdf39501bf0",
+          "anchor_text": "| Build a reranker because the archive recommended one"
+        },
+        {
+          "source_id": "S21",
+          "start_line": 306,
+          "end_line": 314,
+          "quote_sha256": "882934e8c0de852ce695dbb4e934b9af1fe445b8e8b2b61953944447624e75ac",
+          "anchor_text": "## 11. Crosswalk from the comparison harvest"
+        }
+      ],
+      "depends_on": [
+        "EX01"
+      ],
+      "repository_or_service_locators": [
+        "Actual search_ask query path",
+        "memory_search.py if selected",
+        "Current query-vector cache key"
+      ],
+      "work_packages": [
+        "WP02",
+        "WP06"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": null,
+      "current_binding_gap": "Current implementation, authority, and actual consumer result must be bound by the named owner; this source packet does not establish them.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 43
+    },
+    {
+      "id": "EX44",
+      "title": "Trace the already-reported reranker through its actual reader",
+      "lane": "SEARCH",
+      "existing_owner": "Existing cross_encoder/rerank_wire and intended search reader",
+      "scope": "No new ranker stack by default",
+      "action": "Bind rerank_documents call sites and actual requested/used provider. Distinguish Voyage, BGE and identity; record invocation, fallback reason, sent-text spans/hash, candidate IDs, returned index map and qualified receipt.",
+      "acceptance_predicate": "The actual reader receives the correct ranked unit with computation and authority status separate.",
+      "positive_case": "A genuine rerank or legitimate visible fallback remains useful under its declared consumer.",
+      "negative_case": "ADVISORY_ONLY is not no-call evidence, RERANK_APPLIED is not benefit, provider!=identity is not Voyage proof, and unchanged order is not identity proof.",
+      "references": [
+        {
+          "source_id": "S23",
+          "start_line": 801,
+          "end_line": 806,
+          "quote_sha256": "7886a5818f2c570f401f85b0d657b962824de3a7bf5ac3c938761566650d4e6c",
+          "anchor_text": "| Build a reranker because the archive recommended one"
+        },
+        {
+          "source_id": "S21",
+          "start_line": 312,
+          "end_line": 313,
+          "quote_sha256": "c6f0c6051e0445d3cdbd407d727969b988be427db6b5f143e9bfa33aa0049fb0",
+          "anchor_text": "| Text reranking |"
+        }
+      ],
+      "depends_on": [
+        "EX43"
+      ],
+      "repository_or_service_locators": [
+        "core/db/retrieval/cross_encoder.py",
+        "core/db/retrieval/rerank_wire.py",
+        "Intended memory_search/search_ask reader",
+        "verify_reranker_production_wire.py is not itself production"
+      ],
+      "work_packages": [
+        "WP02",
+        "WP03"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": null,
+      "current_binding_gap": "Current implementation, authority, and actual consumer result must be bound by the named owner; this source packet does not establish them.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 44
+    },
+    {
+      "id": "EX45",
+      "title": "Evaluate candidate policy, reranking and instruction as separate treatments",
+      "lane": "SEARCH",
+      "existing_owner": "Search/evaluation owner",
+      "scope": "Before admitting comparative benefit",
+      "action": "Freeze authorized query/candidate text and relevance labels. Compare incumbent, rerank and task-policy-in-query variants; 10/50/200 are experiment arms, not universal defaults. Define passage versus filing, preserve necessary siblings, and separate reranker text expansion from embedding generation.",
+      "acceptance_predicate": "Relevant evidence improves or fails honestly under the fixed comparison and complete costs.",
+      "positive_case": "Supporting, contradictory and complementary passages remain correctly identified and attributable.",
+      "negative_case": "No cosine-GT-as-relevance, blanket same-parent exclusion, fabricated instruction argument, filing score pinned to a paragraph, or writing relevance into SIMILAR_TOPIC.weight.",
+      "references": [
+        {
+          "source_id": "S23",
+          "start_line": 804,
+          "end_line": 809,
+          "quote_sha256": "d155c02782dbfefe3e82fd5cd466fdb00fe76d1c64c260eb23b84e80b1470c08",
+          "anchor_text": "| Rerank fifty because vendor peak is policy"
+        },
+        {
+          "source_id": "S21",
+          "start_line": 413,
+          "end_line": 429,
+          "quote_sha256": "eacb04b4d6758c17b121d41d3c2803a3cdd4a9234fe889d87dff28a288cbca75",
+          "anchor_text": "### Trial A: connector consumption"
+        },
+        {
+          "source_id": "S32",
+          "start_line": 111,
+          "end_line": 115,
+          "quote_sha256": "45d0911b3c09d895757f3fa73901e2abcee2e9542e51d01ee3576994d5c8e221",
+          "anchor_text": "For reranking, accept a query"
+        }
+      ],
+      "depends_on": [
+        "EX44",
+        "EX49"
+      ],
+      "repository_or_service_locators": [
+        "Current search evaluation fixture",
+        "Actual legal/task instruction compiler",
+        "Sent candidate texts and score semantics"
+      ],
+      "work_packages": [
+        "WP06",
+        "WP07"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": null,
+      "current_binding_gap": "Current implementation, authority, and actual consumer result must be bound by the named owner; this source packet does not establish them.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 45
+    },
+    {
+      "id": "EX46",
+      "title": "Keep Chamber and geometry categories legible without minting acceptance",
+      "lane": "OBSERVABILITY",
+      "existing_owner": "Chamber display and receipt producer owners",
+      "scope": "Presentation/readback only",
+      "action": "Separate four-axis cards, repository umbrellas, actual receipt contributors, continuity pair, proposed themes and sentinel. Keep pinned teaching receipt separate from latest observed window. Explain aggregate/named/sentinel counts without inventing role incidence.",
+      "acceptance_predicate": "The displayed receipt and observation time match their evidence and missingness semantics.",
+      "positive_case": "#18767 can remain a teaching pin while latest reflects actual observed data.",
+      "negative_case": "Continuity is not two missing conferral slots; drawing chords, ok_count and published geometry do not prove independence, PAIR_ALIGNED or PR admission.",
+      "references": [
+        {
+          "source_id": "S38",
+          "start_line": 78,
+          "end_line": 99,
+          "quote_sha256": "5739eb71efec83bd8a6575db57d6c6f773e0e8f66fe054cead8e3eb8eb7a6d18",
+          "anchor_text": "## UC06"
+        },
+        {
+          "source_id": "S37",
+          "start_line": 26,
+          "end_line": 59,
+          "quote_sha256": "d9d36cbe28a747a2a58b1a19cfa1fa308fe651e10454ad2b124fcbd524e6d2b5",
+          "anchor_text": "## Observed count difference"
+        },
+        {
+          "source_id": "S10",
+          "start_line": 1,
+          "end_line": 19,
+          "quote_sha256": "b16dcc67f2c75f8577b34c94181912715fb3a240bebbbf4155e294f3a7bfee5b",
+          "anchor_text": "#"
+        }
+      ],
+      "depends_on": [
+        "EX01"
+      ],
+      "repository_or_service_locators": [
+        "Current Chamber renderer, not old MHTML",
+        "Actual witness receipt expected-role/aggregate schema",
+        "source_governance_pulse selected observation"
+      ],
+      "work_packages": [
+        "WP03",
+        "WP06"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": null,
+      "current_binding_gap": "Current implementation, authority, and actual consumer result must be bound by the named owner; this source packet does not establish them.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 46
+    },
+    {
+      "id": "EX47",
+      "title": "Join construct fire, calibration and decision before geometric routing credit",
+      "lane": "GEOMETRY",
+      "existing_owner": "Existing construct-fire/calibration/routing owners",
+      "scope": "Conditional geometry experiment, never plugin default",
+      "action": "Keep runtime polytetrahedron, TDT ontology, shape ladder, advisory skill seating and graph Skillset13 distinct. Bind definition/version, fire identity, roles, inputs, measurement and consuming decision before using Gram/rank evidence. Retain absent temporal/waist signals as missing.",
+      "acceptance_predicate": "A geometric claim is attributable to the selected construct and actual task decision.",
+      "positive_case": "Bound calibration can inform a qualified shadow comparison.",
+      "negative_case": "Provider count, spectral dispersion, zero missing Gram, string COGNITION apex, or CHECK-locked advisory rows cannot become active independent routing authority.",
+      "references": [
+        {
+          "source_id": "S21",
+          "start_line": 466,
+          "end_line": 484,
+          "quote_sha256": "c2f58b96724f6acf11f48e8f55b51b306dfdbd5ed7b66a2acc02b16280db2557",
+          "anchor_text": "## 19. Geometry and learning"
+        },
+        {
+          "source_id": "S24",
+          "start_line": 304,
+          "end_line": 312,
+          "quote_sha256": "14116ab3012e46a0a799327935d16aa7a06089e4e0a3036f76ac7f5eee3f90d5",
+          "anchor_text": "### 9.2 TDT and construct geometry"
+        },
+        {
+          "source_id": "S10",
+          "start_line": 1,
+          "end_line": 28,
+          "quote_sha256": "15ac687dd491d4a8efffb852dfa2893694fc888f7dc20f21331ef26340d5aba5",
+          "anchor_text": "#"
+        }
+      ],
+      "depends_on": [
+        "EX49"
+      ],
+      "repository_or_service_locators": [
+        "Existing construct_licence and fire identity owner",
+        "Existing calibration writer / Gram fields",
+        "governance.skill_13pt_meta (advisory scope retained)"
+      ],
+      "work_packages": [
+        "WP06",
+        "WP07",
+        "WP09"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": null,
+      "current_binding_gap": "Current implementation, authority, and actual consumer result must be bound by the named owner; this source packet does not establish them.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 47
+    },
+    {
+      "id": "EX48",
+      "title": "Make episode data and diagnostic attribution valid before reinforcement",
+      "lane": "LEARNING",
+      "existing_owner": "Existing experience helper and canonical attribution owner",
+      "scope": "WP01/WP05; not automatic recording from this document",
+      "action": "Retain typed product/representation/work/attempt/target/release identity, source-family dependency, missingness and actual executor. Classify error versus changed context/preference, tool failure or rescue; diagnose the lowest broken join before reward. Preserve original 17 probes and relevant controls.",
+      "acceptance_predicate": "Qualified episodes can be compared without duplicate or proxy credit.",
+      "positive_case": "A real corrected consumer outcome is represented with its scope and adverse cases.",
+      "negative_case": "23 fragments become neither 23 independent witnesses nor 162 corroborations; selected skill never gets credit for a different executed fallback.",
+      "references": [
+        {
+          "source_id": "S24",
+          "start_line": 111,
+          "end_line": 187,
+          "quote_sha256": "1dc1917bcade5f3080f8d102313aba2c6975b4313b536e00bf5c6a90959946f3",
+          "anchor_text": "## 4. Minimal protocol records"
+        },
+        {
+          "source_id": "S24",
+          "start_line": 243,
+          "end_line": 265,
+          "quote_sha256": "ea8fadc425e353cd396bdef29254e662e53238273fbd45579fc1ddfe31a0b983",
+          "anchor_text": "## 7. Learning-corpus selection"
+        },
+        {
+          "source_id": "S27",
+          "start_line": 21,
+          "end_line": 31,
+          "quote_sha256": "880cdd0823b605fd59d716c2fadd11b2e9d01090af683699ab4df4368e0e3c62",
+          "anchor_text": "G05"
+        }
+      ],
+      "depends_on": [
+        "EX01"
+      ],
+      "repository_or_service_locators": [
+        "Existing experience helper and episode record",
+        "G05 attribution/EMA owner",
+        "Actual selected/executed/fallback outcome join"
+      ],
+      "work_packages": [
+        "WP01",
+        "WP05"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": null,
+      "current_binding_gap": "Current implementation, authority, and actual consumer result must be bound by the named owner; this source packet does not establish them.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 48
+    },
+    {
+      "id": "EX49",
+      "title": "Freeze valid evaluation before benefit, not before all useful work",
+      "lane": "EVALUATION",
+      "existing_owner": "WP06 and actual task evaluator",
+      "scope": "Applicable comparative or promotion claim",
+      "action": "Resolve task population, source-family split, labels, common masks, finite/range checks, evaluator independence, budgets, margins and observation horizon. Preserve complete eligible ground truth, pending/censored outcomes, false refusals and missed useful evidence.",
+      "acceptance_predicate": "Candidate comparisons use the declared basis and do not profit from missing or dependent evidence.",
+      "positive_case": "Competent incumbent and candidate have the same authorized opportunity.",
+      "negative_case": "Zero latency/cost placeholders, counts, same-source repetitions, an LLM judging itself or changed holdout after seeing outcomes cannot establish benefit.",
+      "references": [
+        {
+          "source_id": "S24",
+          "start_line": 213,
+          "end_line": 243,
+          "quote_sha256": "2b3e57a0e05c40fd63dbb1b8a8a9c3aab1d209f8ce94752f0e7ef6f8faba3b47",
+          "anchor_text": "## 6. Measurement rules"
+        },
+        {
+          "source_id": "S24",
+          "start_line": 393,
+          "end_line": 439,
+          "quote_sha256": "8b89bca812da723944e39d90ce42cb5bc28363093cb378b5cafe6ef220445ac4",
+          "anchor_text": "## 13. Evaluation protocol"
+        },
+        {
+          "source_id": "S28",
+          "start_line": 285,
+          "end_line": 304,
+          "quote_sha256": "d20726f4c4d389bbc84f2633ef315436545f82f05d4d4ef978bf7fc013091e8f",
+          "anchor_text": "### Why the existing JSONL"
+        }
+      ],
+      "depends_on": [
+        "EX01"
+      ],
+      "repository_or_service_locators": [
+        "Existing WP06 evaluator and masks",
+        "Original 94-obligation applicability owner",
+        "Task-specific exact-kNN or relevance ground truth"
+      ],
+      "work_packages": [
+        "WP06"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": null,
+      "current_binding_gap": "Current implementation, authority, and actual consumer result must be bound by the named owner; this source packet does not establish them.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 49
+    },
+    {
+      "id": "EX50",
+      "title": "Admit one scoped procedure and observe unseen later consumption",
+      "lane": "LEARNING",
+      "existing_owner": "WP05/WP08 plus applicable promotion owner",
+      "scope": "D_2 learning proof is separate from pair or plugin completion",
+      "action": "Choose one qualified procedure from the actual correction. Preserve its applicability, exceptions, evaluator and release. Observe a later independent task retrieving or executing it, actual behavior change and task benefit/adverse slices. The recorded September 17–21 window is a plan, not a guarantee or scheduled job here.",
+      "acceptance_predicate": "Actual later use and attributable benefit meet the selected scope, or useful negative/pending outcomes remain explicit.",
+      "positive_case": "Product-aware reuse saves unjustified regeneration while valid generation-only behavior remains intact.",
+      "negative_case": "A receipt, memorized summary, route occurrence, conferral majority, or passing package checker is not learning.",
+      "references": [
+        {
+          "source_id": "S23",
+          "start_line": 721,
+          "end_line": 740,
+          "quote_sha256": "b723ca840998a6f6c57b339968050ff5ec793c2f30232b03a17f9b5f90f8f0c1",
+          "anchor_text": "## 39. Reentry candidates"
+        },
+        {
+          "source_id": "S24",
+          "start_line": 360,
+          "end_line": 393,
+          "quote_sha256": "d3eae2fe348c878fcc9322ede1f8740ea72698af97a9ccafad9a56c5257d253d",
+          "anchor_text": "## 12. Promotion, release"
+        },
+        {
+          "source_id": "S01",
+          "start_line": 873,
+          "end_line": 873,
+          "quote_sha256": "e069df0ed1d669a21dedd39d52220b3b4965d48565345d95d43972fd3b3eda23",
+          "anchor_text": "4. First learning proof from those client outcomes."
+        }
+      ],
+      "depends_on": [
+        "EX48",
+        "EX49"
+      ],
+      "repository_or_service_locators": [
+        "Existing candidate/promotion/release owner",
+        "Actual later task and consumer",
+        "source.utility.evaluate only within its actual contract"
+      ],
+      "work_packages": [
+        "WP05",
+        "WP07",
+        "WP08"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": null,
+      "current_binding_gap": "Current implementation, authority, and actual consumer result must be bound by the named owner; this source packet does not establish them.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 50
+    },
+    {
+      "id": "EX51",
+      "title": "Revalidate drift, revocation and contextual dependencies",
+      "lane": "LEARNING",
+      "existing_owner": "WP09 and affected reader/representation owner",
+      "scope": "After a relevant change, not a constant full-estate sweep",
+      "action": "Revalidate changed policy, content/group context, model/provider, schema, query population, cache, fallback or runtime. Preserve prior release for the owning rollback path. Retire obsolete applicability without destroying provenance or rare useful protections.",
+      "acceptance_predicate": "Stale evidence or memory does not silently control a new incompatible task.",
+      "positive_case": "Unchanged qualified inputs can be reused while a changed parent-context generation is treated correctly.",
+      "negative_case": "Chunk-only hash cannot certify contextualized freshness; current revocation is not bypassed by a pinned old intelligence release.",
+      "references": [
+        {
+          "source_id": "S24",
+          "start_line": 318,
+          "end_line": 342,
+          "quote_sha256": "fdc240886d5acd78a5365bb06c7eb17eaf42208c3e3a688e16cc04ce2c0b1976",
+          "anchor_text": "## 10. Memory and progressive hydration"
+        },
+        {
+          "source_id": "S24",
+          "start_line": 571,
+          "end_line": 579,
+          "quote_sha256": "f252c9380404a173dd653edb72bae31a0a754506f3e524136ae97c9b68e66271",
+          "anchor_text": "### WP09"
+        },
+        {
+          "source_id": "S32",
+          "start_line": 142,
+          "end_line": 143,
+          "quote_sha256": "690697c3f092c3fe51e168efb6e3c02bb0e8a5c073cfbdcb34285e1be5b6beb7",
+          "anchor_text": "An expiring plan must bind"
+        }
+      ],
+      "depends_on": [
+        "EX50"
+      ],
+      "repository_or_service_locators": [
+        "Actual context/cache/representation owner",
+        "Accepted intelligence release and revocation owner"
+      ],
+      "work_packages": [
+        "WP09"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": null,
+      "current_binding_gap": "Current implementation, authority, and actual consumer result must be bound by the named owner; this source packet does not establish them.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 51
+    },
+    {
+      "id": "EX52",
+      "title": "Select a supplier or harness only for a demonstrated missing function",
+      "lane": "CONDITIONAL_HARNESS",
+      "existing_owner": "Existing capability/executor owner and data/spend authority",
+      "scope": "Design/admission branch, not plugin release scope",
+      "action": "Distinguish Source as server for an external client, Source delegating a bounded work unit, and full control-plane migration. Retain TrueForge/TrueFoundry and managed Agents API as dated researched candidates; revalidate current terms before a real selection. Do not infer the remembered platform identity or a performance winner.",
+      "acceptance_predicate": "A concrete missing function and qualified data/authority boundary justify one candidate trial.",
+      "positive_case": "An existing local/native path stays selected when sufficient.",
+      "negative_case": "No vendor score, model-price comparison, advertised SDK feature, or namespace overlap can require a platform migration.",
+      "references": [
+        {
+          "source_id": "S21",
+          "start_line": 125,
+          "end_line": 151,
+          "quote_sha256": "838bccd2d699acdd405758ea0698c4a7fd2e327c9987253912f1a63ecfbc913d",
+          "anchor_text": "## 4. Three ways a harness"
+        },
+        {
+          "source_id": "S21",
+          "start_line": 381,
+          "end_line": 411,
+          "quote_sha256": "4fbc9479b4f12676cedf281ed1fe3dba91989cdb960c186be79970812b5cce3d",
+          "anchor_text": "## 15. What cannot currently be ranked"
+        },
+        {
+          "source_id": "S32",
+          "start_line": 264,
+          "end_line": 283,
+          "quote_sha256": "0d8b338a6420c852c739c777f4c9aa25fe5dc158c812e2796d4f6dc0a605161d",
+          "anchor_text": "## 9. Governed learning"
+        }
+      ],
+      "depends_on": [
+        "EX01",
+        "EX49"
+      ],
+      "repository_or_service_locators": [
+        "Existing executor/implementation resolution",
+        "Account/processor qualification records",
+        "Vendor references preserved in S21, not a new current check"
+      ],
+      "work_packages": [
+        "WP10"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": null,
+      "current_binding_gap": "Current implementation, authority, and actual consumer result must be bound by the named owner; this source packet does not establish them.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 52
+    },
+    {
+      "id": "EX53",
+      "title": "Test one constrained external client on complete Source results",
+      "lane": "CONDITIONAL_HARNESS",
+      "existing_owner": "Existing connector and vendor-admission owners",
+      "scope": "Read-conformance trial only if separately authorized",
+      "action": "Use a public/synthetic fixture and one supported Source result contract. Keep enabled tools narrow and model/context treatment explicit. Observe exact result completeness, source identity, permissions, actual cost/fallback and reader result. Do not create a sandbox or model call merely to validate this document.",
+      "acceptance_predicate": "The external client consumes the same permitted complete product, or the mismatch is diagnosed at the correct boundary.",
+      "positive_case": "A tool-only external front preserves Source evidence and limits.",
+      "negative_case": "Clean outer status, tool-only configuration or vendor approval does not confer universal Source routing, ZDR, shell or mutation authority.",
+      "references": [
+        {
+          "source_id": "S21",
+          "start_line": 413,
+          "end_line": 429,
+          "quote_sha256": "eacb04b4d6758c17b121d41d3c2803a3cdd4a9234fe889d87dff28a288cbca75",
+          "anchor_text": "### Trial A: connector consumption"
+        },
+        {
+          "source_id": "S21",
+          "start_line": 447,
+          "end_line": 466,
+          "quote_sha256": "30470c03b8116e7c570b3dfb33f0a513c2e3fb1bd7a06b597fc57f270f597cb8",
+          "anchor_text": "## 18. Measurement units"
+        }
+      ],
+      "depends_on": [
+        "EX52",
+        "EX09",
+        "EX20"
+      ],
+      "repository_or_service_locators": [
+        "Selected external MCP client contract",
+        "Current Source operation and admitted fixture"
+      ],
+      "work_packages": [
+        "WP07",
+        "WP10"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": null,
+      "current_binding_gap": "Current implementation, authority, and actual consumer result must be bound by the named owner; this source packet does not establish them.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 53
+    },
+    {
+      "id": "EX54",
+      "title": "Test one delegated harness without surrendering Source custody",
+      "lane": "CONDITIONAL_HARNESS",
+      "existing_owner": "Existing work/custody and selected executor owner",
+      "scope": "Bounded execution trial only",
+      "action": "Use a real authorized/disposable worktree and exact task. Bind Source work→vendor session/turn/tool identities, scoped approvals, child budgets, input/context loss, result artifacts and target evidence. Give retry/cancel authority to one layer per effect. Compare against an incumbent under the same task.",
+      "acceptance_predicate": "The candidate supplies better or equivalent qualified execution under the declared criterion, not merely a completed agent message.",
+      "positive_case": "A real candidate patch/test result survives interruption with proper custody.",
+      "negative_case": "Platform memory, reconnectable stream, sandbox snapshot, changed session config or generic completed state cannot replace Source lease/fence and effect reconciliation.",
+      "references": [
+        {
+          "source_id": "S21",
+          "start_line": 429,
+          "end_line": 447,
+          "quote_sha256": "15e3bfcba88c4f7770730cf3e424f0b66490f7110346a6c25e07808f3189ea30",
+          "anchor_text": "### Trial B: Source delegates"
+        },
+        {
+          "source_id": "S21",
+          "start_line": 180,
+          "end_line": 196,
+          "quote_sha256": "32c5fd265eaaff7b4cfaab4282ef8a739eed5a3b1a26b74e24fec87bd4e80867",
+          "anchor_text": "## 6. Ownership at the vendor boundary"
+        },
+        {
+          "source_id": "S28",
+          "start_line": 442,
+          "end_line": 456,
+          "quote_sha256": "dc824f7423b5c51f784f25eec699360295240121343dc205ec952f4da5e71332",
+          "anchor_text": "### Required recovery contract"
+        }
+      ],
+      "depends_on": [
+        "EX52",
+        "EX31",
+        "EX32"
+      ],
+      "repository_or_service_locators": [
+        "Selected programmable/managed harness adapter",
+        "Existing custody/worker/target verifier",
+        "Approved data, tools and full-task budget"
+      ],
+      "work_packages": [
+        "WP04",
+        "WP07",
+        "WP10"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": null,
+      "current_binding_gap": "Current implementation, authority, and actual consumer result must be bound by the named owner; this source packet does not establish them.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 54
+    },
+    {
+      "id": "EX55",
+      "title": "Retain new representations and training as distinct later products",
+      "lane": "CONDITIONAL_FRONTIER",
+      "existing_owner": "Actual generation/search/training owner",
+      "scope": "Only a named, measured need",
+      "action": "Preserve optional parent-group context embeddings, legal-model side evaluation, compression, feature/graph fusion and weight/code learning with distinct identity, data rights and candidate/evaluator releases. Do not mix manifolds or overwrite incumbent vectors. Reranker text coverage is not embedding generation.",
+      "acceptance_predicate": "The proposed new representation earns its own measured consumer result without damaging the incumbent.",
+      "positive_case": "A new useful niche or a qualified negative experiment receives its correct disposition.",
+      "negative_case": "int8, bit, halfvec, MRL, FastRP or GNN cannot satisfy pair-skip/provenance defects; no second 4M-row embed or cloud allocation is implied.",
+      "references": [
+        {
+          "source_id": "S23",
+          "start_line": 672,
+          "end_line": 703,
+          "quote_sha256": "cd08a94367fc1ef1a988c8f4990b1daafd86825b1feea925cb12abde6e770f1d",
+          "anchor_text": "## 36. Leverage order"
+        },
+        {
+          "source_id": "S23",
+          "start_line": 793,
+          "end_line": 801,
+          "quote_sha256": "46a750c35c59f6a78f6302ed4ca82a20a06e3ffd43d42859787da397d63fa7db",
+          "anchor_text": "| Equal dimensions permit comparison"
+        },
+        {
+          "source_id": "S24",
+          "start_line": 587,
+          "end_line": 595,
+          "quote_sha256": "f735844da62cef78bef86cd5d95ebae1410b7167b61e87173a742dcd0f0b0ff3",
+          "anchor_text": "### WP11"
+        }
+      ],
+      "depends_on": [
+        "EX49"
+      ],
+      "repository_or_service_locators": [
+        "Selected current generation/search/structural owner",
+        "WP10/WP11 conditional admission",
+        "Compatible side representation rather than entity-only overwrite"
+      ],
+      "work_packages": [
+        "WP10",
+        "WP11"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": null,
+      "current_binding_gap": "Current implementation, authority, and actual consumer result must be bound by the named owner; this source packet does not establish them.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 55
+    },
+    {
+      "id": "EX56",
+      "title": "Return a scope-specific delivery record and next action from the result",
+      "lane": "ACCEPTANCE",
+      "existing_owner": "Owning product and applicable independent reader",
+      "scope": "End of the selected lane, not all Source",
+      "action": "Report exact source/served/installed identities relevant to the result, changed artifacts, test scopes, current grants, consumer output, readback, residuals and actual next step. Keep plugin packaging, API effects, epoch uptake, pair alignment, corpus publication and learning as separate milestones.",
+      "acceptance_predicate": "The strongest claimed milestone is supported by its actual evidence and no unresolved required predicate is hidden.",
+      "positive_case": "A useful admitted-client result selects the next justified action; pending observation remains pending.",
+      "negative_case": "Test totals, hash counts, merge, deploy, health, geometric labels, task-status edits, or a correct refusal alone cannot claim all Source delivered.",
+      "references": [
+        {
+          "source_id": "S01",
+          "start_line": 16,
+          "end_line": 25,
+          "quote_sha256": "feb0d8a8bfbfafe308a7c9e31316efe9a98a72a7e4fd6902eaa938074d51b212",
+          "anchor_text": "A1. North Star and invariants"
+        },
+        {
+          "source_id": "S03",
+          "start_line": 75,
+          "end_line": 81,
+          "quote_sha256": "b5d8bfc88cb03c50e6d77dd57dd2e8b5e7d58ac43814cec8ad3d4722e65df318",
+          "anchor_text": "## 7. Return only"
+        },
+        {
+          "source_id": "S28",
+          "start_line": 659,
+          "end_line": 659,
+          "quote_sha256": "18f12eb5cdcb8d3dcf157ce53fafabd912ac6a067269e7df375b76402591b9f9",
+          "anchor_text": "[INFERENCE] The most important reconciliation rule"
+        },
+        {
+          "source_id": "S24",
+          "start_line": 637,
+          "end_line": 647,
+          "quote_sha256": "982847e5c8ea23f18d5bfabaeb25866b504e0e9d77badc611e284bc8ee25f5f1",
+          "anchor_text": "## 20. Final disposition"
+        }
+      ],
+      "depends_on": [
+        "EX01"
+      ],
+      "repository_or_service_locators": [
+        "Existing owner outcome/receipt mechanism",
+        "Actual admitted client and required independent target readback"
+      ],
+      "work_packages": [
+        "WP03",
+        "WP08"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": null,
+      "current_binding_gap": "Current implementation, authority, and actual consumer result must be bound by the named owner; this source packet does not establish them.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 56
+    },
+    {
+      "id": "EX57",
+      "title": "Keep credential remediation with the operator, not plugin enrollment",
+      "lane": "OPERATOR",
+      "existing_owner": "Operator and existing security owner 3428834a",
+      "scope": "Reported credential floor only",
+      "action": "Address the reported live credential and embedded-value surfaces through their existing owners and current authority. Preserve credential rotation, removal of embedded values and continuity of affected consumers as separate observations. This packet neither inspects nor contains secret values.",
+      "acceptance_predicate": "The security owner establishes the applicable credential/consumer result; package metadata earns no security-remediation credit.",
+      "positive_case": "A correctly rotated configured consumer remains operational and old active credentials are handled under the owner contract.",
+      "negative_case": "Do not print a token, copy a credential into a plugin/reference, rotate from a readback helper, or treat secret removal in one file as repository-wide remediation.",
+      "references": [
+        {
+          "source_id": "S09",
+          "start_line": 5,
+          "end_line": 9,
+          "quote_sha256": "885da0af964c38d20d19cb998fb650bde8642c39e24db24e3b50cd36457a87fe",
+          "anchor_text": "## Floor"
+        },
+        {
+          "source_id": "S03",
+          "start_line": 73,
+          "end_line": 74,
+          "quote_sha256": "46e1b896d14b11d57b7fcb4378a6a7c63870d3ae1d56f52c0d396e1bb7d4b0c4",
+          "anchor_text": "No task claim, conferral"
+        }
+      ],
+      "depends_on": [
+        "EX01"
+      ],
+      "repository_or_service_locators": [
+        "Existing operator task 3428834a",
+        "Approved vault/credential and affected consumer owners"
+      ],
+      "work_packages": [
+        "WP04"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": null,
+      "current_binding_gap": "Current implementation, authority, and actual consumer result must be bound by the named owner; this source packet does not establish them.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 57
+    },
+    {
+      "id": "EX58",
+      "title": "Correct the actual local MCP installation without changing plugin identity",
+      "lane": "OPERATOR",
+      "existing_owner": "Operator / local development installation owner",
+      "scope": "Reported source-mcp 0.6.4→0.6.6 path, subject to fresh bind",
+      "action": "Inspect actual launch configuration, installed distribution and served local behavior. Reconcile the historical version lag rather than claiming perceive is absent from source. Use only the actual supported installation path and read back the running consumer.",
+      "acceptance_predicate": "The intended local runtime—not merely a package file or plugin manifest—answers the qualified check.",
+      "positive_case": "A new local install consumes the intended supported capability.",
+      "negative_case": "Plugin 0.2.4/0.2.5, remote API identity, and local source-mcp version are not substituted for each other; no downgrade to the historical target.",
+      "references": [
+        {
+          "source_id": "S09",
+          "start_line": 13,
+          "end_line": 13,
+          "quote_sha256": "246984b8e18f821a01d6e848a4edb9181eb0e30b6053900a149b5ba93649ac53",
+          "anchor_text": "| 1 | Local source-mcp"
+        },
+        {
+          "source_id": "S08",
+          "start_line": 29,
+          "end_line": 33,
+          "quote_sha256": "58b8c451cd066ce2b2d9ef61781d8997ab6a2468f59e7825f3fb4d0a706ef9e6",
+          "anchor_text": "## Version and cache acceptance"
+        },
+        {
+          "source_id": "S38",
+          "start_line": 9,
+          "end_line": 9,
+          "quote_sha256": "2735cebb79a2f24bb830f89a98f0284770598eee066e89dde8e570de632f57a1",
+          "anchor_text": "Plugin **0.2.4**"
+        }
+      ],
+      "depends_on": [
+        "EX01"
+      ],
+      "repository_or_service_locators": [
+        "Actual local source-mcp launch/install",
+        "Existing local-client readback"
+      ],
+      "work_packages": [
+        "WP02",
+        "WP08"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": null,
+      "current_binding_gap": "Current implementation, authority, and actual consumer result must be bound by the named owner; this source packet does not establish them.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 58
+    },
+    {
+      "id": "EX59",
+      "title": "Give deployment recovery a real scheduler only through the owning lane",
+      "lane": "OPERATOR",
+      "existing_owner": "Existing release/ops and operator; not this connector packaging seat",
+      "scope": "Off-VM recovery observer in ranked handoffs",
+      "action": "Bind the actual observer, authorized target and scheduling owner. A running scheduler and observed recovery behavior are separate from board rank or a retained task. Do not create another scheduler where the owner already supplies one.",
+      "acceptance_predicate": "The appropriate recovery observation is driven and consumed, or the exact missing scheduler remains open.",
+      "positive_case": "An existing scheduled observation reaches its registered recovery consumer.",
+      "negative_case": "Rank-3 board status, 7/7 observations or 30/30 oneshot counts do not instantiate the missing scheduler or certify this session drained work.",
+      "references": [
+        {
+          "source_id": "S09",
+          "start_line": 15,
+          "end_line": 15,
+          "quote_sha256": "5ca26f225191b6ca0a4c5fbde3cff8129bac04d60280f7e3473b10683f58bd29",
+          "anchor_text": "| 3 | Give the deploy recovery observer"
+        },
+        {
+          "source_id": "S09",
+          "start_line": 23,
+          "end_line": 29,
+          "quote_sha256": "61e7d773f4f46346a8c8e8f8f58d5bb749151cd7befc74f939795b6d7d4595ba",
+          "anchor_text": "## Long paths and board states"
+        }
+      ],
+      "depends_on": [
+        "EX01"
+      ],
+      "repository_or_service_locators": [
+        "Existing off-VM observer/scheduler owner",
+        "Actual recovery gateway and its status/lock"
+      ],
+      "work_packages": [
+        "WP04"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": null,
+      "current_binding_gap": "Current implementation, authority, and actual consumer result must be bound by the named owner; this source packet does not establish them.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 59
+    },
+    {
+      "id": "EX60",
+      "title": "Resolve the fixed-version observation window without fabricating policy",
+      "lane": "OPERATOR",
+      "existing_owner": "Operator/coordinator 086cc4ec",
+      "scope": "Codex 48-hour proof versus daily releases",
+      "action": "Specify which actual dependencies must remain fixed, what evidence a release changes, and which changes invalidate or restart the proof. Preserve the dated September 23 return reference separately from current availability. Do not mandate a global freeze or combine different versions into one fixed-version claim.",
+      "acceptance_predicate": "The proof owner can complete a clearly defined observation without silently changing its treatment.",
+      "positive_case": "Permitted unrelated releases continue where the declared proof does not depend on them.",
+      "negative_case": "A calendar date, fixed-version label or operator ranking does not establish a measured complete proof.",
+      "references": [
+        {
+          "source_id": "S09",
+          "start_line": 16,
+          "end_line": 16,
+          "quote_sha256": "6c59750f38c8313ab3e1a43e92454db5e63ffd23a8fd8228f2e50d74814d3c94",
+          "anchor_text": "| 4 | Resolve Codex"
+        },
+        {
+          "source_id": "S27",
+          "start_line": 84,
+          "end_line": 88,
+          "quote_sha256": "f91d61e6fb8137f77f3452b17538050871ec9e6ae0686a21e99908dd412adc7d",
+          "anchor_text": "Codex"
+        },
+        {
+          "source_id": "S01",
+          "start_line": 874,
+          "end_line": 876,
+          "quote_sha256": "f81e9ff4734917e913f94ddc363011586e747656132a6075a0c1062735abdf3f",
+          "anchor_text": "5. F001 carrier binding deferred"
+        }
+      ],
+      "depends_on": [
+        "EX01"
+      ],
+      "repository_or_service_locators": [
+        "Existing coordinator task 086cc4ec",
+        "Actual Codex proof and release scopes"
+      ],
+      "work_packages": [
+        "WP06",
+        "WP08"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": null,
+      "current_binding_gap": "Current implementation, authority, and actual consumer result must be bound by the named owner; this source packet does not establish them.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 60
+    },
+    {
+      "id": "EX61",
+      "title": "Bind the rule-battery selector to its protected invocation, separately from corpus pairs",
+      "lane": "SELECTOR",
+      "existing_owner": "Existing graph-first battery selector and hook owner",
+      "scope": "Only when that integration is separately selected",
+      "action": "Bind exact applicable BindingRule IDs, qualifying divergence ledger, required battery state and overlay/substitution/debt. Preserve null versus false. Apply the existing leverage floor on the selected first-query contract without bypassing general authorization. Do not install the selector as a plugin hook.",
+      "acceptance_predicate": "The actual protected invocation consumes the selected rule battery and its qualified evidence basis.",
+      "positive_case": "Divergent rule with absent overlay retains required battery plus disclosed semantic substitution or debt.",
+      "negative_case": "Shape-only query, unreadable ledger coerced false, PG neighbor as SIMILAR_RULE fact, or a script on main with no reader cannot pass.",
+      "references": [
+        {
+          "source_id": "S05",
+          "start_line": 13,
+          "end_line": 25,
+          "quote_sha256": "78e7d99752f50ae7e9dfcf88c789d262d87a68901ce16175691c6aff7c48ace2",
+          "anchor_text": "## The query floor"
+        },
+        {
+          "source_id": "S38",
+          "start_line": 99,
+          "end_line": 109,
+          "quote_sha256": "6b24cdac5648fbc7cac42b37f29b40587d09fa98147411d026450fba1b6c0fb3",
+          "anchor_text": "## UC07"
+        }
+      ],
+      "depends_on": [
+        "EX01",
+        "EX25"
+      ],
+      "repository_or_service_locators": [
+        "scripts/governance/graph_first_battery_select.py",
+        "Actual native protected-invocation hook consumer",
+        "governance.binding_rules and rule embeddings"
+      ],
+      "work_packages": [
+        "WP02",
+        "WP04",
+        "WP07"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": null,
+      "current_binding_gap": "Current implementation, authority, and actual consumer result must be bound by the named owner; this source packet does not establish them.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 61
+    },
+    {
+      "id": "EX62",
+      "title": "Repair graph-econ judgment visibility before using trial pairs for promotion",
+      "lane": "GRAPH_ECON",
+      "existing_owner": "Existing graph-econ evaluation/judge-licence owner 1715404c",
+      "scope": "Graph-econ CONTROL/TREATMENT product, not corpus or selector",
+      "action": "Bind the actual trial arms and admissible independent judgment relation. Qualify whether reported quality receipts in another table meet this view contract; no count-only copy into the expected table. Preserve total-claim denominators, causal eligibility and residual-cost distinctions.",
+      "acceptance_predicate": "The comparison sees valid matched evidence under its own actual promotion predicate.",
+      "positive_case": "Eligible control/treatment records join the licensed judgment and full resource/outcome measures.",
+      "negative_case": "No cosine writer, type-cluster fixture, 13-leg PASS, or receipt count can stand in for graph-econ independent arm evidence.",
+      "references": [
+        {
+          "source_id": "S38",
+          "start_line": 99,
+          "end_line": 109,
+          "quote_sha256": "6b24cdac5648fbc7cac42b37f29b40587d09fa98147411d026450fba1b6c0fb3",
+          "anchor_text": "## UC07"
+        },
+        {
+          "source_id": "S21",
+          "start_line": 447,
+          "end_line": 466,
+          "quote_sha256": "30470c03b8116e7c570b3dfb33f0a513c2e3fb1bd7a06b597fc57f270f597cb8",
+          "anchor_text": "## 18. Measurement units"
+        },
+        {
+          "source_id": "S24",
+          "start_line": 419,
+          "end_line": 433,
+          "quote_sha256": "cd9e9be0225eee7b1568bf53e317acc5f0162c52a3ef4580f8ea22e6fe540209",
+          "anchor_text": "### 13.5 Test the interaction"
+        }
+      ],
+      "depends_on": [
+        "EX49"
+      ],
+      "repository_or_service_locators": [
+        "governance.v_graph_vector_reasoning_pair_evidence",
+        "graph_vector_reasoning_independent_judgment",
+        "Existing judge-licence task 1715404c"
+      ],
+      "work_packages": [
+        "WP06",
+        "WP07"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": null,
+      "current_binding_gap": "Current implementation, authority, and actual consumer result must be bound by the named owner; this source packet does not establish them.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 62
+    },
+    {
+      "id": "EX63",
+      "title": "Reserve and reconcile whole-task resources across retries and delegation",
+      "lane": "RESOURCE",
+      "existing_owner": "Existing capability/execution and budget owner",
+      "scope": "Any selected costly or effectful multi-stage path",
+      "action": "Bind actual resource ceilings, estimates and preferences separately. Reserve parent and permitted children without each consuming the whole available balance. Record all attempts, retries, tool/host/evaluator costs and unresolved liabilities. One retry owner per effect; timeouts are not proof of remote cessation.",
+      "acceptance_predicate": "Resource accounting describes the whole accepted work and actual stop/cancel obligations.",
+      "positive_case": "An admitted operation finishes within the claimed measured envelope or reports the observed overrun/residual.",
+      "negative_case": "Token price, LIMIT, provider budget pause, idle TTL, cancelled client wait or missing-cost zero cannot become a total-cost/deadline guarantee.",
+      "references": [
+        {
+          "source_id": "S32",
+          "start_line": 207,
+          "end_line": 217,
+          "quote_sha256": "d409b1a5c4c627404655f5719d151952feb04ba1ceb39ee1d7b6f05243956344",
+          "anchor_text": "## 6. Budget, capacity and cancellation"
+        },
+        {
+          "source_id": "S24",
+          "start_line": 231,
+          "end_line": 243,
+          "quote_sha256": "616a50277b9152d5ee7cf87fa9792002a7988dc94503c3400eedf37a809b3937",
+          "anchor_text": "### 6.4 Measure the cost"
+        }
+      ],
+      "depends_on": [
+        "EX01"
+      ],
+      "repository_or_service_locators": [
+        "Existing budget reservation and retry/cancellation owner",
+        "Actual model/tool/host invoices or usage records as applicable"
+      ],
+      "work_packages": [
+        "WP04",
+        "WP06"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": null,
+      "current_binding_gap": "Current implementation, authority, and actual consumer result must be bound by the named owner; this source packet does not establish them.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 63
+    },
+    {
+      "id": "EX64",
+      "title": "Preserve per-principal data, reference and cache boundaries across the vehicle",
+      "lane": "SECURITY",
+      "existing_owner": "Existing auth, evidence, cache and processor-admission owners",
+      "scope": "Every implicated data path",
+      "action": "Keep tenant/authority scope in reference resolution, caches, retrieval results and resumable work. Qualify every actual processor and sent text; preserve source/version/permission changes. User input and retrieved instructions remain data until legitimately selected under the real owner. Do not ship private operator archives as public plugin content.",
+      "acceptance_predicate": "Only permitted data and references reach each actual reader/executor and current revocation is respected.",
+      "positive_case": "A valid scoped cache hit preserves freshness and evidence identity.",
+      "negative_case": "Cross-principal handle reuse, hidden logs, unapproved external shadowing, full private transcript export or stale authorization cannot be justified by a connector install.",
+      "references": [
+        {
+          "source_id": "S32",
+          "start_line": 250,
+          "end_line": 264,
+          "quote_sha256": "fb7144a1f26161f8f3c3ca3cb36b280c798557f604f0f9853c298e964dfee59c",
+          "anchor_text": "## 8. Privacy, search and caching"
+        },
+        {
+          "source_id": "S24",
+          "start_line": 439,
+          "end_line": 451,
+          "quote_sha256": "3356dbe52cb07715e33af0ee16566e9c6539c450c8381ab9394bfbec684d9ad5",
+          "anchor_text": "## 14. Security and data-use protocol"
+        },
+        {
+          "source_id": "S03",
+          "start_line": 31,
+          "end_line": 32,
+          "quote_sha256": "0747d1389ee4a518a1d0402ead84148592202be07582e8ac8948c5d24d9e9e30",
+          "anchor_text": "`contracts/SKILLS_MANIFEST.json`"
+        }
+      ],
+      "depends_on": [
+        "EX01"
+      ],
+      "repository_or_service_locators": [
+        "Existing Source auth/reference/cache owner",
+        "Current processor and data-policy evidence",
+        "Actual distribution audience"
+      ],
+      "work_packages": [
+        "WP04",
+        "WP09",
+        "WP10"
+      ],
+      "execution_status": "NOT_RUN_IN_THIS_RECOMBINATION",
+      "command_ref": null,
+      "current_binding_gap": "Current implementation, authority, and actual consumer result must be bound by the named owner; this source packet does not establish them.",
+      "failure_disposition": "Preserve the exact failed or unresolved product, relevant identities, and remaining obligation. Do not promote status, retry an unchanged refusal, or transfer ownership from this document.",
+      "order_in_reading_atlas": 64
+    }
+  ]
+}

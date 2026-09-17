@@ -1,0 +1,71 @@
+{
+  "title": "Dynamic oneshot — no-sacrifice unification",
+  "kind": "unified_router_select · alignment_13pt_wrap · NOT_CONFERRED · UNCOMPRESSED_CLOSURE",
+  "claim_ceiling": "DIRECTIVE_ONLY · NOT_REPOSITORY_IMPLEMENTED · PAIR_EVIDENCE_INCOMPLETE",
+  "observed_at": "2026-09-17T13:50:00Z",
+  "http": {
+    "raw": "https://raw.githubusercontent.com/shaneatlas/chamber-subsumption-2026-09-17/main/ONESHOT_DYNAMIC.md",
+    "html": "https://github.com/shaneatlas/chamber-subsumption-2026-09-17/blob/main/ONESHOT_DYNAMIC.md",
+    "json": "https://raw.githubusercontent.com/shaneatlas/chamber-subsumption-2026-09-17/main/ONESHOT_DYNAMIC.json",
+    "packet": "SOURCE_CONNECTOR_BUILD_RECOMBINED_2026-09-17.zip",
+    "packet_sha256": "f0d88ce50864e392ac7242cc2ba4bc1d96fcb4ab769c091b00f8d48220200f84"
+  },
+  "alignment": {
+    "skill": "alignment-13pt",
+    "pair": "EVIDENCE_INCOMPLETE",
+    "source_label": "DISAGREEMENT",
+    "fired": false,
+    "why": "3pass r1 DEFERRED (4246cd7c). Confer r1 REFUSE of D_1 (#18772). No confirming pair on D_2. This seat wraps; it does not confer.",
+    "r0": "#18770 SUSTAIN 10/13 publication-only",
+    "r2_owner": "da60e026",
+    "stop": "PAIR_ALIGNED is the pair terminal. DEFERRED cannot discharge it. 13/13 with CAUGHT_OVERCLAIM is still refusal."
+  },
+  "unify": {
+    "what": "Recombined connector build S01–S38 / B01–B07 / EX01–EX64 / L0–L5 (72) bound as evidence. Thin plugin front stays four skills / five commands.",
+    "not": "Implementation, lock, install, conferral, learning admission, or dump of the 15.8MB archive into the public plugin."
+  },
+  "selection_rule": "Advance the work with the greatest supported impact relative to total time and effort on the selected owner's contended surface, then update from the observed result. WIP=1 per owner. Four releases stay four.",
+  "lanes": [
+    {
+      "id": "PLUGIN",
+      "owner": "6310327d",
+      "first": "EX02 then CMD02 (no apply)",
+      "then": "EX12–EX21 · EX64 · CMD03 only after real lock recorder",
+      "why": "Highest ICE that does not require conferral or API release. Front-only."
+    },
+    {
+      "id": "MASTER",
+      "owner": "da60e026",
+      "first": "EX03 served-effect readback (#4250/#4260/#4125)",
+      "then": "EX22 conditional #4259+#4265 · EX34/EX35 only under live pair custody",
+      "why": "D_2 step 1. Do not transfer D_1 REFUSE. Do not fire from Chamber."
+    },
+    {
+      "id": "CORPUS",
+      "owner": "graph-ingest / enrich_with_voyage owner",
+      "first": "EX41 type-cluster fixture",
+      "then": "EX39 pairs-only reuse · EX40 query qualify · EX42 stage then publish",
+      "why": "Generation eligibility must not control pair eligibility. Orthogonal to plugin and epoch."
+    },
+    {
+      "id": "EPOCH",
+      "owner": "hook estate / dc64363e custody to bind",
+      "first": "EX25 B8 out of PreToolUse (cadc7a87; close 444bbf35, bbea401e)",
+      "then": "EX26–EX30 one epoch carrying #4218; stamper 91d17c55 if ready",
+      "why": "Sealed registrations. Ceiling REGISTRATIONS_WRITTEN_NATIVE_UPTAKE_UNPROVED."
+    }
+  ],
+  "deferred_not_lost": [
+    "EX04–EX11 API/result completeness",
+    "EX43–EX45 search/rerank (L2)",
+    "EX48–EX51 learning (after qualified client results)",
+    "EX52–EX55 L4 representations / harness pilots",
+    "EX57 credential floor (operator)",
+    "EX58 local source-mcp 0.6.6",
+    "EX59 recovery scheduler",
+    "EX60 Codex window",
+    "EX61 graph-first selector",
+    "EX62 graph-econ judgement",
+    "EX63 resource envelope"
+  ]
+}

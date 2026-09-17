@@ -1,0 +1,262 @@
+{
+  "observed_at": "2026-09-17T11:38:34Z",
+  "claim_ceiling": "SAMPLED_VALUES__HISTORICAL_REPLAY_UNPROVED",
+  "invocation_claim_ceiling": "EXECUTED_RECEIPTED_EFFECT_UNVERIFIED",
+  "schema": "source.governance_pulse_observation.v1",
+  "identity": {
+    "generation_id": "3899f56bec0a46cc",
+    "catalog_sha16": "0e6cad304fb4e343",
+    "deploy_sha": "61a3e6a6f3734c75d2d10e2b7d6d57723c6185cd",
+    "native_join": "42 / 42",
+    "tool_count": 42,
+    "profile": "curated",
+    "note": "catalog_sha16 held while generation churned from dae69cc80dec0bee. Catalog hash is not semantic identity. deploy_sha is /api/build, never git HEAD."
+  },
+  "observation": {
+    "schema": "source.governance_pulse_observation.v1",
+    "started_at": "2026-09-17T11:38:33.331840Z",
+    "completed_at": "2026-09-17T11:38:34.491706Z",
+    "cache_ttl_seconds": 20,
+    "collection_mode": "sequential_postgres_queries",
+    "data_sha256": "cc267eccdc2d9249d7b79c06a2298a6db36918be7d4d7a2f805e3a469bd4cc41",
+    "hash_scope": "response_without_observation",
+    "conferral_source": "governance.witness_receipt",
+    "claim_ceiling": "SAMPLED_VALUES__HISTORICAL_REPLAY_UNPROVED"
+  },
+  "invocation": {
+    "id": "9e09bdf4-7f62-599e-b95e-c17d13de3166",
+    "tool_name": "source_governance_pulse",
+    "attempted": true,
+    "dispatched": true,
+    "executed": true,
+    "succeeded": true,
+    "effect_verified": false,
+    "effect_verification_status": "UNVERIFIED_EXTERNAL_EFFECT",
+    "generation_id": "3899f56bec0a46cc",
+    "claim_ceiling": "EXECUTED_RECEIPTED_EFFECT_UNVERIFIED"
+  },
+  "prior": {
+    "observed_at": "2026-09-17T06:09:50Z",
+    "claim_ceiling": "SAMPLED_VALUES__HISTORICAL_REPLAY_UNPROVED",
+    "sensors_total": 3293,
+    "sensors_green": 3277,
+    "witness_receipts": 14576,
+    "witness_verdicts": 78420,
+    "receipts_with_verdicts": 8763,
+    "screaming": 311,
+    "umbrella_rules": 532,
+    "unprobed_doctrine": 33,
+    "generation_id": "dae69cc80dec0bee",
+    "catalog_sha16": "0e6cad304fb4e343",
+    "latest_receipt_id": 18552,
+    "latest_ok": 11,
+    "latest_legs": 13
+  },
+  "scream_ladder": {
+    "contract": "M6436",
+    "view": "governance.v_doctrine_acceptance_scream",
+    "summary_view": "governance.v_doctrine_acceptance_scream_summary",
+    "hot_path": "EXISTENCE",
+    "liveness_isolated": "governance.v_doctrine_probe_liveness",
+    "umbrella_any_of": [
+      "actuation_tier=substrate_mechanical",
+      "enforcement_class=substrate_trigger",
+      "input_determinism=D"
+    ],
+    "claim_basis": [
+      "tagged_mechanical",
+      "trigger_untagged",
+      "deterministic_untagged"
+    ],
+    "acceptance": [
+      {
+        "id": "UNPROBED",
+        "scream": true,
+        "when": "path null or empty"
+      },
+      {
+        "id": "PROBE_RESOLVES_VIEW",
+        "scream": false,
+        "when": "path in live tables or views"
+      },
+      {
+        "id": "PROBE_RESOLVES_FN",
+        "scream": false,
+        "when": "path in live functions"
+      },
+      {
+        "id": "SCRIPT_PATH_UNVERIFIED",
+        "scream": true,
+        "when": "slash-path not a live PG object"
+      },
+      {
+        "id": "PROBE_MISSING",
+        "scream": true,
+        "when": "dotted name resolves to nothing"
+      }
+    ],
+    "accepted_only_if": "PG-resolvable view, table, or function",
+    "ci": "delta-aware; standing backlog does not red-X a PR",
+    "live_buckets_in_pulse": false,
+    "note": "Pulse returns screaming and umbrella_rules only. Per-acceptance counts are not in this observation. Do not invent a 311 split."
+  },
+  "geometry_debug": {
+    "default_receipt_id": 18767,
+    "default_ok": 10,
+    "default_legs": 13,
+    "latest_is_geometry": false,
+    "absences_not_zeros": true,
+    "note": "Ring defaults to 13-pt #18767. Latest conferral #18769 is a 2-leg flood (substrate + code_probe), not the 13-geometry. Unlit nodes are absences, not zeros. ok_count is a count, not independence. filesystem_packet_integrity and checkpoint_gateway_return_binding are a continuity 2-leg owner, not empty 13-pt slots."
+  },
+  "live_window": {
+    "observed_at": "2026-09-17T12:00:08Z",
+    "latest_receipt_id": 18778,
+    "latest_ok": 11,
+    "latest_legs": 13,
+    "latest_unique_named": 10,
+    "window_all_13pt": true,
+    "flood_rotated_off": true,
+    "canonical_off_tape": true,
+    "ok_equals_unique_named_plus": 1,
+    "persistent_other_owner": [
+      "filesystem_packet_integrity",
+      "checkpoint_gateway_return_binding"
+    ],
+    "note": "12:00Z pulse window is 13-pt-only. Teaching pin #18767 and flood #18769 have rotated off that window. Continuity pair never appears on 13-pt conferral receipts. ok is unique named providers plus typically one graph sentinel."
+  },
+  "conferrals": [
+    {
+      "receipt_id": 18769,
+      "providers": [
+        "substrate",
+        "code_probe"
+      ],
+      "ok": 2,
+      "legs": 2,
+      "at": "2026-09-17T11:32:13"
+    },
+    {
+      "receipt_id": 18768,
+      "providers": [
+        "substrate",
+        "code_probe"
+      ],
+      "ok": 2,
+      "legs": 2,
+      "at": "2026-09-17T11:32:12"
+    },
+    {
+      "receipt_id": 18767,
+      "providers": [
+        "code_probe",
+        "google",
+        "grok",
+        "openai",
+        "perplexity",
+        "relational_probe",
+        "substrate",
+        "together",
+        "vector_probe"
+      ],
+      "ok": 10,
+      "legs": 13,
+      "at": "2026-09-17T11:14:08"
+    },
+    {
+      "receipt_id": 18766,
+      "providers": [
+        "substrate",
+        "code_probe"
+      ],
+      "ok": 2,
+      "legs": 2,
+      "at": "2026-09-17T11:07:01"
+    },
+    {
+      "receipt_id": 18765,
+      "providers": [
+        "substrate",
+        "code_probe"
+      ],
+      "ok": 2,
+      "legs": 2,
+      "at": "2026-09-17T11:07:00"
+    },
+    {
+      "receipt_id": 18764,
+      "providers": [
+        "code_probe",
+        "exogenous_probe",
+        "google",
+        "grok",
+        "openai",
+        "perplexity",
+        "substrate",
+        "together",
+        "vector_probe"
+      ],
+      "ok": 10,
+      "legs": 13,
+      "at": "2026-09-17T11:04:52"
+    },
+    {
+      "receipt_id": 18763,
+      "providers": [
+        "substrate",
+        "code_probe"
+      ],
+      "ok": 2,
+      "legs": 2,
+      "at": "2026-09-17T11:02:54"
+    },
+    {
+      "receipt_id": 18762,
+      "providers": [
+        "substrate",
+        "code_probe"
+      ],
+      "ok": 2,
+      "legs": 2,
+      "at": "2026-09-17T11:02:54"
+    }
+  ],
+  "sensors": {
+    "colors": {
+      "red": 6,
+      "green": 3288,
+      "amber": 5,
+      "grey": 5
+    },
+    "total": 3304,
+    "latest": "2026-09-17T11:30:00"
+  },
+  "totals": {
+    "witness_receipts": 14793,
+    "witness_verdicts": 80448,
+    "receipts_with_verdicts": 8945
+  },
+  "independence_status": "per_leg_readable \u2014 8945/14793 receipts have witness_verdict (80448 legs); ok_count is still a count, not independence",
+  "doctrine_scream": {
+    "honest_state": "DOCTRINE_UNACCEPTED_SCREAM",
+    "screaming": 311,
+    "umbrella_rules": 532
+  },
+  "admission_debt": {
+    "honest_state": "UNPROBED_DOCTRINE_ADMITTED",
+    "unprobed_doctrine": 33,
+    "active_doctrine": 209
+  },
+  "whoami": {
+    "role": "connector_public",
+    "scopes": [
+      "source:public"
+    ],
+    "tier": "oauth"
+  },
+  "substrate": {
+    "postgres": "connected (182ms)",
+    "neo4j": "connected (372ms)",
+    "status": "alive",
+    "version": "1.0.0"
+  }
+}

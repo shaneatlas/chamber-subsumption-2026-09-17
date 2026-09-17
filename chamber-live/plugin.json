@@ -1,0 +1,452 @@
+{
+  "title": "Plugin connector",
+  "kind": "harvest_pack",
+  "not": "marketplace bump · epoch hook estate · 29 vendor neo4j skills · PAIR_ALIGNED",
+  "claim_ceiling": "PLUGIN_PACK_HARVESTED_NOT_INSTALLED · HELPDOCS_PINNED · ONESHOT_BOUND",
+  "served_plugin": {
+    "name": "source",
+    "version": "0.2.4",
+    "marketplace": ".claude-plugin/marketplace.json",
+    "source": "./plugins/source",
+    "mcp": "https://mcp.thesrc.ai/mcp/",
+    "surface_case": "CLI plane hundreds of skills; plugin plane 4 skills. Planes were disjoint; lock now pins both."
+  },
+  "honesty": "This atlas packs hooks, skills, battery meta, harness helpdocs, and the oneshot directive as a candidate overlay. Installing it requires a version bump in both plugin.json files plus marketplace.json, then plugin_lock.py --record. This surface does not write Source.",
+  "manifest": {
+    "claude": {
+      "path": "plugins/source/.claude-plugin/plugin.json",
+      "required": ["name"],
+      "fields": ["name", "version", "description", "author", "homepage", "repository", "license", "keywords", "commands", "skills", "agents", "mcpServers"],
+      "hooks_path": "hooks/hooks.json"
+    },
+    "codex": {
+      "path": "plugins/source/.codex-plugin/plugin.json",
+      "extra": "interface.displayName / shortDescription / defaultPrompt[] / capabilities",
+      "skills": "./skills/",
+      "mcpServers": "./.mcp.json"
+    },
+    "lock_rule": "When ANY runtime-class file changes (scripts/, hooks/, skills/, commands/, agents/, LEVERS.json, .mcp.json, either plugin.json): bump version in both plugin.json files AND marketplace.json AND MANIFEST_LOCK.json, then run scripts/plugin_lock.py --record."
+  },
+  "hooks": {
+    "plugin": {
+      "file": "plugins/source/hooks/hooks.json",
+      "law": "Fail-open, bounded, SILENT inside a checkout that already runs the Source epoch hook estate so a lever never fires twice.",
+      "events": [
+        {
+          "event": "SessionStart",
+          "script": "hooks/session_start.py",
+          "timeout_s": 5,
+          "does": "Lever lattice + frontier ledger when no epoch estate; version-lag always (consumer sensor, not a lever)."
+        },
+        {
+          "event": "UserPromptSubmit",
+          "script": "hooks/user_prompt_submit.py",
+          "timeout_s": 5,
+          "does": "Prompt-side lever/frontier hint. Not B8."
+        }
+      ]
+    },
+    "not_in_plugin": {
+      "b8": "Gate B8 census lives in the unified PreToolUse epoch hook. pre-ingest-census.py never runs. Cold 2.68s vs 2.25s budget. Do not move B8 into this plugin UserPromptSubmit.",
+      "epoch": "Epoch install carrying #4218 + B8 is a host checkout operation, not a plugin lever."
+    }
+  },
+  "skills": {
+    "shipped": [
+      {
+        "id": "source-mcp-usage",
+        "role": "Bind catalog identity; one gateway; no sibling MCP names.",
+        "binding": "PLUGIN"
+      },
+      {
+        "id": "source-levers",
+        "role": "13-seat lever lattice. LEVERS.json is authority.",
+        "binding": "PLUGIN"
+      },
+      {
+        "id": "source-frontier-battery",
+        "role": "Recursive wrapper around the existing router. Never a second router.",
+        "binding": "PLUGIN"
+      },
+      {
+        "id": "cross-session-orchestration",
+        "role": "Coordinate live seats without duplicate authority.",
+        "binding": "PLUGIN"
+      }
+    ],
+    "harvest": [
+      {
+        "id": "recursive-conferral",
+        "role": "3pass ⊥ confer until PAIR_ALIGNED. SELECT, do not swallow.",
+        "binding": "CLI_DISK_ONLY · missing from plugin plane",
+        "forms": ["SKILL.md", "agents/openai.yaml", "compatibility: grok"]
+      },
+      {
+        "id": "unified-router",
+        "role": "Ingress. 34-factor activate_skill. Slash is override, never a chain.",
+        "binding": "CLI_BOUND · missing from plugin plane",
+        "forms": ["SKILL.md", "agents/openai.yaml", "compatibility: grok"]
+      },
+      {
+        "id": "durable-oneshot-drain",
+        "role": "Temporal residual oneshot + capacity ratchet. Not re-pri theater.",
+        "binding": "CLI_BOUND · missing from plugin plane",
+        "forms": ["SKILL.md", "agents/openai.yaml", "compatibility: grok"]
+      },
+      {
+        "id": "alignment-13pt",
+        "role": "Wraps the pair as 13 seats. Does not replace the confirming round.",
+        "binding": "CLI_BOUND · missing from plugin plane",
+        "forms": ["SKILL.md", "agents/openai.yaml"]
+      }
+    ]
+  },
+  "battery": {
+    "skill": "source-frontier-battery",
+    "law": "estate_census ⊥ candidate_set ⊥ selection ⊥ invocation ⊥ firing ⊥ consumption ⊥ effect ⊥ authority",
+    "never": "A second router. Scoring inside the battery. EFFECT_WITNESSED without an observer. Swallowing /recursive-conferral.",
+    "protocol": [
+      "init --objective",
+      "pass (router once per OPEN)",
+      "witness <id> --invocation EFFECT_WITNESSED",
+      "residual <id> --text",
+      "drain --cap 13",
+      "status"
+    ],
+    "npass": "A pass is ADMITTED iff it moved a state or added a residual. Two consecutive FORCED passes = EXHAUSTED. Cap 13 is a budget, never a target.",
+    "terminals": [
+      "CLOSED_WITH_BACKLOG",
+      "PARTIAL_WITH_RESIDUALS",
+      "STATUS_ONLY_NO_CHANGE",
+      "REFUSED_WITH_EVIDENCE",
+      "BLOCKED_BY_EXACT_BOUNDARY",
+      "CHECKPOINT"
+    ],
+    "meta_prompts": [
+      {
+        "id": "battery.seed",
+        "prompt": "Seed every open objective and residual onto .thesrc/frontier.json. Do not invent a second ledger."
+      },
+      {
+        "id": "battery.pass",
+        "prompt": "Ask the existing router (POST /api/activate) once per OPEN objective. Record selection_degraded when the headless budget fallback runs. UNAVAILABLE is not movement."
+      },
+      {
+        "id": "battery.witness",
+        "prompt": "Record the state actually reached: FIRED_NO_OUTPUT → OUTPUT_UNCONSUMED → CONSUMED_NO_EFFECT → EFFECT_WITNESSED → DURABLE. Naming a skill is not an effect."
+      },
+      {
+        "id": "battery.pair",
+        "prompt": "If the objective is a load-bearing decision, SELECT recursive-conferral. Do not swallow it. Battery records the receipt; harness fires the pair."
+      },
+      {
+        "id": "battery.oneshot",
+        "prompt": "Once a selection is witnessed, the durable back-half is /durable-oneshot-drain. Residual QUEUE_DRAINED is exhaustion on that plane. Discovery ratchets orthogonally."
+      }
+    ]
+  },
+  "oneshot": {
+    "directive": "durable-oneshot-drain",
+    "triggers": ["/durable-oneshot-drain", "/oneshot-drain", "/queue-drain-oneshot", "/durable-oneshot", "/durable-oneshot-ratchet"],
+    "waist": "Temporal DrainBatch on candidate-drain-filtered-safe. Probe residual board. Fire only if QUEUE_OPEN. Rank-3 means the path exists, not that it already ran.",
+    "h11": "Run the bare command first. GOAL_OVERRIDE=1 only on an actual H11 exit 2. Leading with the prefix poisons the queue on Claude Code.",
+    "planes": [
+      { "n": 0, "id": "residual", "terminal": "QUEUE_DRAINED", "ceiling": "RESIDUAL_BOARD_EXHAUSTED" },
+      { "n": 1, "id": "graph-shape", "terminal": "PLANE_ONESHOT_FIRED", "ceiling": "SHAPE_INVESTIGATION" },
+      { "n": 2, "id": "sweep", "terminal": "PLANE_ONESHOT_FIRED", "ceiling": "GAP_SWEEP_ONESHOT" },
+      { "n": 3, "id": "emergence", "terminal": "PLANE_ONESHOT_FIRED", "ceiling": "candidate" },
+      { "n": 4, "id": "insight", "terminal": "PLANE_ONESHOT_FIRED", "ceiling": "GRAPH_INSIGHT_ONESHOT" }
+    ],
+    "not": [
+      "deterministic-oneshot-runbook (compile a Ghostty/Codex package — different waist)",
+      "source-frontier-battery (router wrapper — selection, not Temporal fire)",
+      "session ICE insert into system_tasks (THEATER_REPRIORITIZE after rank-3)",
+      "this Chamber session firing DrainBatch"
+    ],
+    "invoke": "PYTHONPATH=. python3 .agents/skills/durable-oneshot-drain/scripts/run_durable_oneshot_drain.py",
+    "status": "… --status",
+    "ratchet": "… --ratchet"
+  },
+  "helpdocs": [
+    {
+      "harness": "anthropic",
+      "product": "Claude Code",
+      "doc": "https://code.claude.com/docs/en/plugins",
+      "authority": "PINNED_HELPDOC · not live proof of this install",
+      "contract": "plugin.json name required. skills/ folders with SKILL.md; description required for model invocation. hooks/hooks.json events map to command arrays; stdin JSON. marketplace.json lists plugins. Folder name becomes skill name, namespaced by plugin name.",
+      "this_pack": ".claude-plugin/plugin.json + hooks/hooks.json + skills/*/SKILL.md"
+    },
+    {
+      "harness": "openai",
+      "product": "Codex",
+      "doc": "https://developers.openai.com/codex/concepts/customization",
+      "yaml": "https://raw.githubusercontent.com/openai/codex/main/codex-rs/skills/src/assets/samples/skill-creator/references/openai_yaml.md",
+      "authority": "PINNED_HELPDOC · not live proof of this install",
+      "contract": "AGENTS.md is durable project guidance. Skills are reusable workflows. agents/openai.yaml is harness-facing: interface.display_name, short_description, default_prompt must mention $skill-name. Quote all string values. MCP deps declared in openai.yaml. Plugin install when a reusable workflow already exists.",
+      "this_pack": ".codex-plugin/plugin.json interface.defaultPrompt[] + skills/*/agents/openai.yaml"
+    },
+    {
+      "harness": "xai",
+      "product": "Grok",
+      "doc": "https://docs.x.ai/build/features/skills-plugins-marketplaces",
+      "authority": "PINNED_HELPDOC · not live proof of this install",
+      "contract": "Discover ./.grok/skills, ~/.grok/skills, enabled plugin skills/, extra [skills] paths. SKILL.md YAML: name, description, when-to-use, paths, allowed-tools, argument-hint, user-invocable (literal true; yes is false), disable-model-invocation. Extra keys ignored. effort/compatibility accepted but not applied. Slash /skill-name when user-invocable. Also reads AGENTS.md/Agents.md/AGENT.md. Plugins from ./.grok/plugins and ~/.grok/plugins.",
+      "this_pack": "SKILL.md with user-invocable: true and compatibility: grok (ignored by Grok, kept for Source census)"
+    }
+  ],
+  "triple_form": {
+    "waist": "One SKILL.md body. Three harness adapters. Do not fork procedure per vendor.",
+    "anthropic": "YAML frontmatter name + description. allowed-tools is advisory.",
+    "openai": "agents/openai.yaml interface + $skill-name default_prompt.",
+    "xai": "Same SKILL.md. Extra keys ignored. user-invocable literal true for slash."
+  },
+  "mcp": {
+    "title": "MCP protocol · engineering-13pt",
+    "claim_ceiling": "LIVE_CONNECTOR_MEASURED · PLUGIN_MOUNT_INSPECTED · 2026-07-28_NOT_NEGOTIATED · SOURCE_NOT_WRITTEN",
+    "this_connector": {
+      "protocol_version": "2025-11-25",
+      "profile": "curated",
+      "tool_count": 42,
+      "registered_tools": 188,
+      "catalog_sha16": "0e6cad304fb4e343",
+      "deploy_sha": "61a3e6a6f3734c75d2d10e2b7d6d57723c6185cd",
+      "list_changed_supported": false,
+      "auth_kind": "oauth_jwt",
+      "oauth_context_status": "VERIFIED_RESOURCE_BOUND",
+      "ceilings": [
+        "no_confirm_on_agent_api",
+        "no_native_client_tasks_use_server_polling",
+        "no_custom_ui",
+        "no_slash_interception"
+      ]
+    },
+    "plugin_mount": {
+      "file": "plugins/source/.mcp.json",
+      "type": "http",
+      "url": "https://mcp.thesrc.ai/mcp/",
+      "bearer_token_env_var": "SOURCE_API_TOKEN",
+      "headers": "Authorization: Bearer ${SOURCE_API_TOKEN}",
+      "oauth_object": false,
+      "prompts": false,
+      "resources": false,
+      "listChanged": false
+    },
+    "law": "Registrations are not equivalent even on the same deploy. Bind source_catalog_identity on the registration you will call. Matching catalog_sha16 with a different schema_fingerprint is not equivalence. Never transfer a refusal between plugin, claude.ai OAuth, stdio, Codex, and this Grok connector.",
+    "spec": {
+      "bound": "2025-11-25 (Source initialize)",
+      "moved": "2026-07-28 drops sessions and SSE resumability; elicitation/sampling become MRTR InputRequiredResult; resources/subscribe → subscriptions/listen; tasks leave core.",
+      "risk": "If a harness silently speaks 2026-07-28, Source listChanged=false and session-based elicitation will not degrade loudly."
+    },
+    "harness": [
+      {
+        "id": "anthropic",
+        "client": "Claude Code",
+        "mount": ".mcp.json type=http + optional oauth{} + headersHelper",
+        "has": "tools, resources @-mentions, prompts as /mcp__server__prompt, elicitation form+URL, roots, listChanged stream on v2, tool search / alwaysLoad, plugin tool names mcp__plugin_<plugin>_<server>__<tool>",
+        "gap": "Source plugin has no oauth object, no prompts/list, no resources, listChanged false. 188-tool full profile needs alwaysLoad on identity/health/catalog or ENABLE_TOOL_SEARCH.",
+        "ice": 1
+      },
+      {
+        "id": "openai",
+        "client": "Codex",
+        "mount": "plugin .mcp.json bearer_token_env_var already Codex-shaped; also config.toml [mcp_servers.source]",
+        "has": "stdio+http, CIMD OAuth, tool approval modes, enabled_tools allowlist, instructions first 512 chars",
+        "gap": "No oauth CIMD in the plugin mount. Stranger Codex without SOURCE_API_TOKEN cannot connect. Elicitation/sampling undocumented. Harvest skills missing from plugin plane so slash path is empty.",
+        "ice": 1
+      },
+      {
+        "id": "xai",
+        "client": "Grok Build + grok.com connectors + xAI API remote MCP",
+        "mount": "grok mcp add --transport http · ~/.grok/config.toml [mcp_servers.source] url= · API tools[].mcp server_url+authorization+allowed_tools",
+        "has": "Streamable HTTP tools/list + tools/call. API remote MCP is tools-only (no resources/prompts/elicitation in the helpdoc). This Grok chat connector is OAuth resource-bound, curated 42, no slash interception.",
+        "gap": "Plugin pack had no grok.toml stanza. Grok.com custom connector is a third registration. Do not assume prompts or elicitation exist here. Skills via SKILL.md are the slash path; MCP cannot intercept slashes.",
+        "ice": 1
+      }
+    ],
+    "seats": [
+      { "n": 1, "unit": "U1", "lever": "initialize / protocolVersion", "state": "LIVE 2025-11-25", "next": "Advertise tools.listChanged=false explicitly; negotiate 2026-07-28 or fail closed." },
+      { "n": 2, "unit": "U1", "lever": "streamable HTTP mount", "state": "LIVE plugin .mcp.json", "next": "Keep one URL. Do not add sibling Source MCP names." },
+      { "n": 3, "unit": "U1", "lever": "registration identity", "state": "SPLIT plugin-full-188 ⊥ curated-42 ⊥ stdio", "next": "Every skill Step 0 calls source_catalog_identity on THIS registration." },
+      { "n": 4, "unit": "U1", "lever": "catalog verifier", "state": "LIVE listChanged=false", "next": "Clients re-run tools/list when catalog_sha16 or schema_fingerprint churns. Catalog hash alone is not semantics." },
+      { "n": 5, "unit": "U2", "lever": "bearer SOURCE_API_TOKEN", "state": "LIVE plugin", "next": "Keep for headless. Not sufficient for stranger Claude/Codex." },
+      { "n": 6, "unit": "U2", "lever": "OAuth resource-bound", "state": "LIVE this Grok connector + claude.ai; VOID plugin oauth{} · CIMD false · DCR null", "next": "Pre-register client_ids or enable CIMD/DCR. Do not stuff CIMD oauth{} into the plugin while AS says false." },
+      { "n": 7, "unit": "U2", "lever": "incremental WWW-Authenticate scopes", "state": "VOID", "next": "SEP-835 would let curated→operator without a new client. After oauth object, not before." },
+      { "n": 8, "unit": "U2", "lever": "profile floor", "state": "LIVE curated substrate-ops on source_invoke; activate_skill PROFILE_ROUTE_DENIED", "next": "Do not switch registrations to bypass. This seat cannot fire the router via MCP." },
+      { "n": 9, "unit": "U3", "lever": "tools + outputSchema", "state": "PARTIAL native source_* true; many get_api_* false", "next": "Declare remaining outputSchema so models self-correct (SEP-1303)." },
+      { "n": 10, "unit": "U3", "lever": "prompts/list", "state": "VOID", "next": "Expose battery.seed/pass/witness/oneshot as MCP prompts for Claude Code /mcp__source__*. Do not claim Grok API prompts — helpdoc is tools-only." },
+      { "n": 11, "unit": "U3", "lever": "resources + subscribe", "state": "VOID", "next": "Receipts already return on tools. Subscribe is wasted until listChanged exists." },
+      { "n": 12, "unit": "U3", "lever": "elicitation / tasks", "state": "VOID · ceilings forbid confirm and client tasks", "next": "HARD_GATE stays tool arg confirm. source_events stays poll. Do not chase 2026-07-28 tasks extension." },
+      { "n": 13, "unit": "A13", "lever": "apex", "state": "LAW", "next": "No sampling for conferral (independent providers, not host LLM). No public authority widen. Receipts over narrative." }
+    ],
+    "ranked": [
+      { "rank": 1, "action": "Do NOT add CIMD oauth{} yet. AS advertises client_id_metadata_document_supported=false and registration_endpoint=null. Pre-register Claude/Codex client_ids at the Supabase AS, or enable CIMD/DCR first. Keep bearer for headless.", "owner": "AUTH / plugin lock", "why": "Live 401+PRM+AS measured 2026-09-17. CIMD path would fail closed." },
+      { "rank": 2, "action": "Ship ~/.grok/config.toml and grok mcp add stanza in the pack. Third registration, bind identity.", "owner": "plugin pack / xAI", "why": "This harness was the hole. API remote MCP is tools-only; Grok Build is the agent mount." },
+      { "rank": 3, "action": "AlwaysLoad (Claude) / enabled_tools (Codex) / allowed_tools (xAI API) for catalog_identity, health, capabilities.", "owner": "plugin mount meta", "why": "188-tool full profile drowns identity. Curated 42 still needs identity first." },
+      { "rank": 4, "action": "Declare outputSchema on remaining get_api_* mirrors.", "owner": "source-mcp compiler", "why": "SEP-1303: validation errors as tool errors so the model can self-correct." },
+      { "rank": 5, "action": "MCP prompts for battery meta on Claude Code only. Honest VOID on Grok API.", "owner": "source-mcp prompts plane", "why": "Slash interception is a Source ceiling; prompts are the protocol-native command path." },
+      { "rank": 6, "action": "Fail closed on 2026-07-28 clients until initialize advertises listChanged=false and no session elicitation.", "owner": "source-mcp initialize", "why": "Silent protocol drift is worse than a refused handshake." }
+    ],
+    "do_not": [
+      "Enable sampling for conferral — harness LLM is not an independent provider.",
+      "Chase MCP tasks to replace source_events — experimental, then moved out of core.",
+      "Add resources/subscribe before listChanged.",
+      "Treat this Grok connector's 42 tools as the plugin's 188.",
+      "Move Gate B8 into plugin hooks.",
+      "Install by bumping Chamber files — lock lives on Source."
+    ]
+  },
+  "signal": {
+    "title": "Sense → actuation · signal-13pt",
+    "skill": "/signal-13pt",
+    "geometry": "3×(3 BASE → 1 MID) + APEX. Config-not-content. Mid must close before apex.",
+    "claim_ceiling": "SIGNAL_PLANE_MAPPED · ELICITATION_VOID_THIS_CONNECTOR · DARK_EMITTER_UNLIT · NO_REWARD_MINTED",
+    "ratchet": "sense (identity/pulse) → elicit (accept|decline|cancel) → actuate (invoke/oneshot) → confer apex. Elicitation is the absorption waist, not a generation event and not consumption.",
+    "dark_law": "Seat 2 executor-emitter stays DARK until live rows have non-null quality/cost/reward. A green structural check over a dark emitter is the silent-degradation trap.",
+    "this_connector": "no_confirm_on_agent_api + no_slash_interception. Form/URL elicitation cannot fire here. HARD_GATE stays the tool arg confirm. OAuth is already live (source:public, VERIFIED_RESOURCE_BOUND). Rank-1 remaining is AS registration (CIMD false), not stuffing oauth{} CIMD into the plugin.",
+    "configs": [
+      {
+        "harness": "xai",
+        "product": "Grok Build",
+        "doc": "https://docs.x.ai/build/features/mcp-servers",
+        "cli": "grok mcp add --transport http source https://mcp.thesrc.ai/mcp/ --header \"Authorization: Bearer ${SOURCE_API_TOKEN}\"",
+        "project": "grok mcp add --scope project --transport http source https://mcp.thesrc.ai/mcp/ --header \"Authorization: Bearer ${SOURCE_API_TOKEN}\"",
+        "toml": "[mcp_servers.source]\nurl = \"https://mcp.thesrc.ai/mcp/\"\nheaders = { Authorization = \"Bearer ${SOURCE_API_TOKEN}\" }\nstartup_timeout_sec = 30\ntool_timeout_sec = 6000",
+        "keys": "url · headers · command · args · env · startup_timeout_sec · tool_timeout_sec. ${VAR} and ${VAR:-default} expand in url/command/args/env/headers. {{session_id}} in headers. Transport: stdio | http | sse.",
+        "oauth": "Connect-time browser if the server requires OAuth. Tokens in ~/.grok/mcp_credentials.json. Not mid-tool elicitation/create.",
+        "tools": "Namespaced <server>__<tool>. No enabled_tools key in the helpdoc. No elicitation mention.",
+        "leverage": "Identity tools are NOT pin-able in TOML. Filter at the model, or use curated profile. Project scope (.grok/config.toml) overrides user (~/.grok/config.toml) by name replace, not merge."
+      },
+      {
+        "harness": "anthropic",
+        "product": "Claude Code",
+        "doc": "https://code.claude.com/docs/en/mcp",
+        "cli": "claude mcp add --transport http source https://mcp.thesrc.ai/mcp/",
+        "json": "{\n  \"mcpServers\": {\n    \"source\": {\n      \"type\": \"http\",\n      \"url\": \"https://mcp.thesrc.ai/mcp/\",\n      \"alwaysLoad\": true,\n      \"oauth\": {\n        \"authServerMetadataUrl\": \"https://aelcnctmkweswmvcayox.supabase.co/auth/v1/.well-known/openid-configuration\",\n        \"scopes\": \"openid profile email offline_access\"\n      }\n    }\n  }\n}",
+        "keys": "type (http|sse|stdio|ws) · url · headers · headersHelper · env · command · args · timeout · alwaysLoad · oauth.{clientId,callbackPort,scopes,authServerMetadataUrl}. ${VAR:-default} in url/headers/command/args/env.",
+        "oauth": "oauth{} in .mcp.json. clientSecret via --client-secret, never in JSON. Elicitation hooks: Elicitation / ElicitationResult; match mcp_server_name; action accept|decline|cancel; exit 2 denies.",
+        "tools": "mcp__plugin_<plugin>_<server>__<tool>. Prompts /mcp__source__<name>. Resources @source:…. ENABLE_TOOL_SEARCH true|auto:N|false. alwaysLoad bypasses deferral — pin catalog_identity, health, capabilities.",
+        "leverage": "alwaysLoad on the source server is the identity pin. Form elicitation is the HARD_GATE path. URL mode for OAuth/Casa — never form for secrets. URL mode has an open failure report; do not assume it works."
+      },
+      {
+        "harness": "openai",
+        "product": "Codex / ChatGPT",
+        "doc": "https://developers.openai.com/codex/mcp",
+        "toml": "[mcp_servers.source]\nurl = \"https://mcp.thesrc.ai/mcp/\"\nbearer_token_env_var = \"SOURCE_API_TOKEN\"\nenabled_tools = [\"source_catalog_identity\", \"source_health\", \"source_capabilities\", \"source_ask\"]\ndefault_tools_approval_mode = \"prompt\"\nauth = \"oauth\"\noauth_resource = \"https://mcp.thesrc.ai/mcp/\"\n\n[mcp_servers.source.oauth]\nclient_id = \"\"\ncallback_url = \"https://chatgpt.com/oauth/codex/<id>/callback\"\ncallback_port = 1455\n\n[approval_policy.granular]\nmcp_elicitations = \"prompt\"",
+        "keys": "url · command · args · cwd · env · env_vars · bearer_token_env_var · http_headers · env_http_headers · http_headers_helper · auth (oauth|chatgpt) · oauth_resource · scopes · enabled · required · enabled_tools · disabled_tools · default_tools_approval_mode (auto|prompt|writes|approve) · tools.<tool>.approval_mode · tools.<tool>.output_token_limit · startup_timeout_sec · tool_timeout_sec · oauth.{client_id,callback_url,callback_port}",
+        "oauth": "CIMD at https://chatgpt.com/oauth/codex/<id>/client.json. auth=chatgpt for first-party session. Plugin .mcp.json uses camelCase oauth.clientId/callbackUrl/callbackPort.",
+        "tools": "enabled_tools is the pin. Form+URL elicitation advertised; gated by approval_policy.granular.mcp_elicitations.",
+        "leverage": "bearer_token_env_var is already in plugins/source/.mcp.json. Missing oauth CIMD is why stranger Codex dies. Pin the four identity/ask tools; leave confer/invoke off auto."
+      }
+    ],
+    "elicitation": {
+      "eras": [
+        {
+          "spec": "2025-11-25",
+          "wire": "Server pushes elicitation/create on the session SSE. URL mode may throw -32042 URLElicitationRequiredError and later notifications/elicitation/complete with elicitationId."
+        },
+        {
+          "spec": "2026-07-28",
+          "wire": "No server→client requests. Return InputRequiredResult { inputRequests }. Client retries the same tool call with inputResponses + requestState. elicitationId and complete notification are gone. Empty elicitation:{} in client caps means form only."
+        }
+      ],
+      "modes": [
+        {
+          "mode": "form",
+          "for": "HARD_GATE confirm, non-secret choice, oneshot --force-ratchet consent",
+          "schema": "{ type: object, properties: { confirm: { type: boolean }, reason: { type: string } }, required: [confirm] }",
+          "actions": "accept | decline | cancel",
+          "law": "Never collect tokens, passwords, or Casa cookies in form mode."
+        },
+        {
+          "mode": "url",
+          "for": "OAuth incremental scope, Casa sign-in, payment, API-key bind",
+          "wire": "url + message. Sensitive bytes stay in the browser. If the client lacks url mode, MUST NOT fall back to form.",
+          "law": "SEP-1036. This is the only honest path for SOURCE_API_TOKEN bootstrap without stuffing secrets through the model."
+        }
+      ],
+      "clients": [
+        { "id": "claude", "form": "YES (hooks Elicitation / ElicitationResult)", "url": "DOCUMENTED · URL mode has an open failure report — do not treat as LIVE" },
+        { "id": "codex", "form": "YES advertised", "url": "YES advertised · gated mcp_elicitations" },
+        { "id": "grok-build", "form": "UNSTATED in helpdoc", "url": "CONNECT-TIME OAuth only (mcp_credentials.json), not mid-tool elicitation/create" },
+        { "id": "this-grok-chat", "form": "VOID no_confirm_on_agent_api", "url": "VOID no_custom_ui" }
+      ]
+    },
+    "seats": [
+      { "n": 1, "unit": "GEN", "seat": "/done", "mcp": "quality → mcp_record_quality", "state": "not on curated public" },
+      { "n": 2, "unit": "GEN", "seat": "executor emitter", "mcp": "agent_outcomes writer", "state": "DARK" },
+      { "n": 3, "unit": "GEN", "seat": "/evidence-run", "mcp": "source_catalog_identity + pulse as exogenous evidence", "state": "LIVE this connector" },
+      { "n": 4, "unit": "GEN", "seat": "/verify MID", "mcp": "rows AND reward fields non-null", "state": "OPEN — seat 2 DARK blocks" },
+      { "n": 5, "unit": "ABS", "seat": "/drift-sentinel", "mcp": "catalog_sha16 vs schema_fingerprint", "state": "LIVE catalog held, generation can churn" },
+      { "n": 6, "unit": "ABS", "seat": "/parity", "mcp": "plugin 188 vs curated 42 vs this OAuth 42", "state": "SPLIT registrations" },
+      { "n": 7, "unit": "ABS", "seat": "/delta-audit", "mcp": "elicitation accept vs tool-arg confirm", "state": "VOID elicitation here" },
+      { "n": 8, "unit": "ABS", "seat": "/metric-audit MID", "mcp": "absorption rate of confirmations", "state": "OPEN — CIMD false, DCR null, elicitation VOID here" },
+      { "n": 9, "unit": "CON", "seat": "/route", "mcp": "activate_skill 34-factor", "state": "PROFILE_ROUTE_DENIED on this floor" },
+      { "n": 10, "unit": "CON", "seat": "/graph-leverage", "mcp": "not a skill router", "state": "Nornic fallback, not v_routing_factors" },
+      { "n": 11, "unit": "CON", "seat": "/insight", "mcp": "oneshot residual → ratchet", "state": "observed 7/7 rank-3, 30/30 oneshot — not this session's fire" },
+      { "n": 12, "unit": "CON", "seat": "/3ortho MID", "mcp": "DURABLE ⊥ MECHANICAL ⊥ PROJECTED", "state": "oneshot path actualized elsewhere" },
+      { "n": 13, "unit": "APEX", "seat": "/confer + operator", "mcp": "source_confer. Never sampling.", "state": "pair EVIDENCE_INCOMPLETE" }
+    ],
+    "channels": [
+      "REWARD_LEDGER mid-4 → UNIT-2 — only generation export absorption may consume",
+      "ABSORPTION_STATE mid-8 → UNIT-3 — elicitation accept is the confirm; decline is not a retry license",
+      "ROUTING_EFFECT mid-12 → APEX — oneshot Temporal workflow_id + probe, not a chat ICE insert"
+    ]
+  },
+  "oauth": {
+    "title": "OAuth × elicitation alignment",
+    "claim_ceiling": "PRM_AS_401_WHOAMI_MEASURED · CIMD_FALSE · DCR_NULL · SOURCE_SCOPES_NOT_IN_PRM · NOT_REPOSITORY_IMPLEMENTED",
+    "owner": "6310327d thin-front 0.2.5 · AUTH for CIMD/DCR/PRM scopes · da60e026 r2+",
+    "whoami": {
+      "role": "connector_public",
+      "scopes": ["source:public"],
+      "auth_kind": "oauth_jwt",
+      "oauth_context_status": "VERIFIED_RESOURCE_BOUND",
+      "principal": "oauth:b5dbe739-37d8-45ac-aba6-2d145977dc6c"
+    },
+    "www_authenticate": "Bearer resource_metadata=\"https://mcp.thesrc.ai/.well-known/oauth-protected-resource\", resource=\"https://mcp.thesrc.ai/mcp/\"",
+    "www_authenticate_scope": false,
+    "prm": {
+      "url": "https://mcp.thesrc.ai/.well-known/oauth-protected-resource",
+      "resource": "https://mcp.thesrc.ai/mcp/",
+      "authorization_servers": ["https://aelcnctmkweswmvcayox.supabase.co/auth/v1"],
+      "scopes_supported": ["openid", "profile", "email", "offline_access"],
+      "bearer_methods_supported": ["header"]
+    },
+    "as": {
+      "url": "https://mcp.thesrc.ai/.well-known/oauth-authorization-server",
+      "issuer": "https://aelcnctmkweswmvcayox.supabase.co/auth/v1",
+      "pkce": ["S256"],
+      "client_id_metadata_document_supported": false,
+      "registration_endpoint": null
+    },
+    "oidc": {
+      "url": "https://aelcnctmkweswmvcayox.supabase.co/auth/v1/.well-known/openid-configuration",
+      "scopes_supported": ["openid", "profile", "email", "phone", "offline_access"],
+      "code_challenge_methods_supported": ["S256", "plain"],
+      "use": "S256 only"
+    },
+    "dialect": [
+      { "layer": "401 / PRM", "scopes": "openid profile email offline_access", "note": "no scope= on 401; clients take PRM" },
+      { "layer": "Supabase OIDC", "scopes": "+ phone", "note": "plain PKCE advertised — MCP clients must ignore it" },
+      { "layer": "JWT / whoami", "scopes": "source:public", "note": "application scope after mapping; do not send this as oauth.scopes" },
+      { "layer": "operator step-up", "scopes": "source:operator (unadvertised)", "note": "SEP-835 VOID until 403 insufficient_scope lists it" }
+    ],
+    "blocked": [
+      "CIMD — AS false. Codex chatgpt.com/oauth/codex/<id>/client.json will not register.",
+      "DCR — registration_endpoint null.",
+      "source:* in authorize — not in PRM scopes_supported.",
+      "URL elicitation on this Grok chat — no_custom_ui.",
+      "Form secrets — MUST NOT. SEP-1036."
+    ],
+    "steps": [
+      { "n": 1, "do": "AUTH: put source:public (and operator) on PRM scopes_supported or on 401 scope=", "ref": "RFC 9728 + MCP 2025-11-25 authorization" },
+      { "n": 2, "do": "AUTH: enable CIMD or DCR or pre-register Claude/Codex client_ids at Supabase AS", "ref": "SEP-991 · this AS measurement" },
+      { "n": 3, "do": "6310327d: prepare_connector_delta.py on current HEAD, candidate 0.2.5, no apply", "ref": "CONNECTOR_OWNER_ONESHOT.md" },
+      { "n": 4, "do": "Claude alwaysLoad + OIDC scopes + pre-reg client_id. Form HARD_GATE only.", "ref": "code.claude.com/docs/en/mcp + elicitation 2025-11-25" },
+      { "n": 5, "do": "Codex enabled_tools pin after client_id exists. mcp_elicitations=prompt.", "ref": "developers.openai.com/codex/mcp" },
+      { "n": 6, "do": "Grok stranger: omit Authorization header; 401→PRM drives connect-time OAuth. Then catalog_identity.", "ref": "docs.x.ai/build/features/mcp-servers" },
+      { "n": 7, "do": "SEP-835 403 insufficient_scope for invoke/confer. URL elicitation to Casa, never form.", "ref": "SEP-835 + SEP-1036" }
+    ],
+    "thin": "Four skills, five commands, SessionStart+UserPromptSubmit only. Packet 35/35 synthetic. Source calls this preparation: 0. Finished packaging is not finished Source."
+  }
+}

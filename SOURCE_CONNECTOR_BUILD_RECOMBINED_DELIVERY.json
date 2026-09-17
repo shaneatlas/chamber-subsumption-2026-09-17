@@ -1,0 +1,30 @@
+{
+  "archive": "SOURCE_CONNECTOR_BUILD_RECOMBINED_2026-09-17.zip",
+  "bytes": 15874325,
+  "sha256": "f0d88ce50864e392ac7242cc2ba4bc1d96fcb4ab769c091b00f8d48220200f84",
+  "archive_files": 162,
+  "archive_crc": "OK",
+  "final_reference_validation": {
+    "status": "LOCAL_REFERENCE_PACKAGE_VALID",
+    "scope": "Package bytes, reference ranges, navigation, static dependency/coverage and non-promotion invariants only; NOT Source runtime acceptance",
+    "sources_checked": 45,
+    "execution_cards_checked": 64,
+    "card_reference_ranges_checked": 165,
+    "enhancement_entries_checked": 72,
+    "original_controls_retained": 94,
+    "baseline_registers_checked": 7,
+    "inherited_files_byte_compared": 27,
+    "local_html_links_checked": 19116,
+    "manifest_entries_checked": 161,
+    "errors": []
+  },
+  "native_source_execution": false,
+  "new_source_tasks": 0,
+  "main_markdown_words": 19793,
+  "entrypoints": [
+    "SOURCE_CONNECTOR_BUILD.md",
+    "SOURCE_CONNECTOR_BUILD.html",
+    "CONNECTOR_BUILD_OWNER_RELAY.md"
+  ],
+  "interpretation": "Source-grounded design plus local validation. Not a full installed plugin, a Source patch, live task closure or learned benefit."
+}

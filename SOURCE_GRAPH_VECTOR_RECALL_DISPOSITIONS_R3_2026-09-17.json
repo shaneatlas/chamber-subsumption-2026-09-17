@@ -1,0 +1,688 @@
+{
+  "status": "PREPARATION_ONLY",
+  "parent": "R2 under SLP-1 aligned takeover",
+  "count": 35,
+  "dispositions": [
+    {
+      "id": "R3.D01",
+      "input_claim_or_question": "R2 remains accepted; no patches, suite invocation, exposure change or index rebuild authorized",
+      "disposition": "RETAIN",
+      "retained_instruction": "This is a narrow preparation supplement under SLP-1 and R2. No new authority or blanket public-status transition.",
+      "work_packages": [
+        "WP00",
+        "WP08"
+      ],
+      "references": [
+        "U2",
+        "U3",
+        "R2"
+      ],
+      "source_execution_status": "NOT_RUN",
+      "current_owner_independently_verified": false
+    },
+    {
+      "id": "R3.D02",
+      "input_claim_or_question": "Nornic pinned upstream cookbook is the engine fact",
+      "disposition": "QUALIFY_EVIDENCE_LAYER",
+      "retained_instruction": "Retain the reported commit/file identities as upstream documentation. Distinguish documented recognition, inspected implementation, installed binary and observed effective execution.",
+      "work_packages": [
+        "WP00",
+        "WP02"
+      ],
+      "references": [
+        "U3",
+        "W14"
+      ],
+      "source_execution_status": "NOT_RUN",
+      "current_owner_independently_verified": false
+    },
+    {
+      "id": "R3.D03",
+      "input_claim_or_question": "Source cookbook link is missing; Source skill is a condensed fork",
+      "disposition": "RETAIN_AS_OPERATOR_REPORTED",
+      "retained_instruction": "Treat as a documentation-provenance defect to confirm in current checkout. Prefer pinned upstream reference plus local deltas, not a fabricated local full cookbook.",
+      "work_packages": [
+        "WP00",
+        "WP02"
+      ],
+      "references": [
+        "U3"
+      ],
+      "source_execution_status": "NOT_RUN",
+      "current_owner_independently_verified": false
+    },
+    {
+      "id": "R3.D04",
+      "input_claim_or_question": "SimpleMatchLimitFastPath conflicts with tenant WHERE",
+      "disposition": "RETAIN",
+      "retained_instruction": "Authorize and scope first, then observe the effective route. A slower valid route may pass. Never drop isolation to earn a fast-path name.",
+      "work_packages": [
+        "WP02",
+        "WP04"
+      ],
+      "references": [
+        "U3",
+        "W14"
+      ],
+      "source_execution_status": "NOT_RUN",
+      "current_owner_independently_verified": false
+    },
+    {
+      "id": "R3.D05",
+      "input_claim_or_question": "Literal traversal bound is a Source fork delta",
+      "disposition": "RETAIN_WITH_INPUT_SAFETY",
+      "retained_instruction": "Keep the literal-bound rule without inventing an eighth upstream list item. Select from trusted bounded templates; parameterize data values.",
+      "work_packages": [
+        "WP02",
+        "WP04"
+      ],
+      "references": [
+        "U3",
+        "W14"
+      ],
+      "source_execution_status": "NOT_RUN",
+      "current_owner_independently_verified": false
+    },
+    {
+      "id": "R3.D06",
+      "input_claim_or_question": "OR/function/optional-filter rewrites and plan cache rules",
+      "disposition": "RETAIN_AS_BUILD_SPECIFIC_OPTIMIZATIONS",
+      "retained_instruction": "Prove semantic equivalence including duplicates, nulls, ordering and scope. Preserve exact emitted text separately from any normalized fingerprint.",
+      "work_packages": [
+        "WP02",
+        "WP07"
+      ],
+      "references": [
+        "U3",
+        "W14"
+      ],
+      "source_execution_status": "NOT_RUN",
+      "current_owner_independently_verified": false
+    },
+    {
+      "id": "R3.D07",
+      "input_claim_or_question": "Pipeline falls back on unsupported clauses",
+      "disposition": "DISTINGUISH_FALLBACK_FROM_DENIAL",
+      "retained_instruction": "An optimization miss is not a policy refusal. Trace the dedicated handler and enforce original authority across the dispatch.",
+      "work_packages": [
+        "WP02",
+        "WP04"
+      ],
+      "references": [
+        "U3",
+        "W14"
+      ],
+      "source_execution_status": "NOT_RUN",
+      "current_owner_independently_verified": false
+    },
+    {
+      "id": "R3.D08",
+      "input_claim_or_question": "Batch deletion with WITH LIMIT is bounded",
+      "disposition": "QUALIFY_EFFECT_SIZE",
+      "retained_instruction": "Node count alone does not bound incident relationships, lock duration or transaction work. Keep cleanup separately authorized and degree/effect bounded.",
+      "work_packages": [
+        "WP04",
+        "WP09"
+      ],
+      "references": [
+        "U3"
+      ],
+      "source_execution_status": "NOT_RUN",
+      "current_owner_independently_verified": false
+    },
+    {
+      "id": "R3.D09",
+      "input_claim_or_question": "Nornic vector disabled returns empty/WARN; lazy search blocks",
+      "disposition": "RETAIN_AS_UPSTREAM_CONTRACT",
+      "retained_instruction": "Bind installed settings and returned/logged evidence. Health checks should not accidentally trigger search/warming. Empty unavailable instruments are not factual negatives.",
+      "work_packages": [
+        "WP01",
+        "WP02",
+        "WP05"
+      ],
+      "references": [
+        "U3",
+        "W15"
+      ],
+      "source_execution_status": "NOT_RUN",
+      "current_owner_independently_verified": false
+    },
+    {
+      "id": "R3.D10",
+      "input_claim_or_question": "Nornic dimensions silently skipped; string query auto-embeds",
+      "disposition": "ADD_COVERAGE_AND_MODEL_CHECK",
+      "retained_instruction": "Audit eligible versus indexed vectors and query embedding identity. Equal dimension does not imply same embedding space. Prefer frozen query bytes for ANN-only comparison.",
+      "work_packages": [
+        "WP00",
+        "WP01",
+        "WP06"
+      ],
+      "references": [
+        "U3",
+        "W15",
+        "W16"
+      ],
+      "source_execution_status": "NOT_RUN",
+      "current_owner_independently_verified": false
+    },
+    {
+      "id": "R3.D11",
+      "input_claim_or_question": "3.92M 1024-d Aura corpus is scalar vector-3.0 on 8GB",
+      "disposition": "RETAIN_AS_OPERATOR_REPORTED_INVENTORY",
+      "retained_instruction": "Bind instance, index, provider/options, valid vector population, model and actual memory before claiming live fit or recall. Separate this instance from the reported GDS suite host.",
+      "work_packages": [
+        "WP00",
+        "WP06"
+      ],
+      "references": [
+        "U1",
+        "W01",
+        "W02"
+      ],
+      "source_execution_status": "NOT_RUN",
+      "current_owner_independently_verified": false
+    },
+    {
+      "id": "R3.D12",
+      "input_claim_or_question": "Quantization reduces vector payload, not application graph",
+      "disposition": "RETAIN_WITH_SCOPE",
+      "retained_instruction": "Keep the Lucene cache distinction and measured example scope. Do not infer identical HNSW connectivity or Source sizes from nearly equal example .vex sizes.",
+      "work_packages": [
+        "WP00",
+        "WP06"
+      ],
+      "references": [
+        "U1",
+        "W02"
+      ],
+      "source_execution_status": "NOT_RUN",
+      "current_owner_independently_verified": false
+    },
+    {
+      "id": "R3.D13",
+      "input_claim_or_question": "Scalar current workload fits; none cannot run",
+      "disposition": "CORRECT_CAPACITY_CLAIM",
+      "retained_instruction": "Raw FLOAT32 payload exceeds nominal 8GB capacity; that is full-residency arithmetic, not proof of impossibility or measured thrashing. Include other indexes, filters, graph cache, heap, concurrency and rescore I/O.",
+      "work_packages": [
+        "WP06",
+        "WP10"
+      ],
+      "references": [
+        "U1",
+        "W02"
+      ],
+      "source_execution_status": "NOT_RUN",
+      "current_owner_independently_verified": false
+    },
+    {
+      "id": "R3.D14",
+      "input_claim_or_question": "vector-3.0 has expansion 1.5 frozen until rebuild",
+      "disposition": "CORRECT_UNSUPPORTED_PROVIDER_SETTING",
+      "retained_instruction": "1.5 is a newer scalar expansion default. Release notes describe expansion preview in 2026.06 and GA in 2026.07. Do not attach that field to vector-3.0 without actual evidence.",
+      "work_packages": [
+        "WP00",
+        "WP02",
+        "WP06"
+      ],
+      "references": [
+        "U1",
+        "U2",
+        "W01",
+        "W03"
+      ],
+      "source_execution_status": "NOT_RUN",
+      "current_owner_independently_verified": false
+    },
+    {
+      "id": "R3.D15",
+      "input_claim_or_question": "Binary is the new default; rebuild to pick up HFQ",
+      "disposition": "RETAIN_NO_AUTO_REBUILD",
+      "retained_instruction": "Keep explicit supported settings on a separately authorized rebuild, not automatic latest defaults. Verify provider-specific rescoring on target; keep active scalar unchanged during baseline measurement.",
+      "work_packages": [
+        "WP06",
+        "WP08",
+        "WP10"
+      ],
+      "references": [
+        "U1",
+        "W01",
+        "W03"
+      ],
+      "source_execution_status": "NOT_RUN",
+      "current_owner_independently_verified": false
+    },
+    {
+      "id": "R3.D16",
+      "input_claim_or_question": "Neo4j binary and pgvector binary are the same sign function",
+      "disposition": "REJECT_EQUIVALENCE",
+      "retained_instruction": "pgvector uses raw component sign; documented Lucene binary uses centered optimized quantization and corrected/asymmetric scoring. Do not claim identical codes or ranking without actual codec proof.",
+      "work_packages": [
+        "WP02",
+        "WP06"
+      ],
+      "references": [
+        "U1",
+        "W07",
+        "W08",
+        "W09"
+      ],
+      "source_execution_status": "NOT_RUN",
+      "current_owner_independently_verified": false
+    },
+    {
+      "id": "R3.D17",
+      "input_claim_or_question": "Never use binary_quantize(table_col) in ORDER BY; generated column required",
+      "disposition": "REJECT_BLANKET_RULE",
+      "retained_instruction": "The matching expression index is an official pgvector pattern. Stored expression values need not be recomputed in an indexed search. Generated columns are an optional tradeoff; inspect the actual plan.",
+      "work_packages": [
+        "WP02",
+        "WP07"
+      ],
+      "references": [
+        "U1",
+        "W05",
+        "W06"
+      ],
+      "source_execution_status": "NOT_RUN",
+      "current_owner_independently_verified": false
+    },
+    {
+      "id": "R3.D18",
+      "input_claim_or_question": "PG ef_search must always exceed inner LIMIT; default ef_c is weaker than Neo4j",
+      "disposition": "QUALIFY_VERSION_AND_COMPARISON",
+      "retained_instruction": "Fixed-scan capacity and iterative scans differ. Use scoped session settings, actual returned count, filters and cost. Cross-engine default numbers do not establish comparative recall.",
+      "work_packages": [
+        "WP02",
+        "WP06"
+      ],
+      "references": [
+        "U1",
+        "U2",
+        "W05"
+      ],
+      "source_execution_status": "NOT_RUN",
+      "current_owner_independently_verified": false
+    },
+    {
+      "id": "R3.D19",
+      "input_claim_or_question": "halfvec and bit HNSW should be the PG first cut",
+      "disposition": "DO_NOT_ADOPT_NEW_STORE",
+      "retained_instruction": "No PG ANN is needed for this measurement. halfvec is lossy float16, not scalar int8 and not full-FLOAT32 rerank. Preserve original vectors where required; no mandated storage conversion.",
+      "work_packages": [
+        "WP00",
+        "WP10"
+      ],
+      "references": [
+        "U1",
+        "W05"
+      ],
+      "source_execution_status": "NOT_RUN",
+      "current_owner_independently_verified": false
+    },
+    {
+      "id": "R3.D20",
+      "input_claim_or_question": "Recall@k equals exact/ANN set overlap divided by k",
+      "disposition": "RETAIN_WITH_EDGE_CASES",
+      "retained_instruction": "Freeze target universe, exact metric, unique identity, tie policy and self-exclusion. Handle fewer than k eligible objects and empty universes explicitly; preserve short-result/error rates.",
+      "work_packages": [
+        "WP01",
+        "WP06"
+      ],
+      "references": [
+        "U2",
+        "W12"
+      ],
+      "source_execution_status": "NOT_RUN",
+      "current_owner_independently_verified": false
+    },
+    {
+      "id": "R3.D21",
+      "input_claim_or_question": "Every ANN benchmark uses the same recall metric",
+      "disposition": "QUALIFY_METRIC_IDENTITY",
+      "retained_instruction": "Faiss documents both 1-recall@R and intersection. Store the definition rather than trusting a label or comparing unrelated numbers.",
+      "work_packages": [
+        "WP06"
+      ],
+      "references": [
+        "U2",
+        "W12"
+      ],
+      "source_execution_status": "NOT_RUN",
+      "current_owner_independently_verified": false
+    },
+    {
+      "id": "R3.D22",
+      "input_claim_or_question": "One formula and common floors can qualify legal retrieval",
+      "disposition": "REJECT_UNIVERSAL_ACCEPTANCE",
+      "retained_instruction": "0.95/0.99 are proposed operating targets, not evidence of legal completeness. Separate geometric neighbor fidelity, relevant evidence coverage and task-specific acceptance.",
+      "work_packages": [
+        "WP06",
+        "WP07"
+      ],
+      "references": [
+        "U2",
+        "SLP"
+      ],
+      "source_execution_status": "NOT_RUN",
+      "current_owner_independently_verified": false
+    },
+    {
+      "id": "R3.D23",
+      "input_claim_or_question": "Ground truth changes only with model/dimension/metric",
+      "disposition": "EXTEND_INVALIDATION",
+      "retained_instruction": "Also rebind corpus membership, vector values, query bytes, filters/policy visibility, tombstones, snapshot and tie rule. ANN-only construction/beam changes on identical universe do not change exact neighbors.",
+      "work_packages": [
+        "WP06",
+        "WP09"
+      ],
+      "references": [
+        "U2"
+      ],
+      "source_execution_status": "NOT_RUN",
+      "current_owner_independently_verified": false
+    },
+    {
+      "id": "R3.D24",
+      "input_claim_or_question": "Sample-corpus ground truth lies",
+      "disposition": "QUALIFY_SCOPE_NOT_DISCARD",
+      "retained_instruction": "Subset exact truth is valid for that subset, not the full corpus. Prefer fewer representative queries against the full eligible corpus before claiming scale-wide recall.",
+      "work_packages": [
+        "WP06",
+        "WP07"
+      ],
+      "references": [
+        "U2",
+        "W10",
+        "W11"
+      ],
+      "source_execution_status": "NOT_RUN",
+      "current_owner_independently_verified": false
+    },
+    {
+      "id": "R3.D25",
+      "input_claim_or_question": "Exact ground truth requires everything in GPU memory",
+      "disposition": "REJECT_REQUIREMENT",
+      "retained_instruction": "Exact blockwise search and top-k merge can cover the full corpus using bounded working memory. Freeze arithmetic precision and tie handling; do not claim Faiss/GPU execution occurred.",
+      "work_packages": [
+        "WP06"
+      ],
+      "references": [
+        "U2",
+        "W10",
+        "W11"
+      ],
+      "source_execution_status": "NOT_RUN",
+      "current_owner_independently_verified": false
+    },
+    {
+      "id": "R3.D26",
+      "input_claim_or_question": "db.retrieve can occupy the same ANN recall column as queryNodes",
+      "disposition": "SPLIT_OBJECTIVES",
+      "retained_instruction": "Evaluate vector-only fidelity before fusion. Fused hybrid output against cosine neighbors is overlap, not ANN-only quality; assess task relevance and preserve branch provenance separately.",
+      "work_packages": [
+        "WP02",
+        "WP06",
+        "WP07"
+      ],
+      "references": [
+        "U2",
+        "U3",
+        "W15"
+      ],
+      "source_execution_status": "NOT_RUN",
+      "current_owner_independently_verified": false
+    },
+    {
+      "id": "R3.D27",
+      "input_claim_or_question": "MRR/nDCG necessarily detect inverted exact top-k order",
+      "disposition": "REQUIRE_RELEVANCE_DEFINITION",
+      "retained_instruction": "Binary relevance for all k exact neighbors can leave those metrics unchanged after permutation. Use specified graded gains or an exact-order statistic; retain human task relevance separately.",
+      "work_packages": [
+        "WP06"
+      ],
+      "references": [
+        "U2"
+      ],
+      "source_execution_status": "NOT_RUN",
+      "current_owner_independently_verified": false
+    },
+    {
+      "id": "R3.D28",
+      "input_claim_or_question": "HNSW, quantization, rescore and filters are separate subtractors",
+      "disposition": "KEEP_DIAGNOSIS_REJECT_ADDITIVE_CAUSALITY",
+      "retained_instruction": "They interact and may change candidate and construction behavior. Use controlled ablations; dimension mismatch is an invalid representation/coverage state, not ordinary approximation loss.",
+      "work_packages": [
+        "WP01",
+        "WP06",
+        "WP07"
+      ],
+      "references": [
+        "U2",
+        "W13"
+      ],
+      "source_execution_status": "NOT_RUN",
+      "current_owner_independently_verified": false
+    },
+    {
+      "id": "R3.D29",
+      "input_claim_or_question": "Source category insertion caused about 12 points of loss",
+      "disposition": "DO_NOT_INFER_MAGNITUDE",
+      "retained_instruction": "The paper supports a hypothesis and a representative-ingest test, not a Source penalty or universal default ranking. Preserve source benchmark claims at their actual review ceiling.",
+      "work_packages": [
+        "WP06",
+        "WP07"
+      ],
+      "references": [
+        "U2",
+        "W13"
+      ],
+      "source_execution_status": "NOT_RUN",
+      "current_owner_independently_verified": false
+    },
+    {
+      "id": "R3.D30",
+      "input_claim_or_question": "Cold/warm cache changes retrieval product",
+      "disposition": "RETAIN_WITH_MEASUREMENT_CONTROL",
+      "retained_instruction": "Measure independent latency/error and retrieval outcomes under comparable state. Do not flush/restart production to manufacture cold conditions. Record unknown cache state honestly.",
+      "work_packages": [
+        "WP06",
+        "WP09"
+      ],
+      "references": [
+        "U2",
+        "W02"
+      ],
+      "source_execution_status": "NOT_RUN",
+      "current_owner_independently_verified": false
+    },
+    {
+      "id": "R3.D31",
+      "input_claim_or_question": "Suite writes database, no need for snake_case rewrite",
+      "disposition": "RETAIN_USER_BOUND_SOURCE_INSPECTION",
+      "retained_instruction": "Update inspection evidence only: reported Cypher .write body, not client API, not live invocation. Bounded scripts search for .mutate is not universal absence.",
+      "work_packages": [
+        "WP00",
+        "WP02"
+      ],
+      "references": [
+        "U2",
+        "R2"
+      ],
+      "source_execution_status": "NOT_RUN",
+      "current_owner_independently_verified": false
+    },
+    {
+      "id": "R3.D32",
+      "input_claim_or_question": "Partial suite plus global timestamp proves mixed routing",
+      "disposition": "SPLIT_PRODUCER_AND_CONSUMER_PROOF",
+      "retained_instruction": "Writer structure permits mixed metric ages if reported control flow holds. Actual routing uptake/requirements remain unbound. Timestamp cannot certify a coherent multi-metric bundle.",
+      "work_packages": [
+        "WP00",
+        "WP03",
+        "WP08"
+      ],
+      "references": [
+        "U2",
+        "R2"
+      ],
+      "source_execution_status": "NOT_RUN",
+      "current_owner_independently_verified": false
+    },
+    {
+      "id": "R3.D33",
+      "input_claim_or_question": "DEGRADED_PARTIAL must block all routing",
+      "disposition": "QUALIFY_PER_CONSUMER",
+      "retained_instruction": "A PageRank-only consumer may remain valid; an all-metric consumer must prove required completeness/freshness or use an authorized fallback. Do not disable current service from preparation.",
+      "work_packages": [
+        "WP02",
+        "WP03",
+        "WP08"
+      ],
+      "references": [
+        "U2",
+        "R2"
+      ],
+      "source_execution_status": "NOT_RUN",
+      "current_owner_independently_verified": false
+    },
+    {
+      "id": "R3.D34",
+      "input_claim_or_question": "Catalog/served identity is enough to reuse quality evidence",
+      "disposition": "REJECT_SINGLE_GENERATION_SHORTCUT",
+      "retained_instruction": "Preserve independent implementation, index/provider, dataset, query/filter, metrics-publication and policy/evaluator identities. A stable catalog cannot freeze those dependencies.",
+      "work_packages": [
+        "WP00",
+        "WP03",
+        "WP06",
+        "WP09"
+      ],
+      "references": [
+        "U1",
+        "U2",
+        "U3",
+        "SLP"
+      ],
+      "source_execution_status": "NOT_RUN",
+      "current_owner_independently_verified": false
+    },
+    {
+      "id": "R3.D35",
+      "input_claim_or_question": "Recall fixture and cookbook update establish learning",
+      "disposition": "REQUIRE_BENEFICIAL_LATER_USE",
+      "retained_instruction": "Measure a scoped procedure preventing incompatible, unscoped, stale or false-absence behavior while preserving useful successful work, then observe later use and task value.",
+      "work_packages": [
+        "WP05",
+        "WP06",
+        "WP07",
+        "WP08"
+      ],
+      "references": [
+        "U1",
+        "U2",
+        "U3",
+        "R2",
+        "SLP"
+      ],
+      "source_execution_status": "NOT_RUN",
+      "current_owner_independently_verified": false
+    }
+  ],
+  "primary_source_register": [
+    {
+      "id": "W01",
+      "title": "Neo4j vector indexes",
+      "url": "https://neo4j.com/docs/cypher-manual/current/indexes/semantic-indexes/vector-indexes/",
+      "scope": "Selected settings, provider table, queries, and known limitations; not the installed Source index."
+    },
+    {
+      "id": "W02",
+      "title": "Neo4j vector-index memory configuration",
+      "url": "https://neo4j.com/docs/operations-manual/current/performance/vector-index-memory-configuration/",
+      "scope": "Selected file-layout, measured-example, cache and filter-memory sections; example is not Source telemetry."
+    },
+    {
+      "id": "W03",
+      "title": "Neo4j version changes",
+      "url": "https://neo4j.com/docs/cypher-manual/current/deprecations-additions-removals-compatibility/",
+      "scope": "2026.06 preview and 2026.07 GA entries for binary/expansion; 2026 feature chronology."
+    },
+    {
+      "id": "W04",
+      "title": "Neo4j SEARCH",
+      "url": "https://neo4j.com/docs/cypher-manual/current/clauses/search/",
+      "scope": "Selected syntax and filter semantics; not Source permission."
+    },
+    {
+      "id": "W05",
+      "title": "pgvector maintainer README",
+      "url": "https://github.com/pgvector/pgvector",
+      "scope": "Selected expression indexing, reranking, exact comparison, iterative scanning, parameter and type sections; mutable upstream."
+    },
+    {
+      "id": "W06",
+      "title": "PostgreSQL expression indexes",
+      "url": "https://www.postgresql.org/docs/current/indexes-expressional.html",
+      "scope": "Stored index-expression evaluation versus recomputation; no plan for Source was run."
+    },
+    {
+      "id": "W07",
+      "title": "pgvector binary_quantize implementation",
+      "url": "https://github.com/pgvector/pgvector/blob/master/src/vector.c",
+      "scope": "Selected binary_quantize body uses component > 0; mutable upstream, not installed extension."
+    },
+    {
+      "id": "W08",
+      "title": "Lucene 10.3.1 binary quantizer codec",
+      "url": "https://lucene.apache.org/core/10_3_1/core/org/apache/lucene/codecs/lucene102/Lucene102BinaryQuantizedVectorsFormat.html",
+      "scope": "Documents centroid-centered, corrected, asymmetric binary quantization. Not a codec readback from Source."
+    },
+    {
+      "id": "W09",
+      "title": "Lucene 10.3.1 optimized scalar quantizer",
+      "url": "https://lucene.apache.org/core/10_3_1/core/org/apache/lucene/util/quantization/OptimizedScalarQuantizer.html",
+      "scope": "Selected interval/centroid/correction mechanism, not Source binary equivalence."
+    },
+    {
+      "id": "W10",
+      "title": "Faiss exact indexes",
+      "url": "https://github.com/facebookresearch/faiss/wiki/Faiss-indexes",
+      "scope": "Flat L2/IP are exact search forms; no dataset or GPU run."
+    },
+    {
+      "id": "W11",
+      "title": "Faiss metrics",
+      "url": "https://github.com/facebookresearch/faiss/wiki/MetricType-and-distances",
+      "scope": "Cosine/inner-product equivalence requires the appropriate normalization; exact numerical contract remains to bind."
+    },
+    {
+      "id": "W12",
+      "title": "Faiss evaluation criteria",
+      "url": "https://github.com/facebookresearch/faiss/wiki/Index-IO,-cloning-and-hyper-parameter-tuning",
+      "scope": "Distinguishes 1-recall@R and R-recall@R/intersection; do not equate all benchmark labels."
+    },
+    {
+      "id": "W13",
+      "title": "HNSW ordering and intrinsic dimensionality paper",
+      "url": "https://arxiv.org/abs/2405.17813",
+      "scope": "Abstract-level review only; reports up to 12 percentage points on its tested scenarios, not on Source."
+    },
+    {
+      "id": "W14",
+      "title": "Nornic hot-path cookbook",
+      "url": "https://github.com/orneryd/NornicDB/blob/main/docs/performance/hot-path-query-cookbook.md",
+      "scope": "Selected main inventory, tenant, query and diagnostic sections. Exact user-pinned commit fetch did not succeed."
+    },
+    {
+      "id": "W15",
+      "title": "Nornic vector-search skill",
+      "url": "https://github.com/orneryd/NornicDB/blob/main/docs/skills/vector-search.skill.md",
+      "scope": "Selected model/dimension, string query, hybrid, suppression, disabled and lazy-warming sections. Not installed Source build."
+    },
+    {
+      "id": "W16",
+      "title": "Voyage embedding contracts",
+      "url": "https://docs.voyageai.com/docs/embeddings",
+      "scope": "Selected older model dimensions and query/document role contract; no embedding API request."
+    }
+  ]
+}
