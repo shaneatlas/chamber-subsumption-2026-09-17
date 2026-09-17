@@ -246,3 +246,8 @@ Susie ranking (operator work, **not** the 13-pt ring): credential floor → sour
 
 **Watching seat ends here.** Source was not written. Selected owner: bind checkout, then the first unmet cut above.  
 This cohesive file: https://raw.githubusercontent.com/shaneatlas/chamber-subsumption-2026-09-17/main/ONESHOT_COHESIVE.md
+
+
+---
+
+**Superseded on first cut / inventory:** use [ONESHOT_CONSUME.md](ONESHOT_CONSUME.md). This file remains anti-join lookup. Live base is origin HEAD `ecd94a4dacd`, plugin 0.2.5, 6/7, CMD02 UNAVAILABLE, candidate **0.2.6**.
